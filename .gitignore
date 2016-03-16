@@ -1,6 +1,3 @@
-# C codes
-*.c
-
 # Object files
 *.o
 *.ko
