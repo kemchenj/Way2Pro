@@ -1,9 +1,8 @@
 import java.util.Arrays;
-import j
 
 public class BinarySearch{
         public static int rank(int key, int []a)
-        {  return rank(key, a, 0, a.length - 1);  }
+        {return rank(key, a, 0, a.length - 1);}
 
         public static int rank(int key, int[] a, int lo, int hi){
                 if (lo > hi) {
