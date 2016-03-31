@@ -87,6 +87,11 @@
 		8EF8EA901CA78AB600FCD340 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA8F1CA78AB600FCD340 /* Car.m */; };
 		8EF8EA921CA78ABC00FCD340 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA911CA78ABC00FCD340 /* Slant6.m */; };
 		8EF8EA941CA78ACC00FCD340 /* AllMeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */; };
+		C8F53E711CAD1D5100D4D39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E701CAD1D5100D4D39E /* main.m */; };
+		C8F53E771CAD1DC900D4D39E /* Batman.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E761CAD1DC900D4D39E /* Batman.m */; };
+		C8F53E7A1CAD1DEB00D4D39E /* BatmanTank.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */; };
+		C8F53E881CAD1E0F00D4D39E /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E871CAD1E0F00D4D39E /* Enemy.m */; };
+		C8F53E8B1CAD1E3400D4D39E /* Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E8A1CAD1E3400D4D39E /* Launcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -306,6 +311,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		C8F53E6C1CAD1D5100D4D39E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -449,6 +463,16 @@
 		8EF8EA8F1CA78AB600FCD340 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		8EF8EA911CA78ABC00FCD340 /* Slant6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
 		8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMeatherRadial.m; sourceTree = "<group>"; };
+		C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "蝙蝠侠"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F53E701CAD1D5100D4D39E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8F53E751CAD1DC900D4D39E /* Batman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Batman.h; path = "蝙蝠侠/Batman.h"; sourceTree = SOURCE_ROOT; };
+		C8F53E761CAD1DC900D4D39E /* Batman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Batman.m; path = "蝙蝠侠/Batman.m"; sourceTree = SOURCE_ROOT; };
+		C8F53E781CAD1DEA00D4D39E /* BatmanTank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatmanTank.h; sourceTree = "<group>"; };
+		C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatmanTank.m; sourceTree = "<group>"; };
+		C8F53E861CAD1E0F00D4D39E /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		C8F53E871CAD1E0F00D4D39E /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		C8F53E891CAD1E3400D4D39E /* Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Launcher.h; sourceTree = "<group>"; };
+		C8F53E8A1CAD1E3400D4D39E /* Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Launcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +644,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8F53E6B1CAD1D5100D4D39E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -713,6 +744,7 @@
 				8E1F27661CAA8196005DA050 /* 键/值编码 */,
 				8E1F27901CAA9E18005DA050 /* 18.5批处理 */,
 				8E649DDA1CACC4A9007CC208 /* 20 main */,
+				C8F53E6F1CAD1D5100D4D39E /* 蝙蝠侠 */,
 				8E46B8D51CA2218200F13DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -744,6 +776,7 @@
 				8E1F27651CAA8196005DA050 /* 键/值编码 */,
 				8E1F278F1CAA9E17005DA050 /* 18.5批处理 */,
 				8E649DD91CACC4A9007CC208 /* 20 main */,
+				C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -945,6 +978,22 @@
 				8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */,
 			);
 			path = Car;
+			sourceTree = "<group>";
+		};
+		C8F53E6F1CAD1D5100D4D39E /* 蝙蝠侠 */ = {
+			isa = PBXGroup;
+			children = (
+				C8F53E701CAD1D5100D4D39E /* main.m */,
+				C8F53E891CAD1E3400D4D39E /* Launcher.h */,
+				C8F53E8A1CAD1E3400D4D39E /* Launcher.m */,
+				C8F53E751CAD1DC900D4D39E /* Batman.h */,
+				C8F53E761CAD1DC900D4D39E /* Batman.m */,
+				C8F53E861CAD1E0F00D4D39E /* Enemy.h */,
+				C8F53E871CAD1E0F00D4D39E /* Enemy.m */,
+				C8F53E781CAD1DEA00D4D39E /* BatmanTank.h */,
+				C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */,
+			);
+			path = "蝙蝠侠";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1358,6 +1407,23 @@
 			productReference = 8EF8EA821CA78A7100FCD340 /* Car */;
 			productType = "com.apple.product-type.tool";
 		};
+		C8F53E6D1CAD1D5100D4D39E /* 蝙蝠侠 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F53E741CAD1D5100D4D39E /* Build configuration list for PBXNativeTarget "蝙蝠侠" */;
+			buildPhases = (
+				C8F53E6A1CAD1D5100D4D39E /* Sources */,
+				C8F53E6B1CAD1D5100D4D39E /* Frameworks */,
+				C8F53E6C1CAD1D5100D4D39E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "蝙蝠侠";
+			productName = "蝙蝠侠";
+			productReference = C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1439,6 +1505,9 @@
 					8EF8EA811CA78A7100FCD340 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					C8F53E6D1CAD1D5100D4D39E = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 8E46B8CF1CA2218200F13DF6 /* Build configuration list for PBXProject "day15" */;
@@ -1477,6 +1546,7 @@
 				8E1F27641CAA8196005DA050 /* 键/值编码 */,
 				8E1F278E1CAA9E17005DA050 /* 18.5批处理 */,
 				8E649DD81CACC4A9007CC208 /* 20 main */,
+				C8F53E6D1CAD1D5100D4D39E /* 蝙蝠侠 */,
 			);
 		};
 /* End PBXProject section */
@@ -1727,6 +1797,18 @@
 				8EF8EA901CA78AB600FCD340 /* Car.m in Sources */,
 				8EF8EA851CA78A7200FCD340 /* main.m in Sources */,
 				8EF8EA921CA78ABC00FCD340 /* Slant6.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F53E6A1CAD1D5100D4D39E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F53E881CAD1E0F00D4D39E /* Enemy.m in Sources */,
+				C8F53E7A1CAD1DEB00D4D39E /* BatmanTank.m in Sources */,
+				C8F53E771CAD1DC900D4D39E /* Batman.m in Sources */,
+				C8F53E711CAD1D5100D4D39E /* main.m in Sources */,
+				C8F53E8B1CAD1E3400D4D39E /* Launcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2192,6 +2274,24 @@
 			};
 			name = Release;
 		};
+		C8F53E721CAD1D5100D4D39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8F53E731CAD1D5100D4D39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2301,6 +2401,7 @@
 				8E649DDE1CACC4A9007CC208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E66CA851CA4CE52005F2ACA /* Build configuration list for PBXNativeTarget "NSFile" */ = {
 			isa = XCConfigurationList;
@@ -2418,6 +2519,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C8F53E741CAD1D5100D4D39E /* Build configuration list for PBXNativeTarget "蝙蝠侠" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F53E721CAD1D5100D4D39E /* Debug */,
+				C8F53E731CAD1D5100D4D39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

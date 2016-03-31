@@ -16,12 +16,12 @@ int main(int argc, const char * argv[]) {
         
         NSString *home;
         home = [@"~" stringByExpandingTildeInPath];
-            // 将目录~替换为绝对路径,当前用户的主目录
+            // 将目录~拓展替换为绝对路径,当前用户的主目录
         
         NSDirectoryEnumerator *direnum;
         direnum = [manager enumeratorAtPath:home];
             // 把路径字符串传递给文件管理器
-            // enumeratorAtPath:返回一个NSDictionaryEnumerator对象,它是NSEnumerator的子类,.每次在这儿枚举器对象中调用nextObject方法时,斗湖返回该目录中下一个文件的路径.这个方法也能搜索子目录中的文件.迭代循环结束时,你将会得到主目录中每一个文件的路径.NSDictionaryEnumerator还提供了一些其它功能,比如为每个文件创建一个属性字典,但是在这里我们并不会用到.
+            // enumeratorAtPath:返回一个NSDictionaryEnumerator对象,它是NSEnumerator的子类,.每次在这儿枚举器对象中调用nextObject方法时, 都会返回该目录中下一个文件的路径.这个方法也能搜索子目录中的文件.迭代循环结束时,你将会得到主目录中每一个文件的路径.NSDictionaryEnumerator还提供了一些其它功能,比如为每个文件创建一个属性字典,但是在这里我们并不会用到.
         
         NSMutableArray *files;
             // NSMutableArray是NSArray的一个之类, 具有可变数组的特性

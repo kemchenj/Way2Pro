@@ -121,12 +121,54 @@ int main(int argc, const char * argv[]) {
         predicate = [NSPredicate predicateWithFormat:@"%K == %@", @"name", @"Herbie"];
         
         // 第二种方法, 是把变量名放到字符串里, 类似于环境变量的作用
-        NSPredicate *PredicateTemplete = [NSPredicate predicateWithFormat:@"name == $NAMR"];
+        NSPredicate *PredicateTemplete = [NSPredicate predicateWithFormat:@"name == $NAME"];
         NSDictionary *varDict;
         varDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Herbie", @"NAME", nil];
         predicate = [PredicateTemplete predicateWithSubstitutionVariables:varDict];
+        // 调用predicateWithSubstitutionVariables方法把preadicate变为一个有变量的谓词
         
-        // 第二种方法, 是把变量名放到字符串里, 类似于环境变量的作用
+        PredicateTemplete = [NSPredicate predicateWithFormat:@"engine.power > $POWER"];
+        varDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:129], @"POWER", nil];
+        predicate = [PredicateTemplete predicateWithSubstitutionVariables:varDict];
+        // 注意: 不能使用"$变量名"作为键路径, 它只能表示值
+        // 使用谓词占位符的时候, 如果想要在程序里中通过代码修改键路径, 需要使用%K占位符
+        // 谓词机制不会进行静态类型检查, 也许会造成未知的类型错误
+        
+        
+        predicate= [NSPredicate predicateWithFormat:@"name < 'Newton'"];
+        results = [cars filteredArrayUsingPredicate:predicate];
+        NSLog(@"%@", [results valueForKey: @"name"]);
+        // 如果需要按照字母表去查看车子,可以使用这种字符串对比的方法
+        
+        predicate = [NSPredicate predicateWithFormat:@"engine.power BETWEEN{50,200}"];
+        
+        NSArray *betweens = [NSArray arrayWithObjects:[NSNumber numberWithInt:50], [NSNumber numberWithInt:200], nil];
+        predicate = [NSPredicate predicateWithFormat:@"engine.power BETWEEN %@", betweens];
+        // 输入数组, 可以通过between来过滤出范围内的谓词
+        // between把50作为数组的下限, 200作为上限
+        
+        PredicateTemplete = [NSPredicate predicateWithFormat:@"engine.power BETWEEN %POWERS"];
+        varDict = [NSDictionary dictionaryWithObjectsAndKeys: betweens, @"POWERS", nil];
+        predicate = [PredicateTemplete predicateWithSubstitutionVariables: varDict];
+        
+        predicate = [NSPredicate predicateWithFormat: @"SELF.name IN {'Herbie', 'Snugs', 'Badger', 'Flap'}"];
+        // 使用路径的话, 谓词只能适用于一个路径的过滤
+        // 改用SELF的话, 就可以复用到其它对象上
+        // SELF响应的是谓词计算的对象
+        
+        
+		names = [cars valueForKey:@"name"];
+		predicate = [NSPredicate predicateWithFormat:@"SELF IN {'Herbie', 'Snugs', 'Badger', 'Flap'}"];
+		results = [names filteredArrayUsingPredicate: predicate];
+		NSLog(@"%@", results);
+		
+		NSArray *names1 = [NSArray arrayWithObjects:@"Herbie", @"Badger", @"Judge", @"Elvis", nil];
+		NSArray *names2 = [NSArray arrayWithObjects:@"Judge", @"Paper car", @"Badger", @"Phoenix", nil];
+		
+		predicate = [NSPredicate predicateWithFormat:@"SELF IN %@", names1];
+		results = [names2 filteredArrayUsingPredicate:predicate];
+		NSLog(@"%@", results);
+		// 通过这种方法取两个集合的交集
     }
     return 0;
 }
