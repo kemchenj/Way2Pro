@@ -17,6 +17,21 @@
     return desc;
 }
 
+
+-(id) init
+{
+    if (self = [self initWithPressure:34 treadDepth:20]) {
+    }
+    return self;
+}
+-(id) initWithPressure:(float)p treadDepth:(float)td
+{
+    if (self = [super init]) {
+        pressure = p;
+        treadDepth = td;
+    }
+    return (self);
+}
 -(id) initWithPressure: (float) p
 {
     if (self = [self initWithPressure:p treadDepth:20.0]) {
@@ -32,21 +47,6 @@
     return self;
 }
 
--(id) initWithPressure: (float) p treadDepth:(float)td
-{
-    if (self = [super init]) {
-        pressure = p;
-        treadDepth = td;
-    }
-    return (self);
-}
-
--(id) init
-{
-    if (self = [self initWithPressure:34 treadDepth:20]) {
-    }
-    return self;
-}
 
 -(void) setPressure: (float) p
 {
@@ -70,6 +70,7 @@
 
 @end
 
+
 @implementation Engine
 
 -(NSString *) description
@@ -79,25 +80,28 @@
 
 @end
 
+
 @implementation Car
 -(id) init
 {
     tires = [[NSMutableArray alloc] init];
     for (int i=0; i<4; i++) {
         [tires addObject:[NSNull null]];
+        // 初始化每一个tire, 避免野指针
     }
     return (self);
 }
+
 
 -(Engine *) engine
 {
     return (engine);
 }
-
 -(void) setEngine: (Engine *)newEngine
 {
     engine = newEngine;
 }
+
 
 -(Tire *) tireAtIndex: (int) index
 {
@@ -113,13 +117,13 @@
     
     return [tires objectAtIndex: index];
     // 省略了中转变量,但代码可读性会下降
+    // objectAtIndex是数组的一个对象方法
 }
-
-
 -(void) setTire: (Tire *) tire atIndex: (int) index
 {
     [tires replaceObjectAtIndex:index withObject:tire];
 }
+
 
 -(void) print
 {

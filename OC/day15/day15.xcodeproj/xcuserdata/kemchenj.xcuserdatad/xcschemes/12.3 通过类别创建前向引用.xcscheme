@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E680C4E1CA92D3E0041A7E6"
-               BuildableName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
-               BlueprintName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
+               BuildableName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
+               BlueprintName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
                ReferencedContainer = "container:day15.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E680C4E1CA92D3E0041A7E6"
-            BuildableName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
-            BlueprintName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
+            BuildableName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
+            BlueprintName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
             ReferencedContainer = "container:day15.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E680C4E1CA92D3E0041A7E6"
-            BuildableName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
-            BlueprintName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
+            BuildableName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
+            BlueprintName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
             ReferencedContainer = "container:day15.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E680C4E1CA92D3E0041A7E6"
-            BuildableName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
-            BlueprintName = "12.3 &#x901a;&#x8fc7;&#x7c7b;&#x522b;&#x521b;&#x5efa;&#x524d;&#x5411;&#x5f15;&#x7528;"
+            BuildableName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
+            BlueprintName = "12.3 &#36890;&#36807;&#31867;&#21035;&#21019;&#24314;&#21069;&#21521;&#24341;&#29992;"
             ReferencedContainer = "container:day15.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

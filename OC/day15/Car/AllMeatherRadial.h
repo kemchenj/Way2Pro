@@ -14,8 +14,11 @@
     float rainHandling;
     float snowHandling;
 }
+
 -(void) setRainHandling: (float) rainHandling;
 -(float) rainHandling;
+
 -(void) setSnowhandling: (float) snowHandling;
 -(float) snowHandling;
+
 @end

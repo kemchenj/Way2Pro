@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 make ex17-4
 

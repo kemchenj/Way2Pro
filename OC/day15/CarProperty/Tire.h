@@ -11,8 +11,8 @@
 @property float pressure;
 @property float treadDepth;
 
--(id) initWithPressure: (float) pressure;
--(id) initWithTreadDepth: (float) treadDepth;
 -(id) initWithPressure: (float) pressure treadDepth:(float)treadDepth;
+-(id) initWithTreadDepth: (float) treadDepth;
+-(id) initWithPressure: (float) pressure;
 
 @end

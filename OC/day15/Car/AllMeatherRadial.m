@@ -22,7 +22,6 @@
 {
     rainHandling = rh;
 }
-
 -(float) rainHandling
 {
     return rainHandling;
@@ -32,7 +31,6 @@
 {
     snowHandling = sh;
 }
-
 -(float) snowHandling
 {
     return snowHandling;
@@ -46,5 +44,6 @@
     }
     return self;
 }
+// 重写父类tire的方法, 把rainHandling和snowHandling也进行初始化
 
 @end

@@ -13,20 +13,22 @@
 @synthesize pressure;
 @synthesize treadDepth;
 
--(NSString *) description{
+-(NSString *) description
+{
     NSString *desc;
     desc = [NSString stringWithFormat: @"Tire: Pressure: %.1f TreadDepth:%.1f", pressure, treadDepth];
     return desc;
 }
 
--(id) initWithPressure: (float) p
-{
-    if (self = [self initWithPressure:p treadDepth:20.0]) {
-        NSLog(@"Specified tire pressure already set");
-    }
-    return self;
-}
 
+-(id) initWithPressure: (float)p treadDepth:(float)td
+{
+    if (self = [super init]) {
+        pressure = p;
+        treadDepth = td;
+    }
+    return (self);
+}
 -(id) initWithTreadDepth: (float) td
 {
     if (self = [self initWithPressure:34.0 treadDepth:td]) {
@@ -34,14 +36,12 @@
     }
     return self;
 }
-
--(id) initWithPressure: (float) p treadDepth:(float)td
+-(id) initWithPressure: (float) p
 {
-    if (self = [super init]) {
-        pressure = p;
-        treadDepth = td;
+    if (self = [self initWithPressure:p treadDepth:20.0]) {
+        NSLog(@"Specified tire pressure already set");
     }
-    return (self);
+    return self;
 }
 
 -(id) init
