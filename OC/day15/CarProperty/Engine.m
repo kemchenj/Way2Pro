@@ -16,6 +16,8 @@
     return (@"I am an engine. Vrooom!");
 }
 
+#pragma <NSCopy>
+
 -(id)copyWithZone:(NSZone *)zone
 {
     Engine *engineCopy;

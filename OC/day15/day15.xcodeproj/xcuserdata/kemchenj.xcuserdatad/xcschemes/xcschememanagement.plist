@@ -74,6 +74,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>Selector.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>SetMemManage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -253,6 +258,11 @@
 			<true/>
 		</dict>
 		<key>8EF8EA811CA78A7100FCD340</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8E769921CB0137500673050</key>
 		<dict>
 			<key>primary</key>
 			<true/>

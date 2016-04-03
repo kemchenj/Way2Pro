@@ -2,13 +2,14 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/test2/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing3.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing1.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/CategoryThing.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/CategoryThing.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing2.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Person.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Room.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Person.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Room.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/category/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/category/numberConvenience.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/category/numberConvenience.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/autorelease/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/property/Person.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/property/Dog.h" isTestSource="false" />
@@ -19,23 +20,18 @@
       <sourceFolder url="file://$MODULE_DIR$/property/Car.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/property/Room.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/property/Car.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Selector/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/AllMeatherRadial.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Engine.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Slant6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/AllMeatherRadial.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarProperty/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarProperty/Tire.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Tire.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Car.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarProperty/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Engine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarProperty/Tire.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarProperty/Car.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NSFile-Ex/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Room.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Person.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Room.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/multiObjManage/Person.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Car/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Car/AllMeatherRadial.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Car/Slant6.h" isTestSource="false" />
@@ -46,21 +42,27 @@
       <sourceFolder url="file://$MODULE_DIR$/day15/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day15/Person.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day15/Person.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/NSFile/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Enemy.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Batman.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/Person.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/Person.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Enemy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Batman.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Enemy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/BatmanTank.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Launcher.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Batman.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/BatmanTank.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/Launcher.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/蝙蝠侠/BatmanTank.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/12.3 通过类别创建前向引用/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/RetainCount2/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/Person.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/empty-pointer/Person.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing3.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing1.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/CategoryThing.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/CategoryThing.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12.2利用类分散代码/Thing2.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NSFile-Ex/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test2/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/multiObjManageEx/Author.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/multiObjManageEx/Status.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/multiObjManageEx/Status.h" isTestSource="false" />
@@ -69,64 +71,63 @@
       <sourceFolder url="file://$MODULE_DIR$/multiObjManageEx/Author.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/multiObjManageEx/Account.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Engine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/AllMeatherRadial.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Engine.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Slant6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/AllMeatherRadial.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Tire.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Car.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Tire.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Car.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/Slant6.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/AllMeatherRadial.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Tire.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Car.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Engine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CarValueCoding/Tire.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/Garage.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/Tire.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/AllMeatherRadial.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/Engine.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/Slant6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/AllMeatherRadial.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/Engine.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/Slant6.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/Car.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/Tire.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/Car.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/Garage.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/Engine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20 main/Tire.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/20 main/Car.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/category/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/category/numberConvenience.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/category/numberConvenience.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Slant6.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/AllMeatherRadial.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20 main/Engine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RetainCount2/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Garage.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Tire.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/AllMeatherRadial.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Engine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Slant6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/AllMeatherRadial.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Tire.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Tire.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Engine.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Car.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Garage.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Engine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/键/值编码/Tire.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/键/值编码/Car.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Person.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Person.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NSFile/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Room.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Person.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Person.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SetMemManage/Room.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Slant6.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/AllMeatherRadial.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Garage.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Engine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/AllMeatherRadial.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Car.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Slant6.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Slant6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/AllMeatherRadial.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Engine.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Tire.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Engine.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Car.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Garage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Tire.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Car.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18.5批处理/Engine.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

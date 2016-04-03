@@ -19,7 +19,7 @@
 -(id)copyWithZone:(NSZone *)zone
 {
     Engine *engineCopy;
-    engineCopy = [[[self class] allocWithZone:zone] init];
+    engineCopy = (Engine *) [[[self class] allocWithZone:zone] init];
     engineCopy->power = power;
     // alloc是一个类方法
     // 之所以用的是self而不是Engine,是因为还要考虑它的子类

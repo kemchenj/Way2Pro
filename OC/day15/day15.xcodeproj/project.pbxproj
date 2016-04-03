@@ -87,6 +87,10 @@
 		8EF8EA901CA78AB600FCD340 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA8F1CA78AB600FCD340 /* Car.m */; };
 		8EF8EA921CA78ABC00FCD340 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA911CA78ABC00FCD340 /* Slant6.m */; };
 		8EF8EA941CA78ACC00FCD340 /* AllMeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */; };
+		C8E829EB1CB1B62C000D575E /* 05-Hello Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */; };
+		C8E829EC1CB1B62C000D575E /* Bull.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E61CB1B62C000D575E /* Bull.m */; };
+		C8E829ED1CB1B62C000D575E /* Cattle.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E81CB1B62C000D575E /* Cattle.m */; };
+		C8E829EE1CB1B62C000D575E /* DoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829EA1CB1B62C000D575E /* DoProxy.m */; };
 		C8F53E711CAD1D5100D4D39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E701CAD1D5100D4D39E /* main.m */; };
 		C8F53E771CAD1DC900D4D39E /* Batman.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E761CAD1DC900D4D39E /* Batman.m */; };
 		C8F53E7A1CAD1DEB00D4D39E /* BatmanTank.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */; };
@@ -311,6 +315,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		C8E769911CB0137500673050 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		C8F53E6C1CAD1D5100D4D39E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +476,15 @@
 		8EF8EA8F1CA78AB600FCD340 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		8EF8EA911CA78ABC00FCD340 /* Slant6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
 		8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMeatherRadial.m; sourceTree = "<group>"; };
+		C8E769931CB0137500673050 /* Selector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Selector; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E829DF1CB1B62C000D575E /* 05-Hello Selector_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "05-Hello Selector_Prefix.pch"; path = "../../../../Downloads/05-Hello Selector/05-Hello Selector_Prefix.pch"; sourceTree = "<group>"; };
+		C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "05-Hello Selector.m"; path = "../../../../Downloads/05-Hello Selector/05-Hello Selector.m"; sourceTree = "<group>"; };
+		C8E829E51CB1B62C000D575E /* Bull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bull.h; path = "../../../../Downloads/05-Hello Selector/Bull.h"; sourceTree = "<group>"; };
+		C8E829E61CB1B62C000D575E /* Bull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bull.m; path = "../../../../Downloads/05-Hello Selector/Bull.m"; sourceTree = "<group>"; };
+		C8E829E71CB1B62C000D575E /* Cattle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cattle.h; path = "../../../../Downloads/05-Hello Selector/Cattle.h"; sourceTree = "<group>"; };
+		C8E829E81CB1B62C000D575E /* Cattle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cattle.m; path = "../../../../Downloads/05-Hello Selector/Cattle.m"; sourceTree = "<group>"; };
+		C8E829E91CB1B62C000D575E /* DoProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoProxy.h; path = "../../../../Downloads/05-Hello Selector/DoProxy.h"; sourceTree = "<group>"; };
+		C8E829EA1CB1B62C000D575E /* DoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoProxy.m; path = "../../../../Downloads/05-Hello Selector/DoProxy.m"; sourceTree = "<group>"; };
 		C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "蝙蝠侠"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F53E701CAD1D5100D4D39E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8F53E751CAD1DC900D4D39E /* Batman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Batman.h; path = "蝙蝠侠/Batman.h"; sourceTree = SOURCE_ROOT; };
@@ -644,6 +666,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8E769901CB0137500673050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8F53E6B1CAD1D5100D4D39E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -745,6 +774,7 @@
 				8E1F27901CAA9E18005DA050 /* 18.5批处理 */,
 				8E649DDA1CACC4A9007CC208 /* 20 main */,
 				C8F53E6F1CAD1D5100D4D39E /* 蝙蝠侠 */,
+				C8E769941CB0137500673050 /* Selector */,
 				8E46B8D51CA2218200F13DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -777,6 +807,7 @@
 				8E1F278F1CAA9E17005DA050 /* 18.5批处理 */,
 				8E649DD91CACC4A9007CC208 /* 20 main */,
 				C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */,
+				C8E769931CB0137500673050 /* Selector */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -978,6 +1009,21 @@
 				8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */,
 			);
 			path = Car;
+			sourceTree = "<group>";
+		};
+		C8E769941CB0137500673050 /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				C8E829DF1CB1B62C000D575E /* 05-Hello Selector_Prefix.pch */,
+				C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */,
+				C8E829E51CB1B62C000D575E /* Bull.h */,
+				C8E829E61CB1B62C000D575E /* Bull.m */,
+				C8E829E71CB1B62C000D575E /* Cattle.h */,
+				C8E829E81CB1B62C000D575E /* Cattle.m */,
+				C8E829E91CB1B62C000D575E /* DoProxy.h */,
+				C8E829EA1CB1B62C000D575E /* DoProxy.m */,
+			);
+			path = Selector;
 			sourceTree = "<group>";
 		};
 		C8F53E6F1CAD1D5100D4D39E /* 蝙蝠侠 */ = {
@@ -1407,6 +1453,23 @@
 			productReference = 8EF8EA821CA78A7100FCD340 /* Car */;
 			productType = "com.apple.product-type.tool";
 		};
+		C8E769921CB0137500673050 /* Selector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E769991CB0137500673050 /* Build configuration list for PBXNativeTarget "Selector" */;
+			buildPhases = (
+				C8E7698F1CB0137500673050 /* Sources */,
+				C8E769901CB0137500673050 /* Frameworks */,
+				C8E769911CB0137500673050 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Selector;
+			productName = Selector;
+			productReference = C8E769931CB0137500673050 /* Selector */;
+			productType = "com.apple.product-type.tool";
+		};
 		C8F53E6D1CAD1D5100D4D39E /* 蝙蝠侠 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8F53E741CAD1D5100D4D39E /* Build configuration list for PBXNativeTarget "蝙蝠侠" */;
@@ -1505,6 +1568,9 @@
 					8EF8EA811CA78A7100FCD340 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					C8E769921CB0137500673050 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					C8F53E6D1CAD1D5100D4D39E = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -1547,6 +1613,7 @@
 				8E1F278E1CAA9E17005DA050 /* 18.5批处理 */,
 				8E649DD81CACC4A9007CC208 /* 20 main */,
 				C8F53E6D1CAD1D5100D4D39E /* 蝙蝠侠 */,
+				C8E769921CB0137500673050 /* Selector */,
 			);
 		};
 /* End PBXProject section */
@@ -1797,6 +1864,17 @@
 				8EF8EA901CA78AB600FCD340 /* Car.m in Sources */,
 				8EF8EA851CA78A7200FCD340 /* main.m in Sources */,
 				8EF8EA921CA78ABC00FCD340 /* Slant6.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E7698F1CB0137500673050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E829EE1CB1B62C000D575E /* DoProxy.m in Sources */,
+				C8E829ED1CB1B62C000D575E /* Cattle.m in Sources */,
+				C8E829EC1CB1B62C000D575E /* Bull.m in Sources */,
+				C8E829EB1CB1B62C000D575E /* 05-Hello Selector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2274,6 +2352,24 @@
 			};
 			name = Release;
 		};
+		C8E769971CB0137500673050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8E769981CB0137500673050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C8F53E721CAD1D5100D4D39E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2520,6 +2616,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C8E769991CB0137500673050 /* Build configuration list for PBXNativeTarget "Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E769971CB0137500673050 /* Debug */,
+				C8E769981CB0137500673050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C8F53E741CAD1D5100D4D39E /* Build configuration list for PBXNativeTarget "蝙蝠侠" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2527,6 +2632,7 @@
 				C8F53E731CAD1D5100D4D39E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
