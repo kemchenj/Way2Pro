@@ -1,5 +1,5 @@
 //
-//  Batman.h
+//  Launcher.h
 //  day15
 //
 //  Created by kemchenj on 3/31/16.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BatmanTank.h"
 #import "Enemy.h"
 
-@interface Batman : NSObject
-@property BatmanTank* car;
--(void)shoot:(Enermy *) target;
+@interface Gun : NSObject
+
+-(void)shoot:(dog *)target;
+
 @end

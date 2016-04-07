@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C80E92841CB6993100A0D7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C80E92831CB6993100A0D7EB /* main.m */; };
+		C89A8D371CB4CF5E00643B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A8D361CB4CF5E00643B77 /* main.m */; };
+		C89A8D3A1CB4CF5E00643B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A8D391CB4CF5E00643B77 /* AppDelegate.m */; };
+		C89A8D3D1CB4CF5E00643B77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A8D3C1CB4CF5E00643B77 /* ViewController.m */; };
+		C89A8D401CB4CF5E00643B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89A8D3E1CB4CF5E00643B77 /* Main.storyboard */; };
+		C89A8D421CB4CF5E00643B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89A8D411CB4CF5E00643B77 /* Assets.xcassets */; };
+		C89A8D451CB4CF5E00643B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89A8D431CB4CF5E00643B77 /* LaunchScreen.storyboard */; };
+		C89A8D501CB4CF5E00643B77 /* RaywenderlichTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A8D4F1CB4CF5E00643B77 /* RaywenderlichTests.m */; };
+		C89A8D5B1CB4CF5E00643B77 /* RaywenderlichUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A8D5A1CB4CF5E00643B77 /* RaywenderlichUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C89A8D4C1CB4CF5E00643B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C89A8D2A1CB4CF5E00643B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C89A8D311CB4CF5E00643B77;
+			remoteInfo = Raywenderlich;
+		};
+		C89A8D571CB4CF5E00643B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C89A8D2A1CB4CF5E00643B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C89A8D311CB4CF5E00643B77;
+			remoteInfo = Raywenderlich;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C89A8D6A1CB4D95500643B77 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C80E92831CB6993100A0D7EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Enum&Bitmask/main.m"; sourceTree = SOURCE_ROOT; };
+		C89A8D321CB4CF5E00643B77 /* Raywenderlich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raywenderlich.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89A8D361CB4CF5E00643B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C89A8D381CB4CF5E00643B77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C89A8D391CB4CF5E00643B77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C89A8D3B1CB4CF5E00643B77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C89A8D3C1CB4CF5E00643B77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C89A8D3F1CB4CF5E00643B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C89A8D411CB4CF5E00643B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C89A8D441CB4CF5E00643B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C89A8D461CB4CF5E00643B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89A8D4B1CB4CF5E00643B77 /* RaywenderlichTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaywenderlichTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89A8D4F1CB4CF5E00643B77 /* RaywenderlichTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaywenderlichTests.m; sourceTree = "<group>"; };
+		C89A8D511CB4CF5E00643B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89A8D561CB4CF5E00643B77 /* RaywenderlichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaywenderlichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89A8D5A1CB4CF5E00643B77 /* RaywenderlichUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaywenderlichUITests.m; sourceTree = "<group>"; };
+		C89A8D5C1CB4CF5E00643B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89A8D6C1CB4D95500643B77 /* Enum & Bitmask */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Enum & Bitmask"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C89A8D2F1CB4CF5E00643B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D481CB4CF5E00643B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D531CB4CF5E00643B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D691CB4D95500643B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C89A8D291CB4CF5E00643B77 = {
+			isa = PBXGroup;
+			children = (
+				C89A8D341CB4CF5E00643B77 /* Raywenderlich */,
+				C89A8D4E1CB4CF5E00643B77 /* RaywenderlichTests */,
+				C89A8D591CB4CF5E00643B77 /* RaywenderlichUITests */,
+				C89A8D6D1CB4D95500643B77 /* Enum & Bitmask */,
+				C89A8D331CB4CF5E00643B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C89A8D331CB4CF5E00643B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C89A8D321CB4CF5E00643B77 /* Raywenderlich.app */,
+				C89A8D4B1CB4CF5E00643B77 /* RaywenderlichTests.xctest */,
+				C89A8D561CB4CF5E00643B77 /* RaywenderlichUITests.xctest */,
+				C89A8D6C1CB4D95500643B77 /* Enum & Bitmask */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C89A8D341CB4CF5E00643B77 /* Raywenderlich */ = {
+			isa = PBXGroup;
+			children = (
+				C89A8D381CB4CF5E00643B77 /* AppDelegate.h */,
+				C89A8D391CB4CF5E00643B77 /* AppDelegate.m */,
+				C89A8D3B1CB4CF5E00643B77 /* ViewController.h */,
+				C89A8D3C1CB4CF5E00643B77 /* ViewController.m */,
+				C89A8D3E1CB4CF5E00643B77 /* Main.storyboard */,
+				C89A8D411CB4CF5E00643B77 /* Assets.xcassets */,
+				C89A8D431CB4CF5E00643B77 /* LaunchScreen.storyboard */,
+				C89A8D461CB4CF5E00643B77 /* Info.plist */,
+				C89A8D351CB4CF5E00643B77 /* Supporting Files */,
+			);
+			path = Raywenderlich;
+			sourceTree = "<group>";
+		};
+		C89A8D351CB4CF5E00643B77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C89A8D361CB4CF5E00643B77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C89A8D4E1CB4CF5E00643B77 /* RaywenderlichTests */ = {
+			isa = PBXGroup;
+			children = (
+				C89A8D4F1CB4CF5E00643B77 /* RaywenderlichTests.m */,
+				C89A8D511CB4CF5E00643B77 /* Info.plist */,
+			);
+			path = RaywenderlichTests;
+			sourceTree = "<group>";
+		};
+		C89A8D591CB4CF5E00643B77 /* RaywenderlichUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C89A8D5A1CB4CF5E00643B77 /* RaywenderlichUITests.m */,
+				C89A8D5C1CB4CF5E00643B77 /* Info.plist */,
+			);
+			path = RaywenderlichUITests;
+			sourceTree = "<group>";
+		};
+		C89A8D6D1CB4D95500643B77 /* Enum & Bitmask */ = {
+			isa = PBXGroup;
+			children = (
+				C80E92831CB6993100A0D7EB /* main.m */,
+			);
+			path = "Enum & Bitmask";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C89A8D311CB4CF5E00643B77 /* Raywenderlich */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89A8D5F1CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "Raywenderlich" */;
+			buildPhases = (
+				C89A8D2E1CB4CF5E00643B77 /* Sources */,
+				C89A8D2F1CB4CF5E00643B77 /* Frameworks */,
+				C89A8D301CB4CF5E00643B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raywenderlich;
+			productName = Raywenderlich;
+			productReference = C89A8D321CB4CF5E00643B77 /* Raywenderlich.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C89A8D4A1CB4CF5E00643B77 /* RaywenderlichTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89A8D621CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "RaywenderlichTests" */;
+			buildPhases = (
+				C89A8D471CB4CF5E00643B77 /* Sources */,
+				C89A8D481CB4CF5E00643B77 /* Frameworks */,
+				C89A8D491CB4CF5E00643B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C89A8D4D1CB4CF5E00643B77 /* PBXTargetDependency */,
+			);
+			name = RaywenderlichTests;
+			productName = RaywenderlichTests;
+			productReference = C89A8D4B1CB4CF5E00643B77 /* RaywenderlichTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C89A8D551CB4CF5E00643B77 /* RaywenderlichUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89A8D651CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "RaywenderlichUITests" */;
+			buildPhases = (
+				C89A8D521CB4CF5E00643B77 /* Sources */,
+				C89A8D531CB4CF5E00643B77 /* Frameworks */,
+				C89A8D541CB4CF5E00643B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C89A8D581CB4CF5E00643B77 /* PBXTargetDependency */,
+			);
+			name = RaywenderlichUITests;
+			productName = RaywenderlichUITests;
+			productReference = C89A8D561CB4CF5E00643B77 /* RaywenderlichUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C89A8D6B1CB4D95500643B77 /* Enum & Bitmask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89A8D701CB4D95500643B77 /* Build configuration list for PBXNativeTarget "Enum & Bitmask" */;
+			buildPhases = (
+				C89A8D681CB4D95500643B77 /* Sources */,
+				C89A8D691CB4D95500643B77 /* Frameworks */,
+				C89A8D6A1CB4D95500643B77 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Enum & Bitmask";
+			productName = "Enum & Bitmask";
+			productReference = C89A8D6C1CB4D95500643B77 /* Enum & Bitmask */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C89A8D2A1CB4CF5E00643B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kemchenj;
+				TargetAttributes = {
+					C89A8D311CB4CF5E00643B77 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C89A8D4A1CB4CF5E00643B77 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C89A8D311CB4CF5E00643B77;
+					};
+					C89A8D551CB4CF5E00643B77 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C89A8D311CB4CF5E00643B77;
+					};
+					C89A8D6B1CB4D95500643B77 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C89A8D2D1CB4CF5E00643B77 /* Build configuration list for PBXProject "Raywenderlich" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C89A8D291CB4CF5E00643B77;
+			productRefGroup = C89A8D331CB4CF5E00643B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C89A8D311CB4CF5E00643B77 /* Raywenderlich */,
+				C89A8D4A1CB4CF5E00643B77 /* RaywenderlichTests */,
+				C89A8D551CB4CF5E00643B77 /* RaywenderlichUITests */,
+				C89A8D6B1CB4D95500643B77 /* Enum & Bitmask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C89A8D301CB4CF5E00643B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89A8D451CB4CF5E00643B77 /* LaunchScreen.storyboard in Resources */,
+				C89A8D421CB4CF5E00643B77 /* Assets.xcassets in Resources */,
+				C89A8D401CB4CF5E00643B77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D491CB4CF5E00643B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D541CB4CF5E00643B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C89A8D2E1CB4CF5E00643B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C80E92841CB6993100A0D7EB /* main.m in Sources */,
+				C89A8D3D1CB4CF5E00643B77 /* ViewController.m in Sources */,
+				C89A8D3A1CB4CF5E00643B77 /* AppDelegate.m in Sources */,
+				C89A8D371CB4CF5E00643B77 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D471CB4CF5E00643B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89A8D501CB4CF5E00643B77 /* RaywenderlichTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D521CB4CF5E00643B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89A8D5B1CB4CF5E00643B77 /* RaywenderlichUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89A8D681CB4D95500643B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C89A8D4D1CB4CF5E00643B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C89A8D311CB4CF5E00643B77 /* Raywenderlich */;
+			targetProxy = C89A8D4C1CB4CF5E00643B77 /* PBXContainerItemProxy */;
+		};
+		C89A8D581CB4CF5E00643B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C89A8D311CB4CF5E00643B77 /* Raywenderlich */;
+			targetProxy = C89A8D571CB4CF5E00643B77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C89A8D3E1CB4CF5E00643B77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C89A8D3F1CB4CF5E00643B77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C89A8D431CB4CF5E00643B77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C89A8D441CB4CF5E00643B77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C89A8D5D1CB4CF5E00643B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C89A8D5E1CB4CF5E00643B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C89A8D601CB4CF5E00643B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Raywenderlich/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.Raywenderlich;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C89A8D611CB4CF5E00643B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Raywenderlich/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.Raywenderlich;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C89A8D631CB4CF5E00643B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaywenderlichTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.RaywenderlichTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raywenderlich.app/Raywenderlich";
+			};
+			name = Debug;
+		};
+		C89A8D641CB4CF5E00643B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaywenderlichTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.RaywenderlichTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raywenderlich.app/Raywenderlich";
+			};
+			name = Release;
+		};
+		C89A8D661CB4CF5E00643B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaywenderlichUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.RaywenderlichUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Raywenderlich;
+			};
+			name = Debug;
+		};
+		C89A8D671CB4CF5E00643B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaywenderlichUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.RaywenderlichUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Raywenderlich;
+			};
+			name = Release;
+		};
+		C89A8D711CB4D95500643B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C89A8D721CB4D95500643B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C89A8D2D1CB4CF5E00643B77 /* Build configuration list for PBXProject "Raywenderlich" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89A8D5D1CB4CF5E00643B77 /* Debug */,
+				C89A8D5E1CB4CF5E00643B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89A8D5F1CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "Raywenderlich" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89A8D601CB4CF5E00643B77 /* Debug */,
+				C89A8D611CB4CF5E00643B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89A8D621CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "RaywenderlichTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89A8D631CB4CF5E00643B77 /* Debug */,
+				C89A8D641CB4CF5E00643B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89A8D651CB4CF5E00643B77 /* Build configuration list for PBXNativeTarget "RaywenderlichUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89A8D661CB4CF5E00643B77 /* Debug */,
+				C89A8D671CB4CF5E00643B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89A8D701CB4D95500643B77 /* Build configuration list for PBXNativeTarget "Enum & Bitmask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89A8D711CB4D95500643B77 /* Debug */,
+				C89A8D721CB4D95500643B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C89A8D2A1CB4CF5E00643B77 /* Project object */;
+}

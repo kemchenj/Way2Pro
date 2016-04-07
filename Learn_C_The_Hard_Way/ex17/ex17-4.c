@@ -90,6 +90,7 @@ void Database_load(struct Connection* conn)
 
                 row->name = malloc(conn->db->MAX_DATA);
                 row->email = malloc(conn->db->MAX_DATA);
+
                 if(fread(row->name, conn->db->MAX_DATA, 1, conn->file) != 1)
                         die("Faile to load name", conn);
                 if(fread(row->email, conn->db->MAX_DATA, 1, conn->file) != 1)
@@ -130,7 +131,6 @@ void Database_create(struct Connection* conn)
         if (conn->db->MAX_DATA<=0) die("MAX_DATA must be positive", conn);
 
         conn->db->rows = (struct Address*)malloc(sizeof(struct Address)*conn->db->MAX_ROWS);
-
         for(size_t i = 0; i < conn->db->MAX_ROWS; i++) {
                 char* a = (char*)malloc(conn->db->MAX_DATA);
                 memset(a, 0, conn->db->MAX_DATA);

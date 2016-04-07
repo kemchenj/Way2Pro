@@ -7,19 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Batman.h"
+#import "lieren.h"
 #import "Enemy.h"
-#import "BatmanTank.h"
-#import "Launcher.h"
+#import "che.h"
+#import "Gun.h"
 
 int main(int argc, const char * argv[]) {
-	@autoreleasepool {
-		Batman* lnj = [Batman new];
-		[lnj setCar:[BatmanTank new]];
-		[lnj.car setRocket: [Launcher new]];
-		
-		Enermy* Dumb = [Enermy new];
-		[lnj shoot:Dumb];
-	}
+    lieren* lnj = [lieren new];
+    [lnj setCar:[che new]];
+    [lnj.car setRocket: [Gun new]];
+    
+    dog* Dumb = [dog new];
+    [lnj shoot:Dumb];
     return 0;
 }

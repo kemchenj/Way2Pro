@@ -6,14 +6,14 @@
 //  Copyright © 2016 xmg. All rights reserved.
 //
 
-#import "BatmanTank.h"
+#import "che.h"
 #import "Enemy.h"
-#import "Launcher.h"
+#import "Gun.h"
 
-@implementation BatmanTank
+@implementation che
 @synthesize Rocket;
 
--(void)shoot:(Enermy *) target;
+-(void)shoot:(dog *) target;
 {
 	[Rocket shoot:target];
 }

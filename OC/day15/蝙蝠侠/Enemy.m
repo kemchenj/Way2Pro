@@ -8,11 +8,11 @@
 
 #import "Enemy.h"
 
-@implementation Enermy
+@implementation dog
 
 -(void)beingShoot
 {
-	NSLog(@"Enermy down");
+	NSLog(@"dog down");
 }
 
 @end

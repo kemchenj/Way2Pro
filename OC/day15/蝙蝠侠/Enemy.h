@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Enermy : NSObject
+@interface dog : NSObject
 
 -(void)beingShoot;
 

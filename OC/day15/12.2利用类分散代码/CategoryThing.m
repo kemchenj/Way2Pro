@@ -12,7 +12,7 @@
 -(NSString *) description
 {
     NSString *desc;
-    desc = [NSString stringWithFormat:@"%d %d %d", thing1, thing2, thing3];
+    desc = [NSString stringWithFormat:@"%ld %ld %ld", thing1, thing2, thing3];
     return desc;
 }
 @end

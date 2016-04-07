@@ -6,11 +6,11 @@
 //  Copyright © 2016 xmg. All rights reserved.
 //
 
-#import "Launcher.h"
+#import "Gun.h"
 
-@implementation Launcher
+@implementation Gun
 
--(void)shoot:(Enermy *)target
+-(void)shoot:(dog *)target
 {
 	[target beingShoot];
 }

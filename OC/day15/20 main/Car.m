@@ -12,14 +12,14 @@
 
 @implementation Car
 
-@synthesize tires;
-@synthesize name;
-@synthesize engine;
-@synthesize make;
-@synthesize model;
-@synthesize modelYear;
-@synthesize numberOfDoors;
-@synthesize mileage;
+//@synthesize tires;
+//@synthesize name;
+//@synthesize engine;
+//@synthesize make;
+//@synthesize model;
+//@synthesize modelYear;
+//@synthesize numberOfDoors;
+//@synthesize mileage;
 
 -(id) init
 {

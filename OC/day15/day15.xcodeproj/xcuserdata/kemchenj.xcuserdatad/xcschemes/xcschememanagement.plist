@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
+		<key>@Property联系.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>Car.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -128,6 +133,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
+		</dict>
+		<key>testtt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
 		</dict>
 		<key>蝙蝠侠.xcscheme</key>
 		<dict>
@@ -258,6 +268,16 @@
 			<true/>
 		</dict>
 		<key>8EF8EA811CA78A7100FCD340</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8B87FF31CB35BCC00E2A33F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8E098201CB3A1D100A82B72</key>
 		<dict>
 			<key>primary</key>
 			<true/>

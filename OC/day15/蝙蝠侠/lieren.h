@@ -1,5 +1,5 @@
 //
-//  Launcher.h
+//  Batman.h
 //  day15
 //
 //  Created by kemchenj on 3/31/16.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "che.h"
 #import "Enemy.h"
 
-@interface Launcher : NSObject
-
--(void)shoot:(Enermy *)target;
-
+@interface lieren : NSObject
+@property che* car;
+-(void)shoot:(dog *) target;
 @end

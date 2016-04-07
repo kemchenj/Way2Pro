@@ -6,12 +6,12 @@
 //  Copyright © 2016 xmg. All rights reserved.
 //
 
-#import "Batman.h"
+#import "lieren.h"
 
-@implementation Batman
+@implementation lieren
 @synthesize car;
 
--(void)shoot:(Enermy *) target
+-(void)shoot:(dog *) target
 {
 	[car shoot:target];
 }

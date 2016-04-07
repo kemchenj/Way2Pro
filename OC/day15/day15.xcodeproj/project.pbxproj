@@ -87,15 +87,21 @@
 		8EF8EA901CA78AB600FCD340 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA8F1CA78AB600FCD340 /* Car.m */; };
 		8EF8EA921CA78ABC00FCD340 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA911CA78ABC00FCD340 /* Slant6.m */; };
 		8EF8EA941CA78ACC00FCD340 /* AllMeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */; };
+		C819FB151CB3B16C00759A4A /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = C819FB141CB3B16C00759A4A /* Author.m */; };
+		C8B87FF71CB35BCC00E2A33F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B87FF61CB35BCC00E2A33F /* main.m */; };
+		C8B87FFD1CB35BF900E2A33F /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B87FFC1CB35BF900E2A33F /* Account.m */; };
+		C8B880031CB35C2000E2A33F /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B880021CB35C2000E2A33F /* Status.m */; };
+		C8E098241CB3A1D100A82B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E098231CB3A1D100A82B72 /* main.m */; };
+		C8E0982A1CB3A1E400A82B72 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E098291CB3A1E400A82B72 /* test.m */; };
 		C8E829EB1CB1B62C000D575E /* 05-Hello Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */; };
 		C8E829EC1CB1B62C000D575E /* Bull.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E61CB1B62C000D575E /* Bull.m */; };
 		C8E829ED1CB1B62C000D575E /* Cattle.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829E81CB1B62C000D575E /* Cattle.m */; };
 		C8E829EE1CB1B62C000D575E /* DoProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E829EA1CB1B62C000D575E /* DoProxy.m */; };
 		C8F53E711CAD1D5100D4D39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E701CAD1D5100D4D39E /* main.m */; };
-		C8F53E771CAD1DC900D4D39E /* Batman.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E761CAD1DC900D4D39E /* Batman.m */; };
-		C8F53E7A1CAD1DEB00D4D39E /* BatmanTank.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */; };
+		C8F53E771CAD1DC900D4D39E /* lieren.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E761CAD1DC900D4D39E /* lieren.m */; };
+		C8F53E7A1CAD1DEB00D4D39E /* che.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E791CAD1DEA00D4D39E /* che.m */; };
 		C8F53E881CAD1E0F00D4D39E /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E871CAD1E0F00D4D39E /* Enemy.m */; };
-		C8F53E8B1CAD1E3400D4D39E /* Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E8A1CAD1E3400D4D39E /* Launcher.m */; };
+		C8F53E8B1CAD1E3400D4D39E /* Gun.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F53E8A1CAD1E3400D4D39E /* Gun.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -315,6 +321,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		C8B87FF21CB35BCC00E2A33F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C8E0981F1CB3A1D100A82B72 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		C8E769911CB0137500673050 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,8 +500,19 @@
 		8EF8EA8F1CA78AB600FCD340 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		8EF8EA911CA78ABC00FCD340 /* Slant6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
 		8EF8EA931CA78ACC00FCD340 /* AllMeatherRadial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMeatherRadial.m; sourceTree = "<group>"; };
+		C819FB131CB3B16C00759A4A /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		C819FB141CB3B16C00759A4A /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		C8B87FF41CB35BCC00E2A33F /* @Property联系 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "@Property联系"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B87FF61CB35BCC00E2A33F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8B87FFB1CB35BF900E2A33F /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		C8B87FFC1CB35BF900E2A33F /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		C8B880011CB35C2000E2A33F /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		C8B880021CB35C2000E2A33F /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		C8E098211CB3A1D100A82B72 /* testtt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testtt; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E098231CB3A1D100A82B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8E098281CB3A1E400A82B72 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		C8E098291CB3A1E400A82B72 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		C8E769931CB0137500673050 /* Selector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Selector; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8E829DF1CB1B62C000D575E /* 05-Hello Selector_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "05-Hello Selector_Prefix.pch"; path = "../../../../Downloads/05-Hello Selector/05-Hello Selector_Prefix.pch"; sourceTree = "<group>"; };
 		C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "05-Hello Selector.m"; path = "../../../../Downloads/05-Hello Selector/05-Hello Selector.m"; sourceTree = "<group>"; };
 		C8E829E51CB1B62C000D575E /* Bull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bull.h; path = "../../../../Downloads/05-Hello Selector/Bull.h"; sourceTree = "<group>"; };
 		C8E829E61CB1B62C000D575E /* Bull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bull.m; path = "../../../../Downloads/05-Hello Selector/Bull.m"; sourceTree = "<group>"; };
@@ -487,14 +522,14 @@
 		C8E829EA1CB1B62C000D575E /* DoProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoProxy.m; path = "../../../../Downloads/05-Hello Selector/DoProxy.m"; sourceTree = "<group>"; };
 		C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "蝙蝠侠"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F53E701CAD1D5100D4D39E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C8F53E751CAD1DC900D4D39E /* Batman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Batman.h; path = "蝙蝠侠/Batman.h"; sourceTree = SOURCE_ROOT; };
-		C8F53E761CAD1DC900D4D39E /* Batman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Batman.m; path = "蝙蝠侠/Batman.m"; sourceTree = SOURCE_ROOT; };
-		C8F53E781CAD1DEA00D4D39E /* BatmanTank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatmanTank.h; sourceTree = "<group>"; };
-		C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatmanTank.m; sourceTree = "<group>"; };
+		C8F53E751CAD1DC900D4D39E /* lieren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lieren.h; path = "蝙蝠侠/lieren.h"; sourceTree = SOURCE_ROOT; };
+		C8F53E761CAD1DC900D4D39E /* lieren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lieren.m; path = "蝙蝠侠/lieren.m"; sourceTree = SOURCE_ROOT; };
+		C8F53E781CAD1DEA00D4D39E /* che.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = che.h; sourceTree = "<group>"; };
+		C8F53E791CAD1DEA00D4D39E /* che.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = che.m; sourceTree = "<group>"; };
 		C8F53E861CAD1E0F00D4D39E /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		C8F53E871CAD1E0F00D4D39E /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
-		C8F53E891CAD1E3400D4D39E /* Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Launcher.h; sourceTree = "<group>"; };
-		C8F53E8A1CAD1E3400D4D39E /* Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Launcher.m; sourceTree = "<group>"; };
+		C8F53E891CAD1E3400D4D39E /* Gun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gun.h; sourceTree = "<group>"; };
+		C8F53E8A1CAD1E3400D4D39E /* Gun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gun.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,6 +701,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B87FF11CB35BCC00E2A33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E0981E1CB3A1D100A82B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8E769901CB0137500673050 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -775,6 +824,8 @@
 				8E649DDA1CACC4A9007CC208 /* 20 main */,
 				C8F53E6F1CAD1D5100D4D39E /* 蝙蝠侠 */,
 				C8E769941CB0137500673050 /* Selector */,
+				C8B87FF51CB35BCC00E2A33F /* @Property联系 */,
+				C8E098221CB3A1D100A82B72 /* testtt */,
 				8E46B8D51CA2218200F13DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -808,6 +859,8 @@
 				8E649DD91CACC4A9007CC208 /* 20 main */,
 				C8F53E6E1CAD1D5100D4D39E /* 蝙蝠侠 */,
 				C8E769931CB0137500673050 /* Selector */,
+				C8B87FF41CB35BCC00E2A33F /* @Property联系 */,
+				C8E098211CB3A1D100A82B72 /* testtt */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1011,10 +1064,33 @@
 			path = Car;
 			sourceTree = "<group>";
 		};
+		C8B87FF51CB35BCC00E2A33F /* @Property联系 */ = {
+			isa = PBXGroup;
+			children = (
+				C8B87FF61CB35BCC00E2A33F /* main.m */,
+				C819FB131CB3B16C00759A4A /* Author.h */,
+				C819FB141CB3B16C00759A4A /* Author.m */,
+				C8B87FFB1CB35BF900E2A33F /* Account.h */,
+				C8B87FFC1CB35BF900E2A33F /* Account.m */,
+				C8B880011CB35C2000E2A33F /* Status.h */,
+				C8B880021CB35C2000E2A33F /* Status.m */,
+			);
+			path = "@Property联系";
+			sourceTree = "<group>";
+		};
+		C8E098221CB3A1D100A82B72 /* testtt */ = {
+			isa = PBXGroup;
+			children = (
+				C8E098231CB3A1D100A82B72 /* main.m */,
+				C8E098281CB3A1E400A82B72 /* test.h */,
+				C8E098291CB3A1E400A82B72 /* test.m */,
+			);
+			path = testtt;
+			sourceTree = "<group>";
+		};
 		C8E769941CB0137500673050 /* Selector */ = {
 			isa = PBXGroup;
 			children = (
-				C8E829DF1CB1B62C000D575E /* 05-Hello Selector_Prefix.pch */,
 				C8E829E11CB1B62C000D575E /* 05-Hello Selector.m */,
 				C8E829E51CB1B62C000D575E /* Bull.h */,
 				C8E829E61CB1B62C000D575E /* Bull.m */,
@@ -1030,14 +1106,14 @@
 			isa = PBXGroup;
 			children = (
 				C8F53E701CAD1D5100D4D39E /* main.m */,
-				C8F53E891CAD1E3400D4D39E /* Launcher.h */,
-				C8F53E8A1CAD1E3400D4D39E /* Launcher.m */,
-				C8F53E751CAD1DC900D4D39E /* Batman.h */,
-				C8F53E761CAD1DC900D4D39E /* Batman.m */,
+				C8F53E891CAD1E3400D4D39E /* Gun.h */,
+				C8F53E8A1CAD1E3400D4D39E /* Gun.m */,
+				C8F53E751CAD1DC900D4D39E /* lieren.h */,
+				C8F53E761CAD1DC900D4D39E /* lieren.m */,
 				C8F53E861CAD1E0F00D4D39E /* Enemy.h */,
 				C8F53E871CAD1E0F00D4D39E /* Enemy.m */,
-				C8F53E781CAD1DEA00D4D39E /* BatmanTank.h */,
-				C8F53E791CAD1DEA00D4D39E /* BatmanTank.m */,
+				C8F53E781CAD1DEA00D4D39E /* che.h */,
+				C8F53E791CAD1DEA00D4D39E /* che.m */,
 			);
 			path = "蝙蝠侠";
 			sourceTree = "<group>";
@@ -1453,6 +1529,40 @@
 			productReference = 8EF8EA821CA78A7100FCD340 /* Car */;
 			productType = "com.apple.product-type.tool";
 		};
+		C8B87FF31CB35BCC00E2A33F /* @Property联系 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8B87FFA1CB35BCC00E2A33F /* Build configuration list for PBXNativeTarget "@Property联系" */;
+			buildPhases = (
+				C8B87FF01CB35BCC00E2A33F /* Sources */,
+				C8B87FF11CB35BCC00E2A33F /* Frameworks */,
+				C8B87FF21CB35BCC00E2A33F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "@Property联系";
+			productName = "@Property联系";
+			productReference = C8B87FF41CB35BCC00E2A33F /* @Property联系 */;
+			productType = "com.apple.product-type.tool";
+		};
+		C8E098201CB3A1D100A82B72 /* testtt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E098271CB3A1D100A82B72 /* Build configuration list for PBXNativeTarget "testtt" */;
+			buildPhases = (
+				C8E0981D1CB3A1D100A82B72 /* Sources */,
+				C8E0981E1CB3A1D100A82B72 /* Frameworks */,
+				C8E0981F1CB3A1D100A82B72 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testtt;
+			productName = testtt;
+			productReference = C8E098211CB3A1D100A82B72 /* testtt */;
+			productType = "com.apple.product-type.tool";
+		};
 		C8E769921CB0137500673050 /* Selector */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E769991CB0137500673050 /* Build configuration list for PBXNativeTarget "Selector" */;
@@ -1568,6 +1678,12 @@
 					8EF8EA811CA78A7100FCD340 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					C8B87FF31CB35BCC00E2A33F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C8E098201CB3A1D100A82B72 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					C8E769921CB0137500673050 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -1614,6 +1730,8 @@
 				8E649DD81CACC4A9007CC208 /* 20 main */,
 				C8F53E6D1CAD1D5100D4D39E /* 蝙蝠侠 */,
 				C8E769921CB0137500673050 /* Selector */,
+				C8B87FF31CB35BCC00E2A33F /* @Property联系 */,
+				C8E098201CB3A1D100A82B72 /* testtt */,
 			);
 		};
 /* End PBXProject section */
@@ -1867,6 +1985,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B87FF01CB35BCC00E2A33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B87FF71CB35BCC00E2A33F /* main.m in Sources */,
+				C8B87FFD1CB35BF900E2A33F /* Account.m in Sources */,
+				C819FB151CB3B16C00759A4A /* Author.m in Sources */,
+				C8B880031CB35C2000E2A33F /* Status.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E0981D1CB3A1D100A82B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E098241CB3A1D100A82B72 /* main.m in Sources */,
+				C8E0982A1CB3A1E400A82B72 /* test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8E7698F1CB0137500673050 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1883,10 +2021,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8F53E881CAD1E0F00D4D39E /* Enemy.m in Sources */,
-				C8F53E7A1CAD1DEB00D4D39E /* BatmanTank.m in Sources */,
-				C8F53E771CAD1DC900D4D39E /* Batman.m in Sources */,
+				C8F53E7A1CAD1DEB00D4D39E /* che.m in Sources */,
+				C8F53E771CAD1DC900D4D39E /* lieren.m in Sources */,
 				C8F53E711CAD1D5100D4D39E /* main.m in Sources */,
-				C8F53E8B1CAD1E3400D4D39E /* Launcher.m in Sources */,
+				C8F53E8B1CAD1E3400D4D39E /* Gun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2352,6 +2490,42 @@
 			};
 			name = Release;
 		};
+		C8B87FF81CB35BCC00E2A33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8B87FF91CB35BCC00E2A33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C8E098251CB3A1D100A82B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8E098261CB3A1D100A82B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C8E769971CB0137500673050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2612,6 +2786,24 @@
 			buildConfigurations = (
 				8EF8EA861CA78A7200FCD340 /* Debug */,
 				8EF8EA871CA78A7200FCD340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8B87FFA1CB35BCC00E2A33F /* Build configuration list for PBXNativeTarget "@Property联系" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B87FF81CB35BCC00E2A33F /* Debug */,
+				C8B87FF91CB35BCC00E2A33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E098271CB3A1D100A82B72 /* Build configuration list for PBXNativeTarget "testtt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E098251CB3A1D100A82B72 /* Debug */,
+				C8E098261CB3A1D100A82B72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,14 +13,14 @@
 
 -(NSString *) description
 {
-    return [NSString stringWithFormat:@"I am a Engine. My Power is %d.", power];
+    return [NSString stringWithFormat:@"I am a Engine. My Power is %d.", self.power];
 }
 
 -(id)copyWithZone:(NSZone *)zone
 {
     Engine *engineCopy;
     engineCopy = [[[self class] allocWithZone:zone] init];
-    engineCopy->power = power;
+    engineCopy.power = self.power;
     // alloc是一个类方法
     // 之所以用的是self而不是Engine,是因为还要考虑它的子类
     
@@ -30,7 +30,7 @@
 -(id) init
 {
     if (self = [super init]) {
-        power = 145;
+        self.power = 145;
     }
     return self;
 }

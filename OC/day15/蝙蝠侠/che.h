@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Enemy.h"
-#import "Launcher.h"
+#import "Gun.h"
 
-@interface BatmanTank : NSObject
-@property Launcher *Rocket;
--(void)shoot:(Enermy *) target;
+@interface che : NSObject
+@property Gun *Rocket;
+-(void)shoot:(dog *) target;
 
 @end

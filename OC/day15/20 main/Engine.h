@@ -7,7 +7,5 @@
 //
 
 @interface Engine : NSObject <NSCopying>
-{
-    int power;
-}
+@property(nonatomic, assign) int power;
 @end
