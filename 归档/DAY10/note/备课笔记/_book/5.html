@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>条件编译基本概念 | 全局变量和局部变量</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./typedef/README.html" />
+    
+    
+    <link rel="prev" href="./3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="5" data-basepath="." data-revision="1434358153319">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         全局变量和局部变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="8.html">
+            
+                
+                    <a href="./8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         static和extern关键字-对变量的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="staticextern1-/README.html">
+            
+                
+                    <a href="./staticextern1-/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         static和extern关键字-对函数的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="2.html">
+            
+                
+                    <a href="./2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         预处理指令基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="3.html">
+            
+                
+                    <a href="./3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         宏定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5" data-path="5.html">
+            
+                
+                    <a href="./5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         条件编译基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="typedef/README.html">
+            
+                
+                    <a href="./typedef/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         typedef关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="4.html">
+            
+                
+                    <a href="./4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         宏定义与函数以typedef区别
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="const/README.html">
+            
+                
+                    <a href="./const/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         const关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="8.html">
+            
+                
+                    <a href="./8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         总结
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="9/README.html">
+            
+                
+                    <a href="./9/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         作业
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >全局变量和局部变量</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_33">
+                    
+                        <h1 id="">条件编译基本概念</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【了解】条件编译基本概念</li>
+<li>【掌握】#if-#else 条件编译指令</li>
+<li>【掌握】#ifdef 条件编译指令</li>
+<li>【掌握】#ifndef 条件编译指令</li>
+<li>【掌握】使用条件编译指令调试bug</li>
+</ol>
+<hr>
+<h2 id="1">1.条件编译基本概念</h2>
+<ul>
+<li><p>在很多情况下，我们希望程序的其中一部分代码只有在满足一定条件时才进行编译，否则不参与编译(只有参与编译的代码最终才能被执行)，这就是条件编译。</p>
+</li>
+<li><p>为什么要使用条件编译</p>
+<ul>
+<li><p>1)按不同的条件去编译不同的程序部分,因而产生不同的目标代码文件。有利于程序的移植和调试。</p>
+</li>
+<li><p>2)条件编译当然也可以用条件语句来实现。 但是用条件语句将会对整个源程序进行编译,生成 的目标代码程序很长,而采用条件编译,则根据条件只编译其中的程序段1或程序段2,生成的目 标程序较短。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2if-else-">2.#if-#else 条件编译指令</h2>
+<ul>
+<li>第一种格式:<pre><code>#if 常量表达式
+  ..code1...
+#else
+  ..code2...
+#endif
+</code></pre></li>
+</ul>
+<pre><code>#define SCORE 67
+#if SCORE &gt; 90
+    printf(&quot;优秀\n&quot;);
+#else
+    printf(&quot;不及格\n&quot;);
+#endif
+</code></pre><pre><code>+ 它的功能是,如常量表达式的值为真(非0),则对code1 进行编译,否则对code2进行编译。因此可以使程序在不同条件下,完成不同的功能。
++ 注意:```条件编译后面的条件表达式中不能识别变量,它里面只能识别常量和宏定义```
+</code></pre><ul>
+<li>第二种格式:</li>
+</ul>
+<pre><code>#if 条件1
+  ...code1...
+ #elif 条件2
+  ...code2...
+ #else
+  ...code3...
+ #endif
+</code></pre><pre><code>#define SCORE 67
+#if SCORE &gt; 90
+    printf(&quot;优秀\n&quot;);
+#elif SCORE &gt; 60
+    printf(&quot;良好\n&quot;);
+#else
+    printf(&quot;不及格\n&quot;);
+#endif
+</code></pre><pre><code>+ 1&gt;如果条件1成立，那么编译器就会把#if 与 #elif之间的code1代码编译进去（注意：是编译进去，不是执行，很平时用的if-else是不一样的）
++ 2&gt; 如果条件1不成立、条件2成立，那么编译器就会把#elif 与 #else之间的code2代码编译进去
++ 3&gt; 如果条件1、2都不成立，那么编译器就会把#else 与 #endif之间的code3编译进去
++ 4&gt; 注意，条件编译结束后，要在最后面加一个#endif，不然后果很严重(自己思考一下后果)
++ 5&gt; #if 和 #elif后面的条件一般是判断宏定义而不是判断变量，因为条件编译是在编译之前做的判断，宏定义也是编译之前定义的，而变量是在运行时才产生的、才有使用的意义
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_36">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <h2 id="3ifdef-">3.#ifdef 条件编译指令</h2>
+<ul>
+<li>格式:</li>
+</ul>
+
+</div>
+<div class="editor" style="height: 20px">#ifdef 标识符
+    程序段1
+#else
+    程序段2
+#endif</div>
+
+<pre class="hidden code-solution">+ 它的功能是,如果标识符已被#define命令定义过则对程序段1进行编译;否则对程序段2进行编译。如果没有程序段2(它为空),本格式中的#else可以没有,即可以写为:</pre>
+<pre class="hidden code-validation">#ifdef 标识符 程序段
+#endif</pre>
+
+
+<div class="buttons">
+    <a href="#" class="button size-2 action-submit">Submit</a>
+    <a href="#" class="button size-2 action-solution">Solution</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="normal" id="section-gitbook_37">
+                    
+                        <h2 id="4ifndef-">4.ifndef 条件编译指令</h2>
+<ul>
+<li>格式:</li>
+</ul>
+<pre><code>#ifndef 标识符 程序段1
+#else 程序段2
+#endif
+</code></pre><pre><code>+ 与第二种形式的区别是将“ifdef”改为“ifndef”。它的功能是,如果标识符未被#define命令 定义过则对程序段1进行编译,否则对程序段2进行编译。这与第二种形式的功能正相反。
+</code></pre><hr>
+<h2 id="5bug">5.使用条件编译指令调试bug</h2>
+<ul>
+<li>应用:可变参数宏,更方便地打印调试信息</li>
+</ul>
+<pre><code>#define DEBUG1 1
+#if DEBUG1 == 0 //format是格式控制,##表示可以没有参数,__VA_ARGS__表示变量 #define Log(format,...) printf(format,## __VA_ARGS__)
+#else
+#define Log(format,...)
+#endif
+
+void test(){
+    Log(&quot;xxxxx&quot;);
+}
+int main(int argc, const char * argv[]) {
+    Log(&quot;%d\n&quot;,10);
+    return 0;
+}
+</code></pre><ul>
+<li>这里,‘...’指可变参数。这类宏在被调用时,##表示成零个或多个参数,包括里面的逗号,一直到到右括弧结束为止。当被调用时,在宏体(macro body)中,那些符号序列集合将代替里面 的<strong>VA_ARGS</strong>标识符。</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./3.html" class="navigation navigation-prev " aria-label="Previous page: 宏定义"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./typedef/README.html" class="navigation navigation-next " aria-label="Next page: typedef关键字"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

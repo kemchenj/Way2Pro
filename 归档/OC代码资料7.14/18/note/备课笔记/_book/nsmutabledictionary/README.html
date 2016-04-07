@@ -1,0 +1,562 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>NSMutableDictionary基本概念 | NSArray基本概念</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../4.html" />
+    
+    
+    <link rel="prev" href="../nsdictionary/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="7" data-basepath=".." data-revision="1435558797293">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         NSArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="nsarray/README.html">
+            
+                
+                    <a href="../nsarray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         NSArray遍历
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="220.html">
+            
+                
+                    <a href="../220.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         NSArray排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="nsarraynsstring/README.html">
+            
+                
+                    <a href="../nsarraynsstring/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         NSArray与NSString
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="230.html">
+            
+                
+                    <a href="../230.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         NSArray文件读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="nsmutablearray/README.html">
+            
+                
+                    <a href="../nsmutablearray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         NSMutableArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="nsdictionary/README.html">
+            
+                
+                    <a href="../nsdictionary/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         NSDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="7" data-path="nsmutabledictionary/README.html">
+            
+                
+                    <a href="../nsmutabledictionary/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         NSMutableDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="4.html">
+            
+                
+                    <a href="../4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         常见的结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="nsnumber/README.html">
+            
+                
+                    <a href="../nsnumber/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         NSNumber
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="nsvalue/README.html">
+            
+                
+                    <a href="../nsvalue/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         NSValue
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="nsdate/README.html">
+            
+                
+                    <a href="../nsdate/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         NSDate
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="nsfilemanager/README.html">
+            
+                
+                    <a href="../nsfilemanager/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         NSFileManager
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="150.html">
+            
+                
+                    <a href="../150.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         集合对象的内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="copy/README.html">
+            
+                
+                    <a href="../copy/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Copy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="888.html">
+            
+                
+                    <a href="../888.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         copy与内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="propertycopy/README.html">
+            
+                
+                    <a href="../propertycopy/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         @property中的copy关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="567.html">
+            
+                
+                    <a href="../567.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         自定义的类实现copy操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="631.html">
+            
+                
+                    <a href="../631.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         单例设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >NSArray基本概念</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_363">
+                    
+                        <h1 id="nsmutabledictionary">NSMutableDictionary基本概念</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【理解】NSMutableDictionary 基本概念</li>
+<li>【理解】NSMutableDictionary 常用方法</li>
+<li>【理解】NSMutableDictionary 简写</li>
+<li>【理解】NSDictionary和NSArray对比</li>
+</ol>
+<hr>
+<h2 id="1nsmutabledictionary-">1.NSMutableDictionary 基本概念</h2>
+<ul>
+<li>什么是NSMutableDictionary<ul>
+<li>NSMutableDictionary是NSDictionary的子类</li>
+<li>NSDictionary是不可变的,一旦初始化完毕后,它里面的内容就永远是固定的,不能删除里面的元素, 也不能再往里面添加元素</li>
+<li>NSMutableDictionary是可变的,随时可以往里面添加\更改\删除元素</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2nsmutabledictionary">2.NSMutableDictionary的常见操作</h2>
+<ul>
+<li><p>- (void)setObject:(id)anObject forKey:(id <NSCopying>)aKey;</p>
+<ul>
+<li>添加一个键值对(会把aKey之前对应的值给替换掉)</li>
+</ul>
+</li>
+<li><p>- (void)removeObjectForKey:(id)aKey;</p>
+<ul>
+<li>通过aKey删除对应的value</li>
+</ul>
+</li>
+<li><p>- (void)removeAllObjects;</p>
+<ul>
+<li>删除所有的键值对</li>
+</ul>
+</li>
+</ul>
+<h2 id="3nsmutabledictionary">3.NSMutableDictionary的简写</h2>
+<ul>
+<li>设置键值对<ul>
+<li>以前<pre><code>[dict setObject:@&quot;Jack&quot; forKey:@&quot;name”];
+</code></pre></li>
+<li>现在<pre><code>dict[@&quot;name&quot;] = @&quot;Jack&quot;;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4nsdictionarynsarray">4.NSDictionary和NSArray对比</h2>
+<ul>
+<li><p>NSArray和NSDictionary的区别</p>
+<ul>
+<li>NSArray是有序的,NSDictionary是无序的</li>
+<li>NSArray是通过下标访问元素,NSDictionary是通过key访问元素</li>
+</ul>
+</li>
+<li><p>NSArray的用法</p>
+<ul>
+<li>创建<pre><code>@[@&quot;Jack&quot;, @&quot;Rose&quot;] (返回是不可变数组)
+</code></pre></li>
+<li>访问<pre><code>id d = array[1];
+</code></pre></li>
+<li>赋值<pre><code>array[1] = @&quot;jack&quot;;
+</code></pre></li>
+</ul>
+</li>
+<li><p>NSDictionary的用法
+  +创建</p>
+<pre><code>@{ @&quot;name&quot; : @&quot;Jack&quot;, @&quot;phone&quot; : @&quot;10086&quot; } (返回是不可变字典)
+</code></pre><ul>
+<li>访问<pre><code>id d = dict[@&quot;name&quot;];
+</code></pre></li>
+<li>赋值<pre><code>dict[@&quot;name&quot;] = @&quot;jack&quot;;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../nsdictionary/README.html" class="navigation navigation-prev " aria-label="Previous page: NSDictionary基本概念"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../4.html" class="navigation navigation-next " aria-label="Next page: 常见的结构体"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

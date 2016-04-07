@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>const关键字 | 全局变量和局部变量</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../8.html" />
+    
+    
+    <link rel="prev" href="../4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="8" data-basepath=".." data-revision="1434358153319">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         全局变量和局部变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="8.html">
+            
+                
+                    <a href="../8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         static和extern关键字-对变量的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="staticextern1-/README.html">
+            
+                
+                    <a href="../staticextern1-/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         static和extern关键字-对函数的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="2.html">
+            
+                
+                    <a href="../2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         预处理指令基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="3.html">
+            
+                
+                    <a href="../3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         宏定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="5.html">
+            
+                
+                    <a href="../5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         条件编译基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="typedef/README.html">
+            
+                
+                    <a href="../typedef/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         typedef关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="4.html">
+            
+                
+                    <a href="../4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         宏定义与函数以typedef区别
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="8" data-path="const/README.html">
+            
+                
+                    <a href="../const/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         const关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="8.html">
+            
+                
+                    <a href="../8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         总结
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="9/README.html">
+            
+                
+                    <a href="../9/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         作业
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >全局变量和局部变量</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_53">
+                    
+                        <h1 id="const">const关键字</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【了解】什么是const?</li>
+<li>【理解】const有什么主要的作用?</li>
+<li>【理解】如何使用const?</li>
+</ol>
+<hr>
+<h2 id="1const">1.什么是const?</h2>
+<ul>
+<li>const是一个类型修饰符<ul>
+<li>使用const修饰变量则可以让变量的值不能改变</li>
+<li>常类型是指使用类型修饰符const说明的类型,常类型的变量或对象的值是不能被更新的。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2const">2.const有什么主要的作用?</h2>
+<ul>
+<li>(1)可以定义const常量,具有不可变性。 例如:<pre><code>const int Max=100;
+int Array[Max];
+</code></pre></li>
+<li>(2)便于进行类型检查,使编译器对处理内容有更多了解,消除了一些隐患。<pre><code>void f(const int i) { .........}
+</code></pre><ul>
+<li>编译器就会知道i是一个常量,不允许修改;</li>
+</ul>
+</li>
+<li><p>(3)可以避免意义模糊的数字出现,同样可以很方便地进行参数的调整和修改。 同宏定义一样,可以做到不变则已,一变都变!如(1)中,如果想修改Max的内容,只需要:const int Max=you want;即可!</p>
+</li>
+<li><p>(4)可以保护被修饰的东西,防止意外的修改,增强程序的健壮性。 还是上面的例子,如果在 函数体内修改了i,编译器就会报错;</p>
+<pre><code>void f(const int i) { i=10;//error! }
+</code></pre></li>
+<li>(5) 可以节省空间,避免不必要的内存分配。<pre><code>#define PI 3.14159 //常量宏
+const doulbe Pi=3.14159; //此时并未将Pi放入ROM中 ...... double i=Pi; //此时为Pi分配内存,以后不再分配!
+double I=PI; //编译期间进行宏替换,分配内存
+double j=Pi; //没有内存分配
+double J=PI; //再进行宏替换,又一次分配内存! const定义常量从汇编的角度来看,只是给出了对应的内存地址,而不是象#define一样给出的是立即数,所以,const定义的常量在程序运行过程中只有一份拷贝,而#define定义的常量在内存 中有若干个拷贝。
+</code></pre></li>
+<li>(6) 􏰀高了效率。编译器通常不为普通const常量分配存储空间,而是将它们保存在符号表 中,这使得它成为一个编译期间的常量,没有了存储与读内存的操作,使得它的效率也很高。</li>
+</ul>
+<hr>
+<h2 id="3const">3.如何使用const?</h2>
+<ul>
+<li><p>(1)修饰一般常量一般常量是指简单类型的常量。这种常量在定义时,修饰符const可以用在类型说明符前,也可以用在类型说明符后。</p>
+<pre><code>int const x=2; 或 const int x=2;
+</code></pre><ul>
+<li>(当然,我们可以偷梁换柱进行更新: 通过强制类型转换,将地址赋给变量,再作修改即可以改变const常量值。)<pre><code>const int a = 5;
+int *p;
+p = (int *)&amp;a;
+*p = 10;
+printf(&quot;%d\n&quot;, a);
+printf(&quot;%d\n&quot;, *p);
+输出结果: 5, 10
+</code></pre></li>
+</ul>
+</li>
+<li><p>(2)修饰常数组(值不能够再改变了)定义或说明一个常数组可采用如下格式:</p>
+<pre><code>int const a[5]={1, 2, 3, 4, 5};
+const int a[5]={1, 2, 3, 4, 5};
+</code></pre><pre><code>const int a[5]={1, 2, 3, 4, 5};
+a[1] = 55; // 错误
+</code></pre></li>
+<li><p>(3)修饰函数的常参数const修饰符也可以修饰函数的传递参数,格式如下:
+void Fun(const int Var); 告诉编译器Var在函数体中的无法改变,从而防止了使用者的一些无 意的或错误的修改。</p>
+</li>
+<li><p>(4)修饰函数的返回值: const修饰符也可以修饰函数的返回值,是返回值不可被改变,格式如 下:</p>
+<pre><code>const int Fun1();
+const MyClass Fun2();
+</code></pre></li>
+<li><p>(5)修饰常指针</p>
+<ul>
+<li>const int *A; //const修饰指针,A可变,A指向的值不能被修改
+<code>
+</code></li>
+<li>int const *A; //const修饰指向的对象,A可变,A指向的对象不可变
+<code>
+</code></li>
+<li>int *const A; //const修饰指针A, A不可变,A指向的对象可变
+<code>
+</code></li>
+<li>const int *const A;//指针A和A指向的对象都不可变</li>
+</ul>
+</li>
+<li><p>技巧</p>
+<pre><code>先看“*”的位置
+如果const 在 *的左侧 表示值不能修改,但是指向可以改。
+如果const 在 *的右侧 表示指向不能改,但是值可以改
+如果在“*”的两侧都有const 标识指向和值都不能改。
+</code></pre></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../4.html" class="navigation navigation-prev " aria-label="Previous page: 宏定义与函数以typedef区别"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../8.html" class="navigation navigation-next " aria-label="Next page: 总结"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

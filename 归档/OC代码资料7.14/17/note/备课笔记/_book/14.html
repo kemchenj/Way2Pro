@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>NSMutableString练习 | Protocol基本概念</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./nsarray/README.html" />
+    
+    
+    <link rel="prev" href="./15.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="15" data-basepath="." data-revision="1459925861113">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Protocol基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="protocol/README.html">
+            
+                
+                    <a href="./protocol/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Protocol注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="2.html">
+            
+                
+                    <a href="./2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Protocol类型限制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="3.html">
+            
+                
+                    <a href="./3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         代理设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="foundation/README.html">
+            
+                
+                    <a href="./foundation/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Foundation框架介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="nsstring/README.html">
+            
+                
+                    <a href="./nsstring/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         NSString基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="6.html">
+            
+                
+                    <a href="./6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         字符串读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="7.html">
+            
+                
+                    <a href="./7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         字符串比较
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="8.html">
+            
+                
+                    <a href="./8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         字符串搜索
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="9.html">
+            
+                
+                    <a href="./9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         字符串截取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="10.html">
+            
+                
+                    <a href="./10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         字符串替换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="11.html">
+            
+                
+                    <a href="./11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         字符串与路径
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="12.html">
+            
+                
+                    <a href="./12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         字符串与基本数据类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="nsmutablestring/README.html">
+            
+                
+                    <a href="./nsmutablestring/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         NSMutableString基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="15.html">
+            
+                
+                    <a href="./15.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         NSMutableString常用方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="15" data-path="14.html">
+            
+                
+                    <a href="./14.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         NSMutableString练习
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="nsarray/README.html">
+            
+                
+                    <a href="./nsarray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         NSArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="17.html">
+            
+                
+                    <a href="./17.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         NSArray 遍历
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="18.html">
+            
+                
+                    <a href="./18.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         NSArray排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="19.html">
+            
+                
+                    <a href="./19.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         NSArray文件读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="20.html">
+            
+                
+                    <a href="./20.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         NSArray 与字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="nsmutablearray/README.html">
+            
+                
+                    <a href="./nsmutablearray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         NSMutableArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Protocol基本概念</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_374">
+                    
+                        <h1 id="nsmutablestring">NSMutableString练习</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【理解】NSMutableString练习</li>
+</ol>
+<hr>
+<h2 id="1nsmutablestring">1.NSMutableString练习</h2>
+<ul>
+<li><p>从要求讲3个520it拼接在一起</p>
+</li>
+<li><p>会生成很多新的字符串</p>
+</li>
+</ul>
+<pre><code>    NSString *res = @&quot;&quot;;
+    NSString *subStr = @&quot;520&quot;;
+    // 1.拼接字符串
+
+//    res = [res stringByAppendingString:subStr];
+//    res = [res stringByAppendingString:@&quot; &quot;];
+//
+//    res = [res stringByAppendingString:subStr];
+//    res = [res stringByAppendingString:@&quot; &quot;];
+//
+//    res = [res stringByAppendingString:subStr];
+//    res = [res stringByAppendingString:@&quot; &quot;];
+
+    for (int i = 0; i &lt; 3; ++i) {
+        res = [res stringByAppendingString:subStr];
+        res = [res stringByAppendingString:@&quot; &quot;];
+    }
+
+    // 2.删除末尾的空格
+//    res = [res stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    res = [res substringToIndex:res.length - 1];
+
+    NSLog(@&quot;res = |%@|&quot;, res);
+</code></pre><ul>
+<li>不会生成新的字符串</li>
+</ul>
+<pre><code>    NSString *subStr = @&quot;520it&quot;;
+    NSMutableString *res = [NSMutableString string];
+    // 1.拼接字符串
+    for (int i = 0; i &lt; 3; ++i) {
+        [res appendString:subStr];
+        [res appendString:@&quot; &quot;];
+    }
+    // 2.删除空格
+//    [res replaceCharactersInRange:NSMakeRange(res.length - 1, 1) withString:@&quot;&quot;];
+    [res deleteCharactersInRange:NSMakeRange(res.length - 1, 1)];
+    NSLog(@&quot;res = |%@|&quot;, res);
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./15.html" class="navigation navigation-prev " aria-label="Previous page: NSMutableString常用方法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./nsarray/README.html" class="navigation navigation-next " aria-label="Next page: NSArray基本概念"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

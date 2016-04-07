@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>ARC下的内存管理 | autorelease基本使用</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./arcmrc/README.html" />
+    
+    
+    <link rel="prev" href="./4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="5" data-basepath="." data-revision="1435302853822">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         autorelease基本使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="autorelease/README.html">
+            
+                
+                    <a href="./autorelease/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         autorelease注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="2.html">
+            
+                
+                    <a href="./2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         autorelease 的应用场景
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="arc/README.html">
+            
+                
+                    <a href="./arc/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         ARC基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="4.html">
+            
+                
+                    <a href="./4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         ARC快速入门
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5" data-path="5.html">
+            
+                
+                    <a href="./5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         ARC下的内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="arcmrc/README.html">
+            
+                
+                    <a href="./arcmrc/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         ARC和MRC兼容和转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="category/README.html">
+            
+                
+                    <a href="./category/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Category基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="8.html">
+            
+                
+                    <a href="./8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Category注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="class_extension/README.html">
+            
+                
+                    <a href="./class_extension/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         类扩展(Class Extension)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="block/README.html">
+            
+                
+                    <a href="./block/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Block基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="typedefblock/README.html">
+            
+                
+                    <a href="./typedefblock/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         typedef和Block
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="12.html">
+            
+                
+                    <a href="./12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Block注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >autorelease基本使用</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_272">
+                    
+                        <h1 id="arc">ARC下的内存管理</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【掌握】ARC下单对象内存管理</li>
+<li>【掌握】ARC下多对象内存管理</li>
+<li>【掌握】ARC下循环引用问题</li>
+<li>【掌握】ARC下@property参数</li>
+</ol>
+<hr>
+<h2 id="1arc">1.ARC下单对象内存管理</h2>
+<ul>
+<li>局部变量释放对象随之被释放</li>
+</ul>
+<pre><code>int main(int argc, const char * argv[]) {
+   @autoreleasepool {
+        Person *p = [[Person alloc] init];
+    } // 执行到这一行局部变量p释放
+    // 由于没有强指针指向对象, 所以对象也释放
+    return 0;
+}
+</code></pre><ul>
+<li>清空指针对象随之被释放</li>
+</ul>
+<pre><code>int main(int argc, const char * argv[]) {
+   @autoreleasepool {
+        Person *p = [[Person alloc] init];
+        p = nil; // 执行到这一行, 由于没有强指针指向对象, 所以对象被释放
+    }
+    return 0;
+}
+</code></pre><ul>
+<li>默认清空所有指针都是强指针</li>
+</ul>
+<pre><code>int main(int argc, const char * argv[]) {
+   @autoreleasepool {
+        // p1和p2都是强指针
+        Person *p1 = [[Person alloc] init];
+        __strong Person *p2 = [[Person alloc] init];
+    }
+    return 0;
+}
+</code></pre><ul>
+<li>弱指针需要明确说明<ul>
+<li>注意: 千万不要使用弱指针保存新创建的对象</li>
+</ul>
+</li>
+</ul>
+<pre><code>int main(int argc, const char * argv[]) {
+   @autoreleasepool {
+        // p是弱指针, 对象会被立即释放
+        __weak Person *p1 = [[Person alloc] init];
+    }
+    return 0;
+}
+</code></pre><hr>
+<h2 id="2arc">2.ARC下多对象内存管理</h2>
+<ul>
+<li>ARC和MRC一样, 想拥有某个对象必须用强指针保存对象, 但是不需要在dealloc方法中release</li>
+</ul>
+<pre><code>@interface Person : NSObject
+
+// MRC写法
+//@property (nonatomic, retain) Dog *dog;
+
+// ARC写法
+@property (nonatomic, strong) Dog *dog;
+
+@end
+</code></pre><hr>
+<h2 id="3arc">3.ARC下循环引用问题</h2>
+<ul>
+<li>ARC和MRC一样, 如果A拥有B, B也拥有A, 那么必须一方使用弱指针</li>
+</ul>
+<pre><code>@interface Person : NSObject
+
+//@property (nonatomic, retain) Dog *dog;
+@property (nonatomic, strong) Dog *dog;
+
+@end
+
+@interface Dog : NSObject
+
+// 错误写法, 循环引用会导致内存泄露
+//@property (nonatomic, strong) Person *owner;
+
+// 正确写法, 当如果保存对象建议使用weak
+//@property (nonatomic, assign) Person *owner;
+@property (nonatomic, weak) Person *owner;
+@end
+</code></pre><hr>
+<h2 id="4arcproperty">4.ARC下@property参数</h2>
+<ul>
+<li>strong : 用于OC对象, 相当于MRC中的retain</li>
+<li>weak : 用于OC对象, 相当于MRC中的assign</li>
+<li>assign : 用于基本数据类型, 跟MRC中的assign一样</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./4.html" class="navigation navigation-prev " aria-label="Previous page: ARC快速入门"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./arcmrc/README.html" class="navigation navigation-next " aria-label="Next page: ARC和MRC兼容和转换"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

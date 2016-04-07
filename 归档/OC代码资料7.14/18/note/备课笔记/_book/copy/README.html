@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Copy | NSArray基本概念</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../888.html" />
+    
+    
+    <link rel="prev" href="../150.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="14" data-basepath=".." data-revision="1435558797293">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         NSArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="nsarray/README.html">
+            
+                
+                    <a href="../nsarray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         NSArray遍历
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="220.html">
+            
+                
+                    <a href="../220.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         NSArray排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="nsarraynsstring/README.html">
+            
+                
+                    <a href="../nsarraynsstring/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         NSArray与NSString
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="230.html">
+            
+                
+                    <a href="../230.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         NSArray文件读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="nsmutablearray/README.html">
+            
+                
+                    <a href="../nsmutablearray/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         NSMutableArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="nsdictionary/README.html">
+            
+                
+                    <a href="../nsdictionary/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         NSDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="nsmutabledictionary/README.html">
+            
+                
+                    <a href="../nsmutabledictionary/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         NSMutableDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="4.html">
+            
+                
+                    <a href="../4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         常见的结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="nsnumber/README.html">
+            
+                
+                    <a href="../nsnumber/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         NSNumber
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="nsvalue/README.html">
+            
+                
+                    <a href="../nsvalue/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         NSValue
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="nsdate/README.html">
+            
+                
+                    <a href="../nsdate/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         NSDate
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="nsfilemanager/README.html">
+            
+                
+                    <a href="../nsfilemanager/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         NSFileManager
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="150.html">
+            
+                
+                    <a href="../150.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         集合对象的内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="14" data-path="copy/README.html">
+            
+                
+                    <a href="../copy/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Copy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="888.html">
+            
+                
+                    <a href="../888.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         copy与内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="propertycopy/README.html">
+            
+                
+                    <a href="../propertycopy/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         @property中的copy关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="567.html">
+            
+                
+                    <a href="../567.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         自定义的类实现copy操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="631.html">
+            
+                
+                    <a href="../631.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         单例设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >NSArray基本概念</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_299">
+                    
+                        <h1 id="copy">Copy</h1>
+<h2 id="">本小节知识点:</h2>
+<ol>
+<li>【理解】copy基本概念</li>
+<li>【理解】Copy的使用</li>
+<li>【理解】copy快速入门</li>
+</ol>
+<hr>
+<h2 id="1copy">1.copy基本概念</h2>
+<ul>
+<li><p>什么是copy</p>
+<ul>
+<li>Copy的字面意思是“复制”、“拷贝”，是一个产生副本的过程</li>
+</ul>
+</li>
+<li><p>常见的复制有：文件复制</p>
+<ul>
+<li>作用：利用一个源文件产生一个副本文件</li>
+</ul>
+</li>
+<li><p>特点：</p>
+<ul>
+<li>修改源文件的内容，不会影响副本文件</li>
+<li>修改副本文件的内容，不会影响源文件</li>
+</ul>
+</li>
+<li><p>OC中的copy</p>
+<ul>
+<li>作用：利用一个源对象产生一个副本对象</li>
+</ul>
+</li>
+<li>特点：<ul>
+<li>修改源对象的属性和行为，不会影响副本对象</li>
+<li>修改副本对象的属性和行为，不会影响源对象</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2copy">2.Copy的使用</h2>
+<ul>
+<li><p>如何使用copy功能</p>
+<ul>
+<li>一个对象可以调用copy或mutableCopy方法来创建一个副本对象</li>
+<li>copy : 创建的是不可变副本(如NSString、NSArray、NSDictionary)</li>
+<li>mutableCopy :创建的是可变副本(如NSMutableString、NSMutableArray、NSMutableDictionary)</li>
+</ul>
+</li>
+<li><p>使用copy功能的前提</p>
+<ul>
+<li>copy : 需要遵守NSCopying协议，实现copyWithZone:方法</li>
+</ul>
+</li>
+</ul>
+<pre><code>@protocol NSCopying
+- (id)copyWithZone:(NSZone *)zone;
+@end
+</code></pre><ul>
+<li>使用mutableCopy的前提<ul>
+<li>需要遵守NSMutableCopying协议，实现mutableCopyWithZone:方法</li>
+</ul>
+</li>
+</ul>
+<pre><code>@protocol NSMutableCopying
+- (id)mutableCopyWithZone:(NSZone *)zone;
+@end
+</code></pre><hr>
+<h2 id="2">2.深复制和浅复制</h2>
+<ul>
+<li>浅复制（浅拷贝，指针拷贝，shallow copy）<ul>
+<li>源对象和副本对象是同一个对象</li>
+<li>源对象（副本对象）引用计数器+1,相当于做一次retain操作</li>
+<li>本质是：没有产生新的对象</li>
+</ul>
+</li>
+</ul>
+<pre><code>    NSString *srcStr = @&quot;lnj&quot;;
+    NSString *copyStr = [srcStr copy];
+    NSLog(@&quot;src = %p, copy = %p&quot;, srcStr, copyStr);
+</code></pre><ul>
+<li>深复制（深拷贝，内容拷贝，deep copy）<ul>
+<li>源对象和副本对象是不同的两个对象</li>
+<li>源对象引用计数器不变,副本对象计数器为1（因为是新产生的）</li>
+<li>本质是：产生了新的对象</li>
+</ul>
+</li>
+</ul>
+<pre><code>    NSString *srcStr = @&quot;lnj&quot;;
+    NSMutableString *copyStr = [srcStr mutableCopy];
+    NSLog(@&quot;src = %p, copy = %p&quot;, srcStr, copyStr);
+    NSLog(@&quot;src = %@, copy = %@&quot;, srcStr, copyStr);
+    [copyStr appendString:@&quot; cool&quot;];
+    NSLog(@&quot;src = %@, copy = %@&quot;, srcStr, copyStr);
+</code></pre><pre><code>    NSMutableString *srcStr = [NSMutableString stringWithFormat:@&quot;lnj&quot;];
+    NSString *copyStr = [srcStr copy];
+    [srcStr appendString:@&quot; cool&quot;];
+    NSLog(@&quot;src = %p, copy = %p&quot;, srcStr, copyStr);
+    NSLog(@&quot;src = %@, copy = %@&quot;, srcStr, copyStr);
+</code></pre><pre><code>    NSMutableString *srcStr = [NSMutableString stringWithFormat:@&quot;lnj&quot;];
+    NSMutableString *copyStr = [srcStr mutableCopy];
+    [srcStr appendString:@&quot; cool&quot;];
+    [copyStr appendString:@&quot; 520it&quot;];
+    NSLog(@&quot;src = %p, copy = %p&quot;, srcStr, copyStr);
+    NSLog(@&quot;src = %@, copy = %@&quot;, srcStr, copyStr);
+</code></pre><ul>
+<li>只有源对象和副本对象都不可变时，才是浅复制，其它都是深复制</li>
+</ul>
+<p><img src="http://7xj0kx.com1.z0.glb.clouddn.com/copy.png" alt=""></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../150.html" class="navigation navigation-prev " aria-label="Previous page: 集合对象的内存管理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../888.html" class="navigation navigation-next " aria-label="Next page: copy与内存管理"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
