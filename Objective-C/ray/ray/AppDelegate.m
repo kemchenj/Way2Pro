@@ -72,7 +72,7 @@
     if (category &EntityCategoryEnemy) {
         NSLog(@"Enemy!");
     }
-    // 进行按位掩码之后, 逻辑判断会变得更加容易操作
+    // 使用按位掩码之后, 逻辑判断会变得更加容易操作
     
     NSLog(@"%x", EntityCategoryPlayer);
     NSLog(@"%x", EntityCategoryEnemy);
