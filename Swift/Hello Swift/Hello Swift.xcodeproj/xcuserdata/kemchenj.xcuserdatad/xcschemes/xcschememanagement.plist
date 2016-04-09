@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Control Flow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Functions and Closures.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Hello Swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C815933C1CB7D81100152A45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C815934A1CB8932E00152A45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C81593551CB8CE5100152A45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

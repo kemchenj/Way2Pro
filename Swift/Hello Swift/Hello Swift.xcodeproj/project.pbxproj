@@ -8,10 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C81593411CB7D81100152A45 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81593401CB7D81100152A45 /* main.swift */; };
+		C815934E1CB8932E00152A45 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C815934D1CB8932E00152A45 /* main.swift */; };
+		C81593591CB8CE5100152A45 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81593581CB8CE5100152A45 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C815933B1CB7D81100152A45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C81593491CB8932E00152A45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C81593541CB8CE5100152A45 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +45,28 @@
 /* Begin PBXFileReference section */
 		C815933D1CB7D81100152A45 /* Hello Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hello Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81593401CB7D81100152A45 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C815934B1CB8932E00152A45 /* Control Flow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Control Flow"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C815934D1CB8932E00152A45 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C81593561CB8CE5100152A45 /* Functions and Closures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Functions and Closures"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81593581CB8CE5100152A45 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C815933A1CB7D81100152A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81593481CB8932E00152A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81593531CB8CE5100152A45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				C815933F1CB7D81100152A45 /* Hello Swift */,
+				C815934C1CB8932E00152A45 /* Control Flow */,
+				C81593571CB8CE5100152A45 /* Functions and Closures */,
 				C815933E1CB7D81100152A45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				C815933D1CB7D81100152A45 /* Hello Swift */,
+				C815934B1CB8932E00152A45 /* Control Flow */,
+				C81593561CB8CE5100152A45 /* Functions and Closures */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +102,22 @@
 				C81593401CB7D81100152A45 /* main.swift */,
 			);
 			path = "Hello Swift";
+			sourceTree = "<group>";
+		};
+		C815934C1CB8932E00152A45 /* Control Flow */ = {
+			isa = PBXGroup;
+			children = (
+				C815934D1CB8932E00152A45 /* main.swift */,
+			);
+			path = "Control Flow";
+			sourceTree = "<group>";
+		};
+		C81593571CB8CE5100152A45 /* Functions and Closures */ = {
+			isa = PBXGroup;
+			children = (
+				C81593581CB8CE5100152A45 /* main.swift */,
+			);
+			path = "Functions and Closures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +140,40 @@
 			productReference = C815933D1CB7D81100152A45 /* Hello Swift */;
 			productType = "com.apple.product-type.tool";
 		};
+		C815934A1CB8932E00152A45 /* Control Flow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C815934F1CB8932E00152A45 /* Build configuration list for PBXNativeTarget "Control Flow" */;
+			buildPhases = (
+				C81593471CB8932E00152A45 /* Sources */,
+				C81593481CB8932E00152A45 /* Frameworks */,
+				C81593491CB8932E00152A45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Control Flow";
+			productName = "Control Flow";
+			productReference = C815934B1CB8932E00152A45 /* Control Flow */;
+			productType = "com.apple.product-type.tool";
+		};
+		C81593551CB8CE5100152A45 /* Functions and Closures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C815935A1CB8CE5100152A45 /* Build configuration list for PBXNativeTarget "Functions and Closures" */;
+			buildPhases = (
+				C81593521CB8CE5100152A45 /* Sources */,
+				C81593531CB8CE5100152A45 /* Frameworks */,
+				C81593541CB8CE5100152A45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Functions and Closures";
+			productName = "Functions and Closures";
+			productReference = C81593561CB8CE5100152A45 /* Functions and Closures */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +185,12 @@
 				ORGANIZATIONNAME = kemchenj;
 				TargetAttributes = {
 					C815933C1CB7D81100152A45 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C815934A1CB8932E00152A45 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C81593551CB8CE5100152A45 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -110,6 +208,8 @@
 			projectRoot = "";
 			targets = (
 				C815933C1CB7D81100152A45 /* Hello Swift */,
+				C815934A1CB8932E00152A45 /* Control Flow */,
+				C81593551CB8CE5100152A45 /* Functions and Closures */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +220,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81593411CB7D81100152A45 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81593471CB8932E00152A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C815934E1CB8932E00152A45 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81593521CB8CE5100152A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81593591CB8CE5100152A45 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +338,34 @@
 			};
 			name = Release;
 		};
+		C81593501CB8932E00152A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C81593511CB8932E00152A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C815935B1CB8CE5100152A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C815935C1CB8CE5100152A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -239,6 +383,22 @@
 			buildConfigurations = (
 				C81593451CB7D81100152A45 /* Debug */,
 				C81593461CB7D81100152A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C815934F1CB8932E00152A45 /* Build configuration list for PBXNativeTarget "Control Flow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81593501CB8932E00152A45 /* Debug */,
+				C81593511CB8932E00152A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C815935A1CB8CE5100152A45 /* Build configuration list for PBXNativeTarget "Functions and Closures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C815935B1CB8CE5100152A45 /* Debug */,
+				C815935C1CB8CE5100152A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
