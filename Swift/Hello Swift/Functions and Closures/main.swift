@@ -105,6 +105,11 @@ print(numbers.map({
 
 print(numbers.map({
     (number: Int) -> Int in // self
-    let result = 3 * number
+    var number
+    if number % 2 == 1{
+        let result = 0
+    }else{
+        let result = 3 * number
+    }
     return result
 }))

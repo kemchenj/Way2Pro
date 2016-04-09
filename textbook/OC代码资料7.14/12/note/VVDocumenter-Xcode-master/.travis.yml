@@ -1,3 +1,0 @@
-language: objective-c
-xcode_project: VVDocumenter-Xcode.xcodeproj
-xcode_scheme: VVDocumenter-Xcode
