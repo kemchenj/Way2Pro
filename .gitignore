@@ -27,6 +27,10 @@
 *.i*86
 *.x86_64
 *.hex
+*.class
 
 # Debug files
 *.dSYM/
+
+# Others
+@.DS_Store
