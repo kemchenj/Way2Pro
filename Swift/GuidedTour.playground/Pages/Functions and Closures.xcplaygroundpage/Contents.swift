@@ -112,11 +112,16 @@ numbers.map({
 let mappedNumbers = numbers.map({ number in 3 * number })
 print(mappedNumbers)
 
+let mappedNumber  = numbers.map({ number in 4 * number })
+print(mappedNumbers)
 //: You can refer to parameters by number instead of by name—this approach is especially useful in very short closures. A closure passed as the last argument to a function can appear immediately after the parentheses. When a closure is the only argument to a function, you can omit the parentheses entirely.
 //:
 let sortedNumbers = numbers.sort { $0 > $1 }
+// 表示升序
 print(sortedNumbers)
 
 
+let sortedNumber = numbers.sort { $1 > $0 }
+print(sortedNumber)
 
 //: [Previous](@previous) | [Next](@next)

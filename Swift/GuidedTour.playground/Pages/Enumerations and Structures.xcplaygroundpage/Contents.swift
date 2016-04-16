@@ -2,10 +2,11 @@
 //:
 //: Use `enum` to create an enumeration. Like classes and all other named types, enumerations can have methods associated with them.
 //:
-enum Rank: Int {
-    case Ace = 1
-    case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
-    case Jack, Queen, King
+enum Rank: Int { // :后面定义原始数据类型
+    case Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+    // 不做设置的话, 原始数据默认会从0开始
+    // case Zero = 20, Forteen
+    // case可以分开写, 也可以一起写
     func simpleDescription() -> String {
         switch self {
             case .Ace:
@@ -21,8 +22,25 @@ enum Rank: Int {
         }
     }
 }
-let ace = Rank.Ace
-let aceRawValue = ace.rawValue
+let ace          = Rank.Ace
+let aceRawValue  = ace.rawValue
+let jack         = Rank.Jack
+let jackRawValue = jack.rawValue
+let two          = Rank.Two
+let twoRawValue  = two.rawValue
+
+func compare(cardOne: Rank, cardTwo: Rank) {
+    if cardOne.rawValue > cardTwo.rawValue {
+        print("cardOne > cardTwo")
+    } else if cardOne.rawValue < cardTwo.rawValue {
+        print("cardOne < cardTwo")
+    } else {
+        print("cardOne = cardTwo")
+    }
+}
+
+compare(ace, cardTwo: jack)
+compare(jack, cardTwo: ace)
 
 //: - Experiment:
 //: Write a function that compares two `Rank` values by comparing their raw values.
@@ -31,9 +49,14 @@ let aceRawValue = ace.rawValue
 //:
 //: Use the `init?(rawValue:)` initializer to make an instance of an enumeration from a raw value.
 //:
+// 使用init?(rawValue:)初始化构造器在原始值和枚举值之间转换
+// 这里的完整格式应该是Rank.init(rawValue: 3)
 if let convertedRank = Rank(rawValue: 3) {
     let threeDescription = convertedRank.simpleDescription()
 }
+
+let convertedTest = Rank.init(rawValue: 3)
+convertedTest!.simpleDescription()
 
 //: The case values of an enumeration are actual values, not just another way of writing their raw values. In fact, in cases where there isn’t a meaningful raw value, you don’t have to provide one.
 //:

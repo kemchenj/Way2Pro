@@ -4,8 +4,12 @@
 //:
 class Shape {
     var numberOfSides = 0
+    let kem = "Sin"
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
+    }
+    func test() -> String {
+        return "A guy called \(kem) ."
     }
 }
 
@@ -18,6 +22,10 @@ var shape = Shape()
 shape.numberOfSides = 7
 var shapeDescription = shape.simpleDescription()
 
+shapeDescription
+
+shape.test()
+
 //: This version of the `Shape` class is missing something important: an initializer to set up the class when an instance is created. Use `init` to create one.
 //:
 class NamedShape {
@@ -25,13 +33,17 @@ class NamedShape {
     var name: String
 
     init(name: String) {
-       self.name = name
+        self.name = name
     }
 
     func simpleDescription() -> String {
-       return "A shape with \(numberOfSides) sides."
+        return "A shape with \(numberOfSides) sides."
     }
 }
+
+var namedShape = NamedShape.init(name: "kem")
+
+var number = 33;
 
 //: Notice how `self` is used to distinguish the `name` property from the `name` argument to the initializer. The arguments to the initializer are passed like a function call when you create an instance of the class. Every property needs a value assigned—either in its declaration (as with `numberOfSides`) or in the initializer (as with `name`).
 //:
@@ -50,7 +62,7 @@ class Square: NamedShape {
         numberOfSides = 4
     }
 
-    func area() ->  Double {
+    func area() -> Double {
         return sideLength * sideLength
     }
 
@@ -62,6 +74,27 @@ let test = Square(sideLength: 5.2, name: "my test square")
 test.area()
 test.simpleDescription()
 
+class Circle: NamedShape {
+    var radius : Double = 0.0
+
+    init(radius: Double, name: String) {
+        self.radius = radius
+        super.init(name: name)
+    }
+    
+    func area() -> Double {
+        return 2 * radius * 3.14
+    }
+    
+    override func simpleDescription() -> String {
+        return "A circle with radius \(radius)"
+    }
+}
+
+var test3 = Circle.init(radius: 33.3, name: "测试")
+test3.area()
+test3.simpleDescription()
+
 //: - Experiment:
 //: Make another subclass of `NamedShape` called `Circle` that takes a radius and a name as arguments to its initializer. Implement an `area()` and a `simpleDescription()` method on the `Circle` class.
 //:
@@ -72,16 +105,20 @@ class EquilateralTriangle: NamedShape {
 
     init(sideLength: Double, name: String) {
         self.sideLength = sideLength
+        // setting the value of properties that the subclass declares
         super.init(name: name)
+        // Calling the superclass's initializer
+        // to setting the value of properites that inherit from superclass
         numberOfSides = 3
     }
 
     var perimeter: Double {
         get {
-             return 3.0 * sideLength
+            return 3.0 * sideLength
         }
         set {
             sideLength = newValue / 3.0
+            // the new value has the implict name "newValue"
         }
     }
 
@@ -107,32 +144,50 @@ print(triangle.sideLength)
 //: If you don’t need to compute the property but still need to provide code that is run before and after setting a new value, use `willSet` and `didSet`. The code you provide is run any time the value changes outside of an initializer. For example, the class below ensures that the side length of its triangle is always the same as the side length of its square.
 //:
 class TriangleAndSquare {
-    var triangle: EquilateralTriangle {
+    var triangle: EquilateralTriangle
+    {
         willSet {
-            square.sideLength = newValue.sideLength
+//            square.sideLength = newValue.sideLength
+            square.sideLength = 20
         }
     }
-    var square: Square {
+    // 如果需要在赋值之前或者之后运行某一些代码, 可以使用willSet和didSet
+    
+    var square: Square
+    {
         willSet {
-            triangle.sideLength = newValue.sideLength
+            self.triangle.sideLength = newValue.sideLength
         }
     }
+    
     init(size: Double, name: String) {
         square = Square(sideLength: size, name: name)
         triangle = EquilateralTriangle(sideLength: size, name: name)
     }
 }
 var triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
+// 可以省略init
+print(triangleAndSquare.square.sideLength)
+print(triangleAndSquare.square.name)
+print(triangleAndSquare.triangle.sideLength)
+print(triangleAndSquare.triangle.name)
+
+triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
 print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
-triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
+
+triangleAndSquare.triangle = EquilateralTriangle(sideLength: 30, name: "larger square")
+print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
-
-//: When working with optional values, you can write `?` before operations like methods, properties, and subscripting. If the value before the `?` is `nil`, everything after the `?` is ignored and the value of the whole expression is `nil`. Otherwise, the optional value is unwrapped, and everything after the `?` acts on the unwrapped value. In both cases, the value of the whole expression is an optional value.
+//: When working with optional values, you can write `"?"` before operations like methods, properties, and subscripting. If the value before the `"?"` is `nil`, everything after the `"?"` is ignored and the value of the whole expression is `nil`. Otherwise, the optional value is unwrapped, and everything after the `"?"` acts on the unwrapped value. In both cases, the value of the whole expression is an optional value.
 //:
-let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
+var optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
 let sideLength = optionalSquare?.sideLength
-
+optionalSquare = nil
+let sideLength2 = optionalSquare?.sideLength
+// 如果?之前的值是nil的话, 那么会忽略后面的值, 直接返回nil
+// 否则, ?后面的表达式会被完整地执行
+// 整个值也会变为optional
 
 
 //: [Previous](@previous) | [Next](@next)
