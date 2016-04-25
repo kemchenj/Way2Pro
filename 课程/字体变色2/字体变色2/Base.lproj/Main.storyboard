@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8I-HV-yIP">
+                                <rect key="frame" x="145" y="269" width="30" height="30"/>
+                                <state key="normal" title="红色"/>
+                                <connections>
+                                    <action selector="clickRed" destination="BYZ-38-t0r" eventType="touchUpInside" id="5TN-64-S0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-yJ-NTG">
+                                <rect key="frame" x="61" y="269" width="30" height="30"/>
+                                <state key="normal" title="绿色"/>
+                                <connections>
+                                    <action selector="clickGreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsa-Yy-7xA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iri-d6-4jm">
+                                <rect key="frame" x="230" y="269" width="30" height="30"/>
+                                <state key="normal" title="黑色"/>
+                                <connections>
+                                    <action selector="clickBlack" destination="BYZ-38-t0r" eventType="touchUpInside" id="rai-EK-6o7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="我是一段会变色的文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXa-nR-PPF">
+                                <rect key="frame" x="75" y="176" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nSl-yJ-NTG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-90" id="Q9N-GO-EFe"/>
+                            <constraint firstItem="PXa-nR-PPF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eYj-f6-Ote"/>
+                            <constraint firstItem="l8I-HV-yIP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIX-Bl-J2v"/>
+                            <constraint firstItem="iri-d6-4jm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="udA-gY-FMs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="PXa-nR-PPF" id="0es-cg-Kra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.66666666666666" y="322.33999999999997"/>
+        </scene>
+    </scenes>
+</document>

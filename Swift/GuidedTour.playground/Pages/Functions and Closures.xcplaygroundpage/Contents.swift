@@ -124,4 +124,6 @@ print(sortedNumbers)
 let sortedNumber = numbers.sort { $1 > $0 }
 print(sortedNumber)
 
+let name = "gummy"
+(1...4).forEach{print("Happy Birthday " + (($0 == 3) ? "dear \(name)":"to You"))}
 //: [Previous](@previous) | [Next](@next)

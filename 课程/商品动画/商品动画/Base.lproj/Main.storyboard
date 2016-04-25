@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-aD-ax9">
+                                <rect key="frame" x="20" y="242" width="374" height="241"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByY-hW-m6Z">
+                                <rect key="frame" x="327" y="42" width="67" height="67"/>
+                                <state key="normal" backgroundImage="remove"/>
+                                <state key="disabled" image="remove_disabled"/>
+                                <state key="highlighted" image="remove_highlighted"/>
+                                <connections>
+                                    <action selector="remove" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CP-Cj-NxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyF-2c-gqC">
+                                <rect key="frame" x="20" y="42" width="67" height="67"/>
+                                <state key="normal" backgroundImage="add"/>
+                                <state key="disabled" image="add_disabled"/>
+                                <state key="highlighted" image="add_highlighted"/>
+                                <connections>
+                                    <action selector="add" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbL-QP-YZU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn7-jk-aKS">
+                                <rect key="frame" x="157" y="357" width="100" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.50366379310344822" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="addBtn" destination="FyF-2c-gqC" id="osq-4r-Ky7"/>
+                        <outlet property="alert" destination="yn7-jk-aKS" id="MnC-I3-8HP"/>
+                        <outlet property="removeBtn" destination="ByY-hW-m6Z" id="UnT-j1-26w"/>
+                        <outlet property="shopsView" destination="YHN-aD-ax9" id="GCN-9Q-X6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="128" height="128"/>
+        <image name="add_disabled" width="128" height="128"/>
+        <image name="add_highlighted" width="128" height="128"/>
+        <image name="remove" width="128" height="128"/>
+        <image name="remove_disabled" width="128" height="128"/>
+        <image name="remove_highlighted" width="128" height="128"/>
+    </resources>
+</document>
