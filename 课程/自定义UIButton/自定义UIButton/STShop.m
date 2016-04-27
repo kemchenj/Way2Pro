@@ -10,4 +10,19 @@
 
 @implementation STShop
 
+-(instancetype)initWithDict:(NSDictionary *)dict
+{
+    if (self = [super init]) {
+        self.icon = dict[@"icon"];
+        self.name = dict[@"name"];
+    }
+    return self;
+}
+
++(instancetype)shopWithDict:(NSDictionary *)dict
+{
+    STShop *shop = [[STShop alloc] initWithDict:dict];
+    return shop;
+}
+
 @end

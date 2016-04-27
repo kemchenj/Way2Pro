@@ -10,4 +10,9 @@
 
 @interface STCarGroup : NSObject
 
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) NSArray *cars;
+
++(instancetype)groupWithDict:(NSDictionary *)dict;
+
 @end

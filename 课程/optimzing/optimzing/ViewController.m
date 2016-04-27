@@ -7,21 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "STTableViewCell.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation ViewController
 
+NSString *ID = @"wine";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.tableView.rowHeight = 100;
+    [self.tableView registerClass:[STTableViewCell class] forCellReuseIdentifier:ID];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 200;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    STTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%zd行的数据", indexPath.row];
+    
+    return cell;
 }
 
 @end

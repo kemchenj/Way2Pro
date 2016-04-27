@@ -13,6 +13,9 @@
 		C83C71941CCE557F0018852F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C71921CCE557F0018852F /* Main.storyboard */; };
 		C83C71961CCE557F0018852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83C71951CCE557F0018852F /* Assets.xcassets */; };
 		C83C71991CCE557F0018852F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C71971CCE557F0018852F /* LaunchScreen.storyboard */; };
+		C83C71A11CCE559B0018852F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = C83C71A01CCE559B0018852F /* shops.plist */; };
+		C83C71A41CCE55B80018852F /* STShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C71A31CCE55B80018852F /* STShopView.m */; };
+		C83C71A71CCE55E80018852F /* STShop.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C71A61CCE55E80018852F /* STShop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		C83C71951CCE557F0018852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83C71981CCE557F0018852F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83C719A1CCE557F0018852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83C71A01CCE559B0018852F /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		C83C71A21CCE55B80018852F /* STShopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShopView.h; sourceTree = "<group>"; };
+		C83C71A31CCE55B80018852F /* STShopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShopView.m; sourceTree = "<group>"; };
+		C83C71A51CCE55E80018852F /* STShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShop.h; sourceTree = "<group>"; };
+		C83C71A61CCE55E80018852F /* STShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				C83C718D1CCE557F0018852F /* AppDelegate.m */,
 				C83C718F1CCE557F0018852F /* ViewController.h */,
 				C83C71901CCE557F0018852F /* ViewController.m */,
+				C83C71A21CCE55B80018852F /* STShopView.h */,
+				C83C71A31CCE55B80018852F /* STShopView.m */,
+				C83C71A51CCE55E80018852F /* STShop.h */,
+				C83C71A61CCE55E80018852F /* STShop.m */,
 				C83C71921CCE557F0018852F /* Main.storyboard */,
 				C83C71951CCE557F0018852F /* Assets.xcassets */,
 				C83C71971CCE557F0018852F /* LaunchScreen.storyboard */,
@@ -74,6 +86,7 @@
 		C83C71891CCE557F0018852F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C83C71A01CCE559B0018852F /* shops.plist */,
 				C83C718A1CCE557F0018852F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +151,7 @@
 			files = (
 				C83C71991CCE557F0018852F /* LaunchScreen.storyboard in Resources */,
 				C83C71961CCE557F0018852F /* Assets.xcassets in Resources */,
+				C83C71A11CCE559B0018852F /* shops.plist in Resources */,
 				C83C71941CCE557F0018852F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +166,8 @@
 				C83C71911CCE557F0018852F /* ViewController.m in Sources */,
 				C83C718E1CCE557F0018852F /* AppDelegate.m in Sources */,
 				C83C718B1CCE557F0018852F /* main.m in Sources */,
+				C83C71A71CCE55E80018852F /* STShop.m in Sources */,
+				C83C71A41CCE55B80018852F /* STShopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

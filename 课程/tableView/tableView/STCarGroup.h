@@ -14,4 +14,6 @@
 @property(copy, nonatomic)NSString *footer;
 @property(strong, nonatomic)NSArray *cars;
 
++ (instancetype)carGroupWithDict:(NSDictionary *)dict;
+
 @end

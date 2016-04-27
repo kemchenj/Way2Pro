@@ -10,4 +10,9 @@
 
 @interface STCar : NSObject
 
+@property(copy, nonatomic)NSString *name;
+@property(copy, nonatomic)NSString *icon;
+
++(instancetype)carWithName:(NSString *)name icon:(NSString *)icon;
++ (instancetype)carWithDict:(NSDictionary *)dict;
 @end

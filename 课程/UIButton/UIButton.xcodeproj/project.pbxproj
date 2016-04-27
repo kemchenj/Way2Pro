@@ -13,6 +13,7 @@
 		C83C716E1CCE4BBB0018852F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C716C1CCE4BBB0018852F /* Main.storyboard */; };
 		C83C71701CCE4BBB0018852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83C716F1CCE4BBB0018852F /* Assets.xcassets */; };
 		C83C71731CCE4BBB0018852F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C71711CCE4BBB0018852F /* LaunchScreen.storyboard */; };
+		C83C717C1CCE4CFD0018852F /* STButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C717B1CCE4CFD0018852F /* STButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C83C716F1CCE4BBB0018852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83C71721CCE4BBB0018852F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83C71741CCE4BBB0018852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83C717A1CCE4CFD0018852F /* STButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STButton.h; path = ../STButton.h; sourceTree = "<group>"; };
+		C83C717B1CCE4CFD0018852F /* STButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STButton.m; path = ../STButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C83C71671CCE4BBB0018852F /* AppDelegate.m */,
 				C83C71691CCE4BBB0018852F /* ViewController.h */,
 				C83C716A1CCE4BBB0018852F /* ViewController.m */,
+				C83C717A1CCE4CFD0018852F /* STButton.h */,
+				C83C717B1CCE4CFD0018852F /* STButton.m */,
 				C83C716C1CCE4BBB0018852F /* Main.storyboard */,
 				C83C716F1CCE4BBB0018852F /* Assets.xcassets */,
 				C83C71711CCE4BBB0018852F /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83C717C1CCE4CFD0018852F /* STButton.m in Sources */,
 				C83C716B1CCE4BBB0018852F /* ViewController.m in Sources */,
 				C83C71681CCE4BBB0018852F /* AppDelegate.m in Sources */,
 				C83C71651CCE4BBB0018852F /* main.m in Sources */,

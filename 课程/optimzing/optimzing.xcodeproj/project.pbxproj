@@ -13,6 +13,7 @@
 		C8A644781CD0B37000D288F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A644761CD0B37000D288F6 /* Main.storyboard */; };
 		C8A6447A1CD0B37000D288F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A644791CD0B37000D288F6 /* Assets.xcassets */; };
 		C8A6447D1CD0B37000D288F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A6447B1CD0B37000D288F6 /* LaunchScreen.storyboard */; };
+		C8A644861CD0B3A800D288F6 /* STTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A644851CD0B3A800D288F6 /* STTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C8A644791CD0B37000D288F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A6447C1CD0B37000D288F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A6447E1CD0B37000D288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A644841CD0B3A800D288F6 /* STTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTableViewCell.h; sourceTree = "<group>"; };
+		C8A644851CD0B3A800D288F6 /* STTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C8A644711CD0B37000D288F6 /* AppDelegate.m */,
 				C8A644731CD0B37000D288F6 /* ViewController.h */,
 				C8A644741CD0B37000D288F6 /* ViewController.m */,
+				C8A644841CD0B3A800D288F6 /* STTableViewCell.h */,
+				C8A644851CD0B3A800D288F6 /* STTableViewCell.m */,
 				C8A644761CD0B37000D288F6 /* Main.storyboard */,
 				C8A644791CD0B37000D288F6 /* Assets.xcassets */,
 				C8A6447B1CD0B37000D288F6 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			files = (
 				C8A644751CD0B37000D288F6 /* ViewController.m in Sources */,
 				C8A644721CD0B37000D288F6 /* AppDelegate.m in Sources */,
+				C8A644861CD0B3A800D288F6 /* STTableViewCell.m in Sources */,
 				C8A6446F1CD0B37000D288F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

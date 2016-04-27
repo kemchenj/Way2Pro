@@ -10,4 +10,7 @@
 
 @interface STPageView : UIView
 
+@property(strong, nonatomic)NSArray *imageNames;
++(instancetype)pageView;
+
 @end

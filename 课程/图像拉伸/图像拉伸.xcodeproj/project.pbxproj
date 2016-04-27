@@ -13,6 +13,8 @@
 		C83C71E21CCEF3310018852F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C71E01CCEF3310018852F /* Main.storyboard */; };
 		C83C71E41CCEF3310018852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83C71E31CCEF3310018852F /* Assets.xcassets */; };
 		C83C71E71CCEF3310018852F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83C71E51CCEF3310018852F /* LaunchScreen.storyboard */; };
+		C83C71F01CCF04C30018852F /* STResizingimage.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C71EF1CCF04C30018852F /* STResizingimage.m */; };
+		C83C71FC1CCF21DD0018852F /* UIImage+ResizingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C71FB1CCF21DD0018852F /* UIImage+ResizingImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		C83C71E31CCEF3310018852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83C71E61CCEF3310018852F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83C71E81CCEF3310018852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83C71EE1CCF04C30018852F /* STResizingimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResizingimage.h; sourceTree = "<group>"; };
+		C83C71EF1CCF04C30018852F /* STResizingimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResizingimage.m; sourceTree = "<group>"; };
+		C83C71FA1CCF21DD0018852F /* UIImage+ResizingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizingImage.h"; sourceTree = "<group>"; };
+		C83C71FB1CCF21DD0018852F /* UIImage+ResizingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizingImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				C83C71DB1CCEF3310018852F /* AppDelegate.m */,
 				C83C71DD1CCEF3310018852F /* ViewController.h */,
 				C83C71DE1CCEF3310018852F /* ViewController.m */,
+				C83C71FA1CCF21DD0018852F /* UIImage+ResizingImage.h */,
+				C83C71FB1CCF21DD0018852F /* UIImage+ResizingImage.m */,
+				C83C71EE1CCF04C30018852F /* STResizingimage.h */,
+				C83C71EF1CCF04C30018852F /* STResizingimage.m */,
 				C83C71E01CCEF3310018852F /* Main.storyboard */,
 				C83C71E31CCEF3310018852F /* Assets.xcassets */,
 				C83C71E51CCEF3310018852F /* LaunchScreen.storyboard */,
@@ -150,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83C71DF1CCEF3310018852F /* ViewController.m in Sources */,
+				C83C71F01CCF04C30018852F /* STResizingimage.m in Sources */,
+				C83C71FC1CCF21DD0018852F /* UIImage+ResizingImage.m in Sources */,
 				C83C71DC1CCEF3310018852F /* AppDelegate.m in Sources */,
 				C83C71D91CCEF3310018852F /* main.m in Sources */,
 			);

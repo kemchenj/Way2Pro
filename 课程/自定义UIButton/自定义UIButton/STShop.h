@@ -10,4 +10,10 @@
 
 @interface STShop : NSObject
 
+@property(nonatomic, copy)NSString *icon;
+@property(nonatomic, copy)NSString *name;
+
+-(instancetype)initWithDict:(NSDictionary *)dict;
++(instancetype)shopWithDict:(NSDictionary *)dict;
+
 @end

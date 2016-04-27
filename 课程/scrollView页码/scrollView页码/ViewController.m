@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "STPageView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -16,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    STPageView *pageView = [STPageView pageView];
+    pageView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.0];
+    pageView.center = CGPointMake(210, 150);
+    pageView.imageNames = @[@"img_01",@"img_02",@"img_03",@"img_04",@"img_05"];
+    [self.view addSubview:pageView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

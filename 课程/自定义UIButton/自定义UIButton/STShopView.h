@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class STShop;
 
-@interface STShopView : UIView
+@interface STShopView : UIButton
+
+@property(nonatomic, weak)STShop *shop;
+
++(instancetype)shopViewWithShop:(STShop *)shop;
++(instancetype)shopView;
 
 @end

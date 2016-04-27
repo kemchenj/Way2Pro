@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -16,7 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CGFloat scrollViewW = self.scrollView.frame.size.width;
+    CGFloat scrollViewH = self.scrollView.frame.size.height;
+    
+    int count = 5;
+    for (int i = 0; i < count; i++) {
+        UIImageView *imageView = [[UIImageView alloc] init];
+        NSString *imageName = [NSString stringWithFormat:@"img_0%d", i+1];
+        imageView.image = [UIImage imageNamed:imageName];
+        imageView.frame = CGRectMake(i * scrollViewW, 0, scrollViewW, scrollViewH);
+        [self.scrollView addSubview:imageView];
+    }
+    
+    self.scrollView.contentSize = CGSizeMake(count * scrollViewW, 0);
+    
+    self.scrollView.pagingEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {

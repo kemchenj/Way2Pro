@@ -8,17 +8,24 @@
 
 #import "STTgCellTableViewCell.h"
 
+@interface STTgCellTableViewCell()
+
+@property (nonatomic, weak) UIImageView *iconImageView;
+@property (nonatomic, weak) UILabel *titleLabel;
+@property (nonatomic, weak) UILabel *priceLabel;
+@property (nonatomic, weak) UILabel *buyCountLabel;
+
+@end
+
 @implementation STTgCellTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        UIImageView *iconImageView = [[UIImageView alloc] init];
+        [self.contentView addSubview:iconImageView];
+        
+    }
 }
 
 @end

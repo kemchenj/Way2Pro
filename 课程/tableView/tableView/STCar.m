@@ -10,4 +10,18 @@
 
 @implementation STCar
 
++(instancetype)carWithName:(NSString *)name icon:(NSString *)icon
+{
+    STCar *car = [[STCar alloc] init];
+    car.name = name;
+    car.icon = icon;
+    return car;
+}
+
++ (instancetype)carWithDict:(NSDictionary *)dict
+{
+    STCar *car = [STCar carWithName:dict[@"name"] icon:dict[@"icon"]];
+    return car;
+}
+
 @end

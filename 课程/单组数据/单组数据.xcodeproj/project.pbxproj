@@ -13,6 +13,8 @@
 		C8A6440A1CD097DE00D288F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A644081CD097DE00D288F6 /* Main.storyboard */; };
 		C8A6440C1CD097DE00D288F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A6440B1CD097DE00D288F6 /* Assets.xcassets */; };
 		C8A6440F1CD097DE00D288F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A6440D1CD097DE00D288F6 /* LaunchScreen.storyboard */; };
+		C8A644171CD0982D00D288F6 /* wine.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A644161CD0982D00D288F6 /* wine.plist */; };
+		C8A6441A1CD098A600D288F6 /* STWine.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A644191CD098A600D288F6 /* STWine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		C8A6440B1CD097DE00D288F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A6440E1CD097DE00D288F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A644101CD097DE00D288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A644161CD0982D00D288F6 /* wine.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wine.plist; sourceTree = "<group>"; };
+		C8A644181CD098A600D288F6 /* STWine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWine.h; sourceTree = "<group>"; };
+		C8A644191CD098A600D288F6 /* STWine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,8 @@
 				C8A644031CD097DE00D288F6 /* AppDelegate.m */,
 				C8A644051CD097DE00D288F6 /* ViewController.h */,
 				C8A644061CD097DE00D288F6 /* ViewController.m */,
+				C8A644181CD098A600D288F6 /* STWine.h */,
+				C8A644191CD098A600D288F6 /* STWine.m */,
 				C8A644081CD097DE00D288F6 /* Main.storyboard */,
 				C8A6440B1CD097DE00D288F6 /* Assets.xcassets */,
 				C8A6440D1CD097DE00D288F6 /* LaunchScreen.storyboard */,
@@ -74,6 +81,7 @@
 		C8A643FF1CD097DE00D288F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8A644161CD0982D00D288F6 /* wine.plist */,
 				C8A644001CD097DE00D288F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +147,7 @@
 				C8A6440F1CD097DE00D288F6 /* LaunchScreen.storyboard in Resources */,
 				C8A6440C1CD097DE00D288F6 /* Assets.xcassets in Resources */,
 				C8A6440A1CD097DE00D288F6 /* Main.storyboard in Resources */,
+				C8A644171CD0982D00D288F6 /* wine.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A644071CD097DE00D288F6 /* ViewController.m in Sources */,
+				C8A6441A1CD098A600D288F6 /* STWine.m in Sources */,
 				C8A644041CD097DE00D288F6 /* AppDelegate.m in Sources */,
 				C8A644011CD097DE00D288F6 /* main.m in Sources */,
 			);

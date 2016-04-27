@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "STButton.h"
 
 @interface ViewController ()
+
+@property(nonatomic, weak) UIButton *btn;
 
 @end
 
@@ -16,12 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    STButton *btn = [[STButton alloc] init];
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(50, 50, 200, 250);
+    [btn setTitle:@"钱包" forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"qianbao"] forState:UIControlStateNormal];
+    
+    [self.view addSubview:btn];
+    self.btn = btn;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%@", self.btn.subviews);
 }
 
 @end

@@ -10,4 +10,10 @@
 
 @interface STWine : NSObject
 
+@property(copy, nonatomic) NSString *name;
+@property(copy, nonatomic) NSString *icon;
+@property(copy, nonatomic) NSString *price;
+
++(instancetype)wineWithDict:(NSDictionary *)dict;
+
 @end

@@ -10,4 +10,14 @@
 
 @implementation STCar
 
++(instancetype)carWithDict:(NSDictionary *)dict
+{
+    STCar *car = [[STCar alloc] init];
+//    car.icon = dict[@"icon"];
+//    car.name = dict[@"name"];
+    [car setValuesForKeysWithDictionary:dict];
+    
+    return car;
+}
+
 @end

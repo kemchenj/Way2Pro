@@ -1,6 +1,6 @@
 //
-//  UIImage+ResizingImage.h
-//  图像拉伸
+//  ViewController.h
+//  按钮内边距
 //
 //  Created by kemchenj on 4/26/16.
 //  Copyright © 2016 kemchenj. All rights reserved.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (ResizingImage)
+@interface ViewController : UIViewController
+
 
 @end
+

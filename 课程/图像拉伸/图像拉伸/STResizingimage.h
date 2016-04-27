@@ -6,8 +6,9 @@
 //  Copyright © 2016 kemchenj. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface STResizingimage : NSObject
 
++ (UIImage *)resizingImageWithImageName:(NSString *)imageName;
 @end

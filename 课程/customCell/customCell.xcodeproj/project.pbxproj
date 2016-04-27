@@ -13,6 +13,7 @@
 		C8ABBC351CD0E1A00062FD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ABBC331CD0E1A00062FD05 /* Main.storyboard */; };
 		C8ABBC371CD0E1A00062FD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8ABBC361CD0E1A00062FD05 /* Assets.xcassets */; };
 		C8ABBC3A1CD0E1A00062FD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ABBC381CD0E1A00062FD05 /* LaunchScreen.storyboard */; };
+		C8ABBC431CD0E1C70062FD05 /* STTgCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ABBC421CD0E1C70062FD05 /* STTgCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C8ABBC361CD0E1A00062FD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8ABBC391CD0E1A00062FD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8ABBC3B1CD0E1A00062FD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8ABBC411CD0E1C70062FD05 /* STTgCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTgCellTableViewCell.h; sourceTree = "<group>"; };
+		C8ABBC421CD0E1C70062FD05 /* STTgCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTgCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C8ABBC2E1CD0E19F0062FD05 /* AppDelegate.m */,
 				C8ABBC301CD0E19F0062FD05 /* ViewController.h */,
 				C8ABBC311CD0E19F0062FD05 /* ViewController.m */,
+				C8ABBC411CD0E1C70062FD05 /* STTgCellTableViewCell.h */,
+				C8ABBC421CD0E1C70062FD05 /* STTgCellTableViewCell.m */,
 				C8ABBC331CD0E1A00062FD05 /* Main.storyboard */,
 				C8ABBC361CD0E1A00062FD05 /* Assets.xcassets */,
 				C8ABBC381CD0E1A00062FD05 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				C8ABBC321CD0E19F0062FD05 /* ViewController.m in Sources */,
 				C8ABBC2F1CD0E19F0062FD05 /* AppDelegate.m in Sources */,
 				C8ABBC2C1CD0E19F0062FD05 /* main.m in Sources */,
+				C8ABBC431CD0E1C70062FD05 /* STTgCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

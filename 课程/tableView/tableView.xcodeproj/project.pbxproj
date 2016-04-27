@@ -13,6 +13,9 @@
 		C8A643DF1CD0802800D288F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A643DD1CD0802800D288F6 /* Main.storyboard */; };
 		C8A643E11CD0802800D288F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A643E01CD0802800D288F6 /* Assets.xcassets */; };
 		C8A643E41CD0802800D288F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A643E21CD0802800D288F6 /* LaunchScreen.storyboard */; };
+		C8A643ED1CD0886000D288F6 /* STCar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A643EC1CD0886000D288F6 /* STCar.m */; };
+		C8A643F01CD0887100D288F6 /* STCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A643EF1CD0887100D288F6 /* STCarGroup.m */; };
+		C8A643F21CD08FC000D288F6 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A643F11CD08FC000D288F6 /* cars.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		C8A643E01CD0802800D288F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A643E31CD0802800D288F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A643E51CD0802800D288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A643EB1CD0886000D288F6 /* STCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCar.h; sourceTree = "<group>"; };
+		C8A643EC1CD0886000D288F6 /* STCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCar.m; sourceTree = "<group>"; };
+		C8A643EE1CD0887100D288F6 /* STCarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCarGroup.h; sourceTree = "<group>"; };
+		C8A643EF1CD0887100D288F6 /* STCarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCarGroup.m; sourceTree = "<group>"; };
+		C8A643F11CD08FC000D288F6 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				C8A643D81CD0802800D288F6 /* AppDelegate.m */,
 				C8A643DA1CD0802800D288F6 /* ViewController.h */,
 				C8A643DB1CD0802800D288F6 /* ViewController.m */,
+				C8A643EB1CD0886000D288F6 /* STCar.h */,
+				C8A643EC1CD0886000D288F6 /* STCar.m */,
+				C8A643EE1CD0887100D288F6 /* STCarGroup.h */,
+				C8A643EF1CD0887100D288F6 /* STCarGroup.m */,
 				C8A643DD1CD0802800D288F6 /* Main.storyboard */,
 				C8A643E01CD0802800D288F6 /* Assets.xcassets */,
 				C8A643E21CD0802800D288F6 /* LaunchScreen.storyboard */,
@@ -74,6 +86,7 @@
 		C8A643D41CD0802800D288F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8A643F11CD08FC000D288F6 /* cars.plist */,
 				C8A643D51CD0802800D288F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -137,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A643E41CD0802800D288F6 /* LaunchScreen.storyboard in Resources */,
+				C8A643F21CD08FC000D288F6 /* cars.plist in Resources */,
 				C8A643E11CD0802800D288F6 /* Assets.xcassets in Resources */,
 				C8A643DF1CD0802800D288F6 /* Main.storyboard in Resources */,
 			);
@@ -151,7 +165,9 @@
 			files = (
 				C8A643DC1CD0802800D288F6 /* ViewController.m in Sources */,
 				C8A643D91CD0802800D288F6 /* AppDelegate.m in Sources */,
+				C8A643F01CD0887100D288F6 /* STCarGroup.m in Sources */,
 				C8A643D61CD0802800D288F6 /* main.m in Sources */,
+				C8A643ED1CD0886000D288F6 /* STCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

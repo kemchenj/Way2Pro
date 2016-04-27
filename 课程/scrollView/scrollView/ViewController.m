@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *redView = [[UIView alloc] init];
+    redView.backgroundColor = [UIColor redColor];
+    redView.frame = CGRectMake(0, 0, 50, 50);
+    [self.scrollView addSubview:redView];
+    
+    self.scrollView.contentSize = CGSizeMake(275, 900);
+    
+    self.scrollView.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {

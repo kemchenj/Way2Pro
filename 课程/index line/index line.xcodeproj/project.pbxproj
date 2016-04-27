@@ -13,6 +13,9 @@
 		C8A6449E1CD0B6D600D288F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A6449C1CD0B6D600D288F6 /* Main.storyboard */; };
 		C8A644A01CD0B6D600D288F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A6449F1CD0B6D600D288F6 /* Assets.xcassets */; };
 		C8A644A31CD0B6D600D288F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A644A11CD0B6D600D288F6 /* LaunchScreen.storyboard */; };
+		C8A644AC1CD0B6FB00D288F6 /* STCar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A644AB1CD0B6FB00D288F6 /* STCar.m */; };
+		C8A644AF1CD0B71400D288F6 /* STCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A644AE1CD0B71400D288F6 /* STCarGroup.m */; };
+		C8A644B11CD0B71E00D288F6 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A644B01CD0B71E00D288F6 /* cars.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		C8A6449F1CD0B6D600D288F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A644A21CD0B6D600D288F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A644A41CD0B6D600D288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A644AA1CD0B6FB00D288F6 /* STCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCar.h; sourceTree = "<group>"; };
+		C8A644AB1CD0B6FB00D288F6 /* STCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCar.m; sourceTree = "<group>"; };
+		C8A644AD1CD0B71400D288F6 /* STCarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCarGroup.h; sourceTree = "<group>"; };
+		C8A644AE1CD0B71400D288F6 /* STCarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCarGroup.m; sourceTree = "<group>"; };
+		C8A644B01CD0B71E00D288F6 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				C8A644971CD0B6D600D288F6 /* AppDelegate.m */,
 				C8A644991CD0B6D600D288F6 /* ViewController.h */,
 				C8A6449A1CD0B6D600D288F6 /* ViewController.m */,
+				C8A644AA1CD0B6FB00D288F6 /* STCar.h */,
+				C8A644AB1CD0B6FB00D288F6 /* STCar.m */,
+				C8A644AD1CD0B71400D288F6 /* STCarGroup.h */,
+				C8A644AE1CD0B71400D288F6 /* STCarGroup.m */,
 				C8A6449C1CD0B6D600D288F6 /* Main.storyboard */,
 				C8A6449F1CD0B6D600D288F6 /* Assets.xcassets */,
 				C8A644A11CD0B6D600D288F6 /* LaunchScreen.storyboard */,
@@ -74,6 +86,7 @@
 		C8A644931CD0B6D600D288F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8A644B01CD0B71E00D288F6 /* cars.plist */,
 				C8A644941CD0B6D600D288F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -137,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A644A31CD0B6D600D288F6 /* LaunchScreen.storyboard in Resources */,
+				C8A644B11CD0B71E00D288F6 /* cars.plist in Resources */,
 				C8A644A01CD0B6D600D288F6 /* Assets.xcassets in Resources */,
 				C8A6449E1CD0B6D600D288F6 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A644AF1CD0B71400D288F6 /* STCarGroup.m in Sources */,
 				C8A6449B1CD0B6D600D288F6 /* ViewController.m in Sources */,
 				C8A644981CD0B6D600D288F6 /* AppDelegate.m in Sources */,
 				C8A644951CD0B6D600D288F6 /* main.m in Sources */,
+				C8A644AC1CD0B6FB00D288F6 /* STCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +316,7 @@
 				C8A644A91CD0B6D600D288F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

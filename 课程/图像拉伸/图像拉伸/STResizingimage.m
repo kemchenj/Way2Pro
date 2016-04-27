@@ -10,4 +10,18 @@
 
 @implementation STResizingimage
 
++ (UIImage *)resizingImageWithImageName:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    CGFloat imageW = image.size.width;
+    CGFloat imageH = image.size.height;
+    
+//    UIImage *resizingImage = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH * 0.5, imageW * 0.5, imageH * 0.5 - 1, imageW * 0.5 - 1) resizingMode:UIImageResizingModeTile];
+//    return resizingImage;
+    
+    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH * 0.5, imageW * 0.5, imageH * 0.5 - 1, imageW * 0.5 - 1) resizingMode:UIImageResizingModeTile];
+    return image;
+}
+
 @end

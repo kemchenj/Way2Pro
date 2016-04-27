@@ -13,6 +13,8 @@
 		C8A6431D1CD0470300D288F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A6431B1CD0470300D288F6 /* Main.storyboard */; };
 		C8A6431F1CD0470300D288F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A6431E1CD0470300D288F6 /* Assets.xcassets */; };
 		C8A643221CD0470300D288F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A643201CD0470300D288F6 /* LaunchScreen.storyboard */; };
+		C8A643311CD05CAA00D288F6 /* STPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A643301CD05CAA00D288F6 /* STPageView.m */; };
+		C8A643351CD05D7900D288F6 /* STPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A643341CD05D7900D288F6 /* STPageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		C8A6431E1CD0470300D288F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A643211CD0470300D288F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A643231CD0470300D288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A6432F1CD05CAA00D288F6 /* STPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPageView.h; sourceTree = "<group>"; };
+		C8A643301CD05CAA00D288F6 /* STPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPageView.m; sourceTree = "<group>"; };
+		C8A643341CD05D7900D288F6 /* STPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STPageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				C8A643161CD0470300D288F6 /* AppDelegate.m */,
 				C8A643181CD0470300D288F6 /* ViewController.h */,
 				C8A643191CD0470300D288F6 /* ViewController.m */,
+				C8A6432F1CD05CAA00D288F6 /* STPageView.h */,
+				C8A643301CD05CAA00D288F6 /* STPageView.m */,
+				C8A643341CD05D7900D288F6 /* STPageView.xib */,
 				C8A6431B1CD0470300D288F6 /* Main.storyboard */,
 				C8A6431E1CD0470300D288F6 /* Assets.xcassets */,
 				C8A643201CD0470300D288F6 /* LaunchScreen.storyboard */,
@@ -138,6 +146,7 @@
 			files = (
 				C8A643221CD0470300D288F6 /* LaunchScreen.storyboard in Resources */,
 				C8A6431F1CD0470300D288F6 /* Assets.xcassets in Resources */,
+				C8A643351CD05D7900D288F6 /* STPageView.xib in Resources */,
 				C8A6431D1CD0470300D288F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +160,7 @@
 			files = (
 				C8A6431A1CD0470300D288F6 /* ViewController.m in Sources */,
 				C8A643171CD0470300D288F6 /* AppDelegate.m in Sources */,
+				C8A643311CD05CAA00D288F6 /* STPageView.m in Sources */,
 				C8A643141CD0470300D288F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +310,7 @@
 				C8A643281CD0470300D288F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

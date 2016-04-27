@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -16,12 +16,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // 1. 添加scrollView
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.backgroundColor = [UIColor redColor];
+    scrollView.frame = CGRectMake(20, 20, 300, 200);
+    [self.view addSubview:scrollView];
+    
+    // 2. 添加imageView
+    UIImage *image = [UIImage imageNamed:@"minion"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [scrollView addSubview:imageView];
+    
+    // 3. 设置content size
+    scrollView.contentSize = image.size;
+    
+    // 4. 设置代理
+    scrollView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"scrollView did scroll");
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    NSLog(@"scrollView will begin dragging");
+}
+
+-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    NSLog(@"scrollview will end dragging");
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (decelerate == NO) {
+        NSLog(@"用户已经停止拖拽scrollView,scrollView停止滚动");
+    } else {
+        NSLog(@"用户已经停止拖拽scrollView,但是scrollView由于惯性会继续滚动,并且减速");
+    }
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"scrollView减速完毕,停止滚动");
 }
 
 @end
