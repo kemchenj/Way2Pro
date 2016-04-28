@@ -32,16 +32,16 @@
         [self.contentView addSubview: iconImageView];
         self.iconImageView = iconImageView;
         
-        UILabel *nameLabel = [[UILabel alloc] init];
-        nameLabel.font     = [UIFont systemFontOfSize:20];
+        UILabel *nameLabel      = [[UILabel alloc] init];
+        nameLabel.font          = [UIFont systemFontOfSize:20];
         nameLabel.lineBreakMode = NSLineBreakByWordWrapping;
         [nameLabel sizeToFit];
         [self.contentView addSubview: nameLabel];
         self.nameLabel = nameLabel;
         
-        UILabel *introLabel  = [[UILabel alloc] init];
-        introLabel.font      = [UIFont systemFontOfSize:16];
-        introLabel.textColor = [UIColor grayColor];
+        UILabel *introLabel      = [[UILabel alloc] init];
+        introLabel.font          = [UIFont systemFontOfSize:16];
+        introLabel.textColor     = [UIColor grayColor];
         introLabel.numberOfLines = 0;
         [self.contentView addSubview: introLabel];
         self.introLabel = introLabel;

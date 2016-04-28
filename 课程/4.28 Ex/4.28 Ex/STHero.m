@@ -41,12 +41,14 @@
         CGFloat iconWH = 80;
         self.iconFrame = CGRectMake(iconX, iconY, iconWH, iconWH);
         
-        CGFloat nameX  = iconWH + 2 * margin;
-        CGFloat nameY  = margin;
-        CGFloat nameW  = [UIScreen mainScreen].bounds.size.width - iconWH - 3 *margin;
+        
         NSDictionary *nameAttrs = @{NSFontAttributeName : [UIFont systemFontOfSize:20]};
         CGSize nameSize = [self.name sizeWithAttributes:nameAttrs];
+        
+        CGFloat nameX  = iconWH + 2 * margin;
+        CGFloat nameY  = margin;
         CGFloat nameH  = nameSize.height;
+        CGFloat nameW  = [UIScreen mainScreen].bounds.size.width - iconWH - 3 *margin;
         self.nameFrame = CGRectMake(nameX, nameY, nameW, nameH);
         
         CGFloat introX = nameX;
