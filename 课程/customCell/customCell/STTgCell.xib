@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tg" rowHeight="95" id="5N6-rX-JfT" customClass="STTgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5N6-rX-JfT" id="QhU-wd-cIE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XAm-WQ-hbv">
+                        <rect key="frame" x="10" y="10" width="80" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2kS-gB-iAf"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="zK4-MS-8CO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-bb-i7T">
+                        <rect key="frame" x="105" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twa-an-QLF">
+                        <rect key="frame" x="105" y="41" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7X-hJ-biP">
+                        <rect key="frame" x="281" y="43" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="G7X-hJ-biP" secondAttribute="trailing" constant="8" id="1XM-WE-yRs"/>
+                    <constraint firstItem="Twa-an-QLF" firstAttribute="bottom" secondItem="XAm-WQ-hbv" secondAttribute="bottom" id="58M-rJ-sEW"/>
+                    <constraint firstItem="XAm-WQ-hbv" firstAttribute="top" secondItem="QhU-wd-cIE" secondAttribute="top" constant="10" id="9qs-XP-c9K"/>
+                    <constraint firstItem="Twa-an-QLF" firstAttribute="leading" secondItem="DkM-bb-i7T" secondAttribute="leading" id="JBw-Tg-PA3"/>
+                    <constraint firstItem="DkM-bb-i7T" firstAttribute="leading" secondItem="XAm-WQ-hbv" secondAttribute="trailing" constant="15" id="NJ0-Lk-bVN"/>
+                    <constraint firstItem="G7X-hJ-biP" firstAttribute="bottom" secondItem="XAm-WQ-hbv" secondAttribute="bottom" id="iqs-Z3-DO7"/>
+                    <constraint firstItem="DkM-bb-i7T" firstAttribute="top" secondItem="XAm-WQ-hbv" secondAttribute="top" id="lbo-mu-UFD"/>
+                    <constraint firstItem="XAm-WQ-hbv" firstAttribute="leading" secondItem="QhU-wd-cIE" secondAttribute="leading" constant="10" id="wae-7m-hds"/>
+                    <constraint firstAttribute="bottom" secondItem="XAm-WQ-hbv" secondAttribute="bottom" constant="10" id="zey-f5-OJj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buyCountLabel" destination="G7X-hJ-biP" id="FIx-bl-iLe"/>
+                <outlet property="iconImageView" destination="XAm-WQ-hbv" id="u2Z-Cv-Qtg"/>
+                <outlet property="priceLabel" destination="Twa-an-QLF" id="u3N-jB-25Z"/>
+                <outlet property="titleLabel" destination="DkM-bb-i7T" id="T2X-ur-Ohd"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="48.5"/>
+        </tableViewCell>
+    </objects>
+</document>

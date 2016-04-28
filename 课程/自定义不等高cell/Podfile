@@ -1,0 +1,7 @@
+platform :ios, "9.3"
+
+pod "MJExtension"
+
+target :自定义不等高cellTests, :exclusive => true do
+  # pod 'Kiwi'
+end
