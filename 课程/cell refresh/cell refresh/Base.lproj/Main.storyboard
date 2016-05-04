@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-BQ-0bd">
+                                <rect key="frame" x="0.0" y="20" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t60-em-EE4">
+                                        <rect key="frame" x="486" y="9" width="104" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Multi Remove">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MultiRemove" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALp-gC-w0N"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-r9-j5e">
+                                        <rect key="frame" x="10" y="9" width="62" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Remove">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="remove" destination="BYZ-38-t0r" eventType="touchUpInside" id="197-Rb-qRA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0YH-r9-j5e" firstAttribute="leading" secondItem="V0l-BQ-0bd" secondAttribute="leading" constant="10" id="5AL-qt-KSB"/>
+                                    <constraint firstAttribute="trailing" secondItem="t60-em-EE4" secondAttribute="trailing" constant="10" id="B59-Dr-Ldh"/>
+                                    <constraint firstItem="0YH-r9-j5e" firstAttribute="centerY" secondItem="V0l-BQ-0bd" secondAttribute="centerY" id="I3r-aq-1OC"/>
+                                    <constraint firstItem="t60-em-EE4" firstAttribute="centerY" secondItem="V0l-BQ-0bd" secondAttribute="centerY" id="Rgl-nU-BFI"/>
+                                    <constraint firstAttribute="height" constant="50" id="zb8-tb-nha"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W7h-ED-9va">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oDI-am-uMT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Rvh-fb-IOx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W7h-ED-9va" secondAttribute="bottom" id="Avn-5M-sC2"/>
+                            <constraint firstItem="W7h-ED-9va" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HUd-Uq-dsK"/>
+                            <constraint firstItem="W7h-ED-9va" firstAttribute="top" secondItem="V0l-BQ-0bd" secondAttribute="bottom" id="JJs-nr-7YO"/>
+                            <constraint firstAttribute="trailing" secondItem="V0l-BQ-0bd" secondAttribute="trailing" id="P51-9u-8PH"/>
+                            <constraint firstItem="V0l-BQ-0bd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nX5-V5-lzK"/>
+                            <constraint firstItem="V0l-BQ-0bd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vop-iW-JTG"/>
+                            <constraint firstAttribute="trailing" secondItem="W7h-ED-9va" secondAttribute="trailing" id="zRA-Qa-m5n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="removeBtn" destination="0YH-r9-j5e" id="z3S-Ne-GLf"/>
+                        <outlet property="tableView" destination="W7h-ED-9va" id="Vts-dr-hBI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="340"/>
+        </scene>
+    </scenes>
+</document>

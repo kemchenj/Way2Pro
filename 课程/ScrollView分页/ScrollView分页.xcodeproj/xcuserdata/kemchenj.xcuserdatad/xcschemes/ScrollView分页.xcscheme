@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C83C72D71CCF92310018852F"
-               BuildableName = "ScrollView&#x5206;&#x9875;.app"
-               BlueprintName = "ScrollView&#x5206;&#x9875;"
-               ReferencedContainer = "container:ScrollView&#x5206;&#x9875;.xcodeproj">
+               BuildableName = "ScrollView&#20998;&#39029;.app"
+               BlueprintName = "ScrollView&#20998;&#39029;"
+               ReferencedContainer = "container:ScrollView&#20998;&#39029;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C83C72D71CCF92310018852F"
-            BuildableName = "ScrollView&#x5206;&#x9875;.app"
-            BlueprintName = "ScrollView&#x5206;&#x9875;"
-            ReferencedContainer = "container:ScrollView&#x5206;&#x9875;.xcodeproj">
+            BuildableName = "ScrollView&#20998;&#39029;.app"
+            BlueprintName = "ScrollView&#20998;&#39029;"
+            ReferencedContainer = "container:ScrollView&#20998;&#39029;.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C83C72D71CCF92310018852F"
-            BuildableName = "ScrollView&#x5206;&#x9875;.app"
-            BlueprintName = "ScrollView&#x5206;&#x9875;"
-            ReferencedContainer = "container:ScrollView&#x5206;&#x9875;.xcodeproj">
+            BuildableName = "ScrollView&#20998;&#39029;.app"
+            BlueprintName = "ScrollView&#20998;&#39029;"
+            ReferencedContainer = "container:ScrollView&#20998;&#39029;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C83C72D71CCF92310018852F"
-            BuildableName = "ScrollView&#x5206;&#x9875;.app"
-            BlueprintName = "ScrollView&#x5206;&#x9875;"
-            ReferencedContainer = "container:ScrollView&#x5206;&#x9875;.xcodeproj">
+            BuildableName = "ScrollView&#20998;&#39029;.app"
+            BlueprintName = "ScrollView&#20998;&#39029;"
+            ReferencedContainer = "container:ScrollView&#20998;&#39029;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

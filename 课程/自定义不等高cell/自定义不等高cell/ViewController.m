@@ -24,8 +24,6 @@
 
 @implementation ViewController
 
-NSString *ID = @"tweet";
-
 - (NSArray *)tweets
 {
     if (!_tweets) {
@@ -37,8 +35,13 @@ NSString *ID = @"tweet";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[STTweetCell class] forCellReuseIdentifier:ID ];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+//    [self.tableView registerClass:[STTweetCell class] forCellReuseIdentifier:ID ];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    
+    // 告诉tableView所有cell的真实高度是自动计算（根据设置的约束来计算）
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    // 告诉tableView所有cell的估算高度
+    self.tableView.estimatedRowHeight = 100;
 }
 
 -(BOOL)prefersStatusBarHidden
@@ -57,9 +60,12 @@ NSString *ID = @"tweet";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    STTweetCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    STTweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tweet"];
     
     cell.tweet = self.tweets[indexPath.row];
+    
+    NSLog(@"cell高度: %f", cell.frame.size.height);
+    NSLog(@"cell.height: %f", cell.height);
     
     return cell;
 }
@@ -68,11 +74,22 @@ NSString *ID = @"tweet";
 
 #pragma mark - <TableView Delegate>
 
+STTweetCell *cell;
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    STTweet *tweet = self.tweets[indexPath.row];
+    if (!cell) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"tweet"];
+    }
     
-    return tweet.cellHeight;
+    cell.tweet = self.tweets[indexPath.row];
+    
+    NSLog(@"cell高度    : %f", cell.frame.size.height);
+    NSLog(@"cell.height : %f", cell.height);
+    
+    return cell.height;
 }
+
+
 
 @end

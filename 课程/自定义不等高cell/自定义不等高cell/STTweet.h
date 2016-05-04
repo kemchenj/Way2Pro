@@ -17,12 +17,12 @@
 @property (nonatomic, copy) NSString *picture;
 @property (nonatomic, assign) BOOL vip;
 
-@property (nonatomic, assign) CGRect  vipFrame;
-@property (nonatomic, assign) CGRect  iconFrame;
-@property (nonatomic, assign) CGRect  nameFrame;
-@property (nonatomic, assign) CGRect  textFrame;
-@property (nonatomic, assign) CGRect  pictureFrame;
-@property (nonatomic, assign) CGFloat cellHeight;
+//@property (nonatomic, assign) CGRect  vipFrame;
+//@property (nonatomic, assign) CGRect  iconFrame;
+//@property (nonatomic, assign) CGRect  nameFrame;
+//@property (nonatomic, assign) CGRect  textFrame;
+//@property (nonatomic, assign) CGRect  pictureFrame;
+//@property (nonatomic, assign) CGFloat cellHeight;
 
 //+ (instancetype)tweetWithDict:(NSDictionary *)dict;
 

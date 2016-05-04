@@ -12,5 +12,6 @@
 @interface STTweetCell : UITableViewCell
 
 @property (nonatomic, strong) STTweet *tweet;
+-(CGFloat)height;
 
 @end

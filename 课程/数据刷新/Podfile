@@ -1,0 +1,6 @@
+platform :ios, '9.3'
+use_frameworks!
+
+target '数据刷新' do
+  pod 'MJExtension'
+end

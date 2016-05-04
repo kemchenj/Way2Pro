@@ -1,0 +1,6 @@
+framework module Pods_textField_2 {
+  umbrella header "Pods-textField-2-umbrella.h"
+
+  export *
+  module * { export * }
+}

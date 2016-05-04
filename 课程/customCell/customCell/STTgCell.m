@@ -13,25 +13,27 @@
 //#define MAS_SHORTHAND_GLOBALS
 //#import "Masonry/Masonry.h"
 
-@interface STTgCell()
+@interface STTgCell ()
 
-@property (nonatomic, weak) IBOutlet UIImageView *iconImageView;
-@property (nonatomic, weak) IBOutlet UILabel     *titleLabel;
-@property (nonatomic, weak) IBOutlet UILabel     *priceLabel;
-@property (nonatomic, weak) IBOutlet UILabel     *buyCountLabel;
+@property(nonatomic, weak) IBOutlet UILabel     *titleLabel;
+@property(nonatomic, weak) IBOutlet UILabel     *priceLabel;
+@property(nonatomic, weak) IBOutlet UILabel     *buyCountLabel;
+@property(nonatomic, weak) IBOutlet UIImageView *iconImageView;
 
 @end
 
+
+
 @implementation STTgCell
 
--(void)setTg:(STTg *)tg
+- (void)setTg:(STTg *)tg
 {
     _tg = tg;
-    
+
+    self.titleLabel.text     = tg.title;
+    self.priceLabel.text     = [NSString stringWithFormat:@"%@", tg.price];
+    self.buyCountLabel.text  = [NSString stringWithFormat:@"%@人已购买", tg.buyCount];
     self.iconImageView.image = [UIImage imageNamed:tg.icon];
-    self.titleLabel.text = tg.title;
-    self.priceLabel.text = [NSString stringWithFormat:@"￥%@", tg.price];
-    self.buyCountLabel.text = [NSString stringWithFormat:@"%@人已购买", tg.buyCount];
 }
 
 @end

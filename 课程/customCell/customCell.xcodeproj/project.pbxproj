@@ -25,6 +25,10 @@
 		C8ABBCCE1CD1A7360062FD05 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ABBCC51CD1A7360062FD05 /* NSObject+MJProperty.m */; };
 		C8ABBCCF1CD1A7360062FD05 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ABBCC71CD1A7360062FD05 /* NSString+MJExtension.m */; };
 		C8B3CE751CD1C00A00F4917D /* STTgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B3CE741CD1C00A00F4917D /* STTgCell.xib */; };
+		C8F9F2A31CD6E781000FE6C3 /* STPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F9F2A21CD6E781000FE6C3 /* STPageView.m */; };
+		C8F9F2A61CD6E7A1000FE6C3 /* STLoadMoreFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F9F2A51CD6E7A1000FE6C3 /* STLoadMoreFooter.m */; };
+		C8F9F2A81CD6E7B2000FE6C3 /* STPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8F9F2A71CD6E7B2000FE6C3 /* STPageView.xib */; };
+		C8F9F2AA1CD6E7BE000FE6C3 /* STLoadMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8F9F2A91CD6E7BE000FE6C3 /* STLoadMoreFooter.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,12 @@
 		C8ABBCC61CD1A7360062FD05 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		C8ABBCC71CD1A7360062FD05 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		C8B3CE741CD1C00A00F4917D /* STTgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTgCell.xib; sourceTree = "<group>"; };
+		C8F9F2A11CD6E781000FE6C3 /* STPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPageView.h; sourceTree = "<group>"; };
+		C8F9F2A21CD6E781000FE6C3 /* STPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPageView.m; sourceTree = "<group>"; };
+		C8F9F2A41CD6E7A1000FE6C3 /* STLoadMoreFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLoadMoreFooter.h; sourceTree = "<group>"; };
+		C8F9F2A51CD6E7A1000FE6C3 /* STLoadMoreFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLoadMoreFooter.m; sourceTree = "<group>"; };
+		C8F9F2A71CD6E7B2000FE6C3 /* STPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STPageView.xib; sourceTree = "<group>"; };
+		C8F9F2A91CD6E7BE000FE6C3 /* STLoadMoreFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STLoadMoreFooter.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,12 @@
 				C8ABBC2E1CD0E19F0062FD05 /* AppDelegate.m */,
 				C8ABBC301CD0E19F0062FD05 /* ViewController.h */,
 				C8ABBC311CD0E19F0062FD05 /* ViewController.m */,
+				C8F9F2A11CD6E781000FE6C3 /* STPageView.h */,
+				C8F9F2A21CD6E781000FE6C3 /* STPageView.m */,
+				C8F9F2A71CD6E7B2000FE6C3 /* STPageView.xib */,
+				C8F9F2A41CD6E7A1000FE6C3 /* STLoadMoreFooter.h */,
+				C8F9F2A51CD6E7A1000FE6C3 /* STLoadMoreFooter.m */,
+				C8F9F2A91CD6E7BE000FE6C3 /* STLoadMoreFooter.xib */,
 				C8B3CE741CD1C00A00F4917D /* STTgCell.xib */,
 				C8ABBC411CD0E1C70062FD05 /* STTgCell.h */,
 				C8ABBC421CD0E1C70062FD05 /* STTgCell.m */,
@@ -204,8 +220,10 @@
 			files = (
 				C8ABBC3A1CD0E1A00062FD05 /* LaunchScreen.storyboard in Resources */,
 				C8ABBC481CD19DF40062FD05 /* tgs.plist in Resources */,
+				C8F9F2AA1CD6E7BE000FE6C3 /* STLoadMoreFooter.xib in Resources */,
 				C8B3CE751CD1C00A00F4917D /* STTgCell.xib in Resources */,
 				C8ABBC371CD0E1A00062FD05 /* Assets.xcassets in Resources */,
+				C8F9F2A81CD6E7B2000FE6C3 /* STPageView.xib in Resources */,
 				C8ABBC351CD0E1A00062FD05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +243,8 @@
 				C8ABBCCA1CD1A7360062FD05 /* MJProperty.m in Sources */,
 				C8ABBCCD1CD1A7360062FD05 /* NSObject+MJKeyValue.m in Sources */,
 				C8ABBCC91CD1A7360062FD05 /* MJFoundation.m in Sources */,
+				C8F9F2A31CD6E781000FE6C3 /* STPageView.m in Sources */,
+				C8F9F2A61CD6E7A1000FE6C3 /* STLoadMoreFooter.m in Sources */,
 				C8ABBCCB1CD1A7360062FD05 /* MJType.m in Sources */,
 				C8ABBCCF1CD1A7360062FD05 /* NSString+MJExtension.m in Sources */,
 				C8ABBCCE1CD1A7360062FD05 /* NSObject+MJProperty.m in Sources */,

@@ -1,0 +1,15 @@
+PODS:
+  - IQKeyboardManager (4.0.2)
+  - MJExtension (3.0.10)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - MJExtension
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 2341089c4ae25fa2fa82ce356a259fcd267dc6b6
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+
+PODFILE CHECKSUM: 11221ce1fda8b88e30d0f764a04085bc60d5cec6
+
+COCOAPODS: 1.0.0.rc.1

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KDa-oQ-fq7" customClass="STLoadMoreFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kI5-Zu-58L" userLabel="分割线">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hxe-yu-Pn3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-Ix-enl" userLabel="Load More Button">
+                    <rect key="frame" x="0.0" y="1" width="320" height="34"/>
+                    <state key="normal" title="点击加载">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMore" destination="KDa-oQ-fq7" eventType="touchUpInside" id="gnV-6L-Avz"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isC-Ub-eUg" userLabel="Loading">
+                    <rect key="frame" x="0.0" y="2" width="320" height="33"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ulx-TZ-AUf">
+                            <rect key="frame" x="8" y="7" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-5d-pjP">
+                            <rect key="frame" x="0.0" y="-2" width="320" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="1"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eOA-5d-pjP" firstAttribute="top" secondItem="isC-Ub-eUg" secondAttribute="top" id="ALT-XZ-qgW"/>
+                        <constraint firstAttribute="bottom" secondItem="eOA-5d-pjP" secondAttribute="bottom" id="Be2-Ha-Bt9"/>
+                        <constraint firstItem="Ulx-TZ-AUf" firstAttribute="leading" secondItem="isC-Ub-eUg" secondAttribute="leading" constant="8" id="ZGd-VO-cMA"/>
+                        <constraint firstItem="eOA-5d-pjP" firstAttribute="leading" secondItem="isC-Ub-eUg" secondAttribute="leading" id="cSP-2D-Wev"/>
+                        <constraint firstAttribute="trailing" secondItem="eOA-5d-pjP" secondAttribute="trailing" id="oZs-Wi-NaV"/>
+                        <constraint firstItem="Ulx-TZ-AUf" firstAttribute="centerY" secondItem="isC-Ub-eUg" secondAttribute="centerY" id="y2T-Sh-NHw"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ALT-XZ-qgW"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eCu-Ix-enl" secondAttribute="trailing" id="1k6-jT-Uh2"/>
+                <constraint firstItem="kI5-Zu-58L" firstAttribute="leading" secondItem="KDa-oQ-fq7" secondAttribute="leading" id="2xX-I7-dba"/>
+                <constraint firstItem="isC-Ub-eUg" firstAttribute="top" secondItem="kI5-Zu-58L" secondAttribute="bottom" constant="1" id="Bjf-5X-onX"/>
+                <constraint firstAttribute="trailing" secondItem="isC-Ub-eUg" secondAttribute="trailing" id="J5o-Js-5jc"/>
+                <constraint firstAttribute="trailing" secondItem="kI5-Zu-58L" secondAttribute="trailing" id="Rgu-1x-oCa"/>
+                <constraint firstAttribute="bottom" secondItem="eCu-Ix-enl" secondAttribute="bottom" id="Y0R-br-tez"/>
+                <constraint firstAttribute="bottom" secondItem="isC-Ub-eUg" secondAttribute="bottom" id="aXr-CK-bem"/>
+                <constraint firstItem="kI5-Zu-58L" firstAttribute="top" secondItem="KDa-oQ-fq7" secondAttribute="top" id="eda-aJ-9F0"/>
+                <constraint firstItem="eCu-Ix-enl" firstAttribute="top" secondItem="kI5-Zu-58L" secondAttribute="bottom" id="hzt-Tb-9ZZ"/>
+                <constraint firstItem="isC-Ub-eUg" firstAttribute="leading" secondItem="KDa-oQ-fq7" secondAttribute="leading" id="n3d-8u-sgx"/>
+                <constraint firstItem="eCu-Ix-enl" firstAttribute="leading" secondItem="KDa-oQ-fq7" secondAttribute="leading" id="rPU-3u-1Jx"/>
+                <constraint firstItem="eOA-5d-pjP" firstAttribute="height" secondItem="KDa-oQ-fq7" secondAttribute="height" id="upT-Dc-ggo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadMoreButton" destination="eCu-Ix-enl" id="PKB-4F-9bR"/>
+                <outlet property="loadingView" destination="isC-Ub-eUg" id="pVh-mV-b9d"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="54.5"/>
+        </view>
+    </objects>
+</document>

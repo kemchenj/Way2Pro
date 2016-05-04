@@ -126,7 +126,7 @@ NSString *ID = @"car";
     return YES;
 }
 
-#pragma mark - <数据源>
+#pragma mark - <TableView DataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return self.carGroups.count;
@@ -162,11 +162,6 @@ NSString *ID = @"car";
  */
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
-//    NSMutableArray *titles = [NSMutableArray array];
-//    for (MJCarGroup *group in self.carGroups) {
-//        [titles addObject:group.title];
-//    }
-//    return titles;
     return [self.carGroups valueForKeyPath:@"title"];
 }
 @end
