@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate
 {
     var checklist: Checklist!
@@ -16,21 +18,18 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
     // MARK - UIView
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         title = checklist.name
     }
 
 
 
-    func itemDetailViewControllerDidCancel(controller: ItemDetailViewController)
-    {
+    func itemDetailViewControllerDidCancel(controller: ItemDetailViewController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    func itemDetailViewController(controller: ItemDetailViewController, didFinishAddingItem item: ChecklistItem)
-    {
+    func itemDetailViewController(controller: ItemDetailViewController, didFinishAddingItem item: ChecklistItem) {
         let newRowIndex = checklist.items.count
 
         checklist.items.append(item)
@@ -46,8 +45,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    func itemDetailViewController(controller: ItemDetailViewController, didFinishEditItem item: ChecklistItem)
-    {
+    func itemDetailViewController(controller: ItemDetailViewController, didFinishEditItem item: ChecklistItem) {
         if let index = checklist.items.indexOf(item) {
             let indexPath = NSIndexPath(forRow: index, inSection: 0)
             if let cell = tableView.cellForRowAtIndexPath(indexPath) {
@@ -58,8 +56,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     }
 
     // 通知view某个segue将要触发了
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // 1. 因为代理可能不止一个，所以需要用identifier来判断是否是自己需要的那个代理
         // swift的==可以用在绝大部分数据类型上，例如string等
         if segue.identifier == "AddItem" {
@@ -84,12 +81,10 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
 
     // view ask for data
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return checklist.items.count
     }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistItem", forIndexPath: indexPath)
 
         let item = checklist.items[indexPath.row]
@@ -100,8 +95,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     }
 
     // check or uncheck
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             let item = checklist.items[indexPath.row]
             item.toggleChecked()
@@ -111,8 +105,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
-    {
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         // 1. Remove the item from the data model
         checklist.items.removeAtIndex(indexPath.row)
         // 2. Delete the corresponding row from the table view
@@ -121,8 +114,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
     }
 
-    func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem)
-    {
+    func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
         let label = cell.viewWithTag(1001) as! UILabel
 
         if item.checked {
@@ -132,8 +124,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         }
     }
 
-    func configureTextForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem)
-    {
+    func configureTextForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.text
     }

@@ -93,8 +93,8 @@ NSString *ID = @"hero";
     [alert addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField) {}];
 
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        STHero *hero = self.heros[indexPath.row];
         if (![alert.textFields.lastObject.text isEqualToString:@""]) {
+            STHero *hero = self.heros[indexPath.row];
             hero.name = alert.textFields.lastObject.text;
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }

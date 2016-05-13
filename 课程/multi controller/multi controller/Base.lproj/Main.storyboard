@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EcZ-IZ-xfd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--根控制器-->
+        <scene sceneID="IS5-Re-MgC">
+            <objects>
+                <navigationController title="根控制器" id="EcZ-IZ-xfd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ERu-Gp-BA3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dbh-eA-5my" kind="relationship" relationship="rootViewController" id="9zt-qc-4Yi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwT-tf-sny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="869"/>
+        </scene>
+        <!--根控制器-->
+        <scene sceneID="Jn8-xM-BDy">
+            <objects>
+                <viewController id="dbh-eA-5my" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WDY-Mc-zpU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xGF-FI-u6Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Es-kW-0HD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-y7-ddG">
+                                <rect key="frame" x="278" y="285" width="45" height="30"/>
+                                <state key="normal" title="下一层"/>
+                                <connections>
+                                    <segue destination="2Si-Hy-tJn" kind="show" id="opn-8k-U4O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DWi-y7-ddG" firstAttribute="centerY" secondItem="5Es-kW-0HD" secondAttribute="centerY" id="Wbb-Ne-1JL"/>
+                            <constraint firstItem="DWi-y7-ddG" firstAttribute="centerX" secondItem="5Es-kW-0HD" secondAttribute="centerX" id="nYV-R2-CO3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="根控制器" id="lPE-eh-Va7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8r-Ze-od5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="869"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufB-x3-wyc">
+            <objects>
+                <viewController id="2Si-Hy-tJn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbs-x7-nmJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EhB-jc-WQO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Acl-Ab-EAh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJj-hu-esC">
+                                <rect key="frame" x="278" y="285" width="45" height="30"/>
+                                <state key="normal" title="下一层"/>
+                                <connections>
+                                    <segue destination="Tbh-oA-2Iv" kind="show" id="DrT-vs-dA5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yJj-hu-esC" firstAttribute="centerX" secondItem="Acl-Ab-EAh" secondAttribute="centerX" id="4Nh-5Z-shC"/>
+                            <constraint firstItem="yJj-hu-esC" firstAttribute="centerY" secondItem="Acl-Ab-EAh" secondAttribute="centerY" id="Vfd-L3-pPN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aiS-7U-azI">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="左侧" id="Eev-Yi-lXg"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="tD8-jf-Ksg">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="第一个"/>
+                                <segment title="第二个"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="eUx-Ux-CjV"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVN-qZ-orc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="869"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hY2-d2-hSh">
+            <objects>
+                <viewController id="Tbh-oA-2Iv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Flz-E6-JPD"/>
+                        <viewControllerLayoutGuide type="bottom" id="xfH-NZ-giN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hLf-i5-VGu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Cgf-QF-Xgw"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="RdY-gL-0hL">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ihD-pS-8GC">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4To-8K-NHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="869"/>
+        </scene>
+    </scenes>
+</document>

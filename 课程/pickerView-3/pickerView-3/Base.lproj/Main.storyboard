@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-9A-vgG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRk-aR-ZCD">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgv-L9-USj" customClass="FlagField">
+                                                <rect key="frame" x="240" y="35" width="120" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="mxF-03-3K9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pYY-1b-MNE"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-OM-ijf" customClass="BirthdayField">
+                                                <rect key="frame" x="240" y="85" width="120" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zcd-1z-2r8"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLu-ot-Cak" customClass="CityField">
+                                                <rect key="frame" x="240" y="135" width="120" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hyW-38-HZB"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国籍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8y-sc-Va3">
+                                                <rect key="frame" x="155" y="39" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaN-PR-0gR">
+                                                <rect key="frame" x="154" y="89" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7h-zD-X0k">
+                                                <rect key="frame" x="154" y="139" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="TcG-OM-ijf" firstAttribute="top" secondItem="qgv-L9-USj" secondAttribute="bottom" constant="20" id="0Hg-Lt-gCQ"/>
+                                            <constraint firstItem="OaN-PR-0gR" firstAttribute="top" secondItem="P8y-sc-Va3" secondAttribute="bottom" constant="29" id="1gh-Hr-NQu"/>
+                                            <constraint firstItem="TcG-OM-ijf" firstAttribute="leading" secondItem="qgv-L9-USj" secondAttribute="leading" id="9LA-ak-iTy"/>
+                                            <constraint firstItem="TcG-OM-ijf" firstAttribute="centerX" secondItem="qRk-aR-ZCD" secondAttribute="centerX" id="RIp-lZ-8ba"/>
+                                            <constraint firstItem="hLu-ot-Cak" firstAttribute="centerX" secondItem="qRk-aR-ZCD" secondAttribute="centerX" id="SuM-Vr-oog"/>
+                                            <constraint firstItem="TcG-OM-ijf" firstAttribute="leading" secondItem="OaN-PR-0gR" secondAttribute="trailing" constant="52" id="V1Y-tD-a2L"/>
+                                            <constraint firstItem="TcG-OM-ijf" firstAttribute="width" secondItem="qgv-L9-USj" secondAttribute="width" id="XEQ-v7-cT0"/>
+                                            <constraint firstItem="P8y-sc-Va3" firstAttribute="top" secondItem="qRk-aR-ZCD" secondAttribute="top" constant="39" id="bDJ-ca-fnA"/>
+                                            <constraint firstItem="j7h-zD-X0k" firstAttribute="top" secondItem="OaN-PR-0gR" secondAttribute="bottom" constant="29" id="c39-3h-D7m"/>
+                                            <constraint firstItem="qgv-L9-USj" firstAttribute="centerX" secondItem="qRk-aR-ZCD" secondAttribute="centerX" id="eut-cw-BMX"/>
+                                            <constraint firstItem="hLu-ot-Cak" firstAttribute="leading" secondItem="j7h-zD-X0k" secondAttribute="trailing" constant="52" id="hqf-tG-2nd"/>
+                                            <constraint firstAttribute="height" constant="250" id="huH-ZB-1wg"/>
+                                            <constraint firstItem="hLu-ot-Cak" firstAttribute="top" secondItem="TcG-OM-ijf" secondAttribute="bottom" constant="20" id="nwn-fC-Lgf"/>
+                                            <constraint firstItem="hLu-ot-Cak" firstAttribute="width" secondItem="qgv-L9-USj" secondAttribute="width" id="o1E-vu-qQM"/>
+                                            <constraint firstItem="qgv-L9-USj" firstAttribute="leading" secondItem="P8y-sc-Va3" secondAttribute="trailing" constant="51" id="sAA-ZU-3o0"/>
+                                            <constraint firstItem="qgv-L9-USj" firstAttribute="top" secondItem="qRk-aR-ZCD" secondAttribute="top" constant="35" id="zAT-4z-T0m"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="9LA-ak-iTy"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qRk-aR-ZCD" secondAttribute="trailing" id="Efr-OV-H1I"/>
+                                    <constraint firstItem="qRk-aR-ZCD" firstAttribute="top" secondItem="JGb-9A-vgG" secondAttribute="top" id="so5-KS-u9t"/>
+                                    <constraint firstItem="qRk-aR-ZCD" firstAttribute="leading" secondItem="JGb-9A-vgG" secondAttribute="leading" id="tUb-G0-wjg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JGb-9A-vgG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5jc-y3-va6"/>
+                            <constraint firstAttribute="trailing" secondItem="JGb-9A-vgG" secondAttribute="trailing" id="Fag-07-CKK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JGb-9A-vgG" secondAttribute="bottom" id="RuI-HL-1zg"/>
+                            <constraint firstItem="JGb-9A-vgG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V5g-dm-1BT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayField" destination="TcG-OM-ijf" id="bul-8r-0S1"/>
+                        <outlet property="cityField" destination="hLu-ot-Cak" id="MV6-oD-ard"/>
+                        <outlet property="countryField" destination="qgv-L9-USj" id="A5i-Vl-m1s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

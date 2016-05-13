@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "542D42E4A8A544A53BA430AB03D62B4E6745649C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "542D42E4A8A544A53BA430AB03D62B4E6745649C" : 0,
+    "6FC4832245A6A8E50F2A782F20A8B58A46BD1FEB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B995289C-BC69-40EA-AEBD-76E6B95AB7C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "542D42E4A8A544A53BA430AB03D62B4E6745649C" : "Way2Pro\/",
+    "6FC4832245A6A8E50F2A782F20A8B58A46BD1FEB" : "Way2Pro\/%E8%AF%BE%E7%A8%8B\/5.5%20test\/5.5%20test\/Masonry\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "5.5 test",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "课程\/5.5 test\/5.5 test.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kemchenj\/Way2Pro.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "542D42E4A8A544A53BA430AB03D62B4E6745649C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SnapKit\/Masonry.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FC4832245A6A8E50F2A782F20A8B58A46BD1FEB"
+    }
+  ]
+}
