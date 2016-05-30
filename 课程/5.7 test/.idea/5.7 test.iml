@@ -2,25 +2,7 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJFoundation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJExtensionConst.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJProperty.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJClass.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyType.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJClass.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJProperty.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJProperty.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJCoding.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJFoundation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJProperty.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSString+MJExtension.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyKey.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSString+MJExtension.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyKey.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJCoding.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJKeyValue.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyType.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJExtension.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASConstraint.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/ViewController+MASAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/Info.plist" isTestSource="false" />
@@ -29,43 +11,61 @@
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASConstraint+Private.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSArray+MASShorthandAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSArray+MASAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/ViewController+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/View+MASAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASLayoutConstraint.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASConstraintMaker.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSArray+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASViewConstraint.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/View+MASAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASLayoutConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASViewConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASCompositeConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/ViewController+MASAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASViewAttribute.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASViewConstraint.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/View+MASShorthandAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSLayoutConstraint+MASDebugAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASViewAttribute.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASUtilities.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/View+MASAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSLayoutConstraint+MASDebugAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASCompositeConstraint.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/MASCompositeConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJKeyValue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/Masonry/NSArray+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJProperty.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJClass.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyType.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJClass.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJProperty.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJProperty.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSString+MJExtension.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJProperty.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyKey.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSString+MJExtension.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJPropertyKey.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJFoundation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJCoding.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJExtensionConst.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJFoundation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJKeyValue.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJExtensionConst.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/MJExtension.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJKeyValue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/MJExtension/NSObject+MJCoding.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Launch Screen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/PeopleNearby/STPeopleNearby.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/PeopleNearby/STPeopleNearby.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/PeopleNearby/STPeopleNearby.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/theme.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/AppDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STNavigationBarTitleView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STTitleView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STNavigationBarTitleView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STTitleView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STNavigationController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STNavigationController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STViewController.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/STNavigationBar/STNavigationController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.7 test/AppDelegate.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.7 test/Launch Screen.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.7 test/theme.plist" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

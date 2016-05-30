@@ -97,13 +97,17 @@ NSString *ID = @"hero";
     [alert addTextFieldWithConfigurationHandler:^(UITextField *_Nonnull textField) {}];
     
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
         if (![alert.textFields.lastObject.text isEqualToString:@""]) {
             STHero *hero = self.heros[indexPath.row];
             hero.name = alert.textFields.lastObject.text;
-            [tableView reloadData];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [tableView reloadData];
+            });
         }
-        [alert.view endEditing:YES];
-        [self.view endEditing:YES];
+        //[alert.view endEditing:YES];
+        //[self.view endEditing:YES];
+
     }];
 
     [alert addAction:defaultAction];

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2B" translatesAutoresizingMaskIntoConstraints="NO" id="sax-JF-H2J">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2A" translatesAutoresizingMaskIntoConstraints="NO" id="Avj-Th-mli">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ed8-S1-u8T" appends="YES" id="Uj4-48-WFT"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Avj-Th-mli" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4yF-s1-x0U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Avj-Th-mli" secondAttribute="bottom" id="cac-cs-SYG"/>
+                            <constraint firstItem="sax-JF-H2J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oMF-Vz-hJz"/>
+                            <constraint firstItem="Avj-Th-mli" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ooO-Ua-fVn"/>
+                            <constraint firstItem="sax-JF-H2J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p8O-2L-J7i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sax-JF-H2J" secondAttribute="bottom" id="qce-dx-gT1"/>
+                            <constraint firstAttribute="trailing" secondItem="sax-JF-H2J" secondAttribute="trailing" id="sDF-1e-ovd"/>
+                            <constraint firstAttribute="trailing" secondItem="Avj-Th-mli" secondAttribute="trailing" id="zLk-VI-vDM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ed8-S1-u8T">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="vkM-WA-Z31"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2A" width="480" height="720"/>
+        <image name="2B" width="480" height="720"/>
+    </resources>
+</document>

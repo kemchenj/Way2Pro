@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 protocol ItemDetailViewControllerDelegate: class
 {
     func itemDetailViewController(controller: ItemDetailViewController, didFinishEditItem item: ChecklistItem)
@@ -25,6 +27,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    @IBOutlet weak var shouldRemindSwitch: UISwitch!
+    @IBOutlet weak var dueDateLabel: UILabel!
 
 
 
@@ -68,10 +72,16 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate
 
 
 
+    // MARK: - TableView Delegate
+    
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         return nil
     }
 
+    
+    
+    // MARK: - TextField Delegate
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let oldText: NSString = textField.text!
         let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)

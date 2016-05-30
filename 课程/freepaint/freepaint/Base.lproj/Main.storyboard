@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Flm-7k-XsN">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Clear" id="Zis-pl-YPs">
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" id="tZG-9f-1r9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Undo" id="iKb-yu-tu3">
+                                        <connections>
+                                            <action selector="undo:" destination="BYZ-38-t0r" id="tw8-rd-iBV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Eraser" id="1PP-sv-1fn">
+                                        <connections>
+                                            <action selector="eraser:" destination="BYZ-38-t0r" id="K8v-Ng-Of9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Picture" id="q2D-IP-rVk">
+                                        <connections>
+                                            <action selector="pickPicture:" destination="BYZ-38-t0r" id="Yy1-X3-IQx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1lz-GB-8Ph"/>
+                                    <barButtonItem title="Save" id="brb-av-b7z">
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" id="uLV-rU-nS8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WAl-V9-wS4" customClass="STDrawView">
+                                <rect key="frame" x="0.0" y="72" width="414" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOA-X2-Efr">
+                                <rect key="frame" x="0.0" y="609" width="414" height="127"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-kb-zaU">
+                                        <rect key="frame" x="6" y="20" width="402" height="31"/>
+                                        <connections>
+                                            <action selector="lineWithChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ymP-NH-dcX"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cge-cS-Tqk">
+                                        <rect key="frame" x="8" y="74" width="119" height="30"/>
+                                        <color key="backgroundColor" red="0.99205094575881958" green="0.97498208284378052" blue="0.0071858246810734272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="pickColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nR-g5-tvW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM5-dk-h7O">
+                                        <rect key="frame" x="311" y="74" width="95" height="30"/>
+                                        <color key="backgroundColor" red="0.037528052926063538" green="0.079743571579456329" blue="0.9330868124961853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="pickColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5jr-7S-ayW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB7-PB-Htv">
+                                        <rect key="frame" x="154" y="74" width="107" height="30"/>
+                                        <color key="backgroundColor" red="0.21829843521118164" green="0.89748126268386841" blue="0.18803489208221436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="pickColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxk-mO-uGp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="drawView" destination="WAl-V9-wS4" id="TGN-7R-lbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="340"/>
+        </scene>
+    </scenes>
+</document>

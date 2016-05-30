@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'clock' do
+  pod 'MBProgressHUD'
+  pod 'ReactiveCocoa'
+  pod 'Masonry'
+  pod 'AFNetworking'
+
+end

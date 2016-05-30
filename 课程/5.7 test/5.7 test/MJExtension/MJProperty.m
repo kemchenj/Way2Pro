@@ -32,6 +32,7 @@
     if (!_objectClassInArrayDict) {
         _objectClassInArrayDict = [NSMutableDictionary dictionary];
     }
+    //return _objectClassInArrayDict;
     return _objectClassInArrayDict;
 }
 

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		997431BBD5A452F76BA94EB6 /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99743E050A364C5AEA45489C /* STViewController.m */; };
 		9974325B77DA25CB5688C78A /* STNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974304E973DF642BD2CB2A9 /* STNavigationController.m */; };
-		99743432EB25A5CD970084D4 /* STNavigationBarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99743760EC2999BED3916933 /* STNavigationBarTitleView.m */; };
+		99743432EB25A5CD970084D4 /* STTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99743760EC2999BED3916933 /* STTitleView.m */; };
 		9974355AC07EE6A229270448 /* STViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997439C3EF331F6AEC30BE7B /* STViewController.xib */; };
 		9974366E2A28A62C13B46268 /* STPeopleNearby.m in Sources */ = {isa = PBXBuildFile; fileRef = 99743CA117DE8BF2114190D7 /* STPeopleNearby.m */; };
 		99743A7C2FB1339A93E93679 /* STPeopleNearby.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9974304F450FF95E81E696CC /* STPeopleNearby.xib */; };
@@ -45,10 +45,10 @@
 		9974304E973DF642BD2CB2A9 /* STNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavigationController.m; sourceTree = "<group>"; };
 		9974304F450FF95E81E696CC /* STPeopleNearby.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STPeopleNearby.xib; sourceTree = "<group>"; };
 		9974363587EA702B1C6F5541 /* STNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavigationController.h; sourceTree = "<group>"; };
-		99743760EC2999BED3916933 /* STNavigationBarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavigationBarTitleView.m; sourceTree = "<group>"; };
+		99743760EC2999BED3916933 /* STTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTitleView.m; sourceTree = "<group>"; };
 		997439C3EF331F6AEC30BE7B /* STViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STViewController.xib; sourceTree = "<group>"; };
 		99743CA117DE8BF2114190D7 /* STPeopleNearby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPeopleNearby.m; sourceTree = "<group>"; };
-		99743D8DBE7C4E2CB063744B /* STNavigationBarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavigationBarTitleView.h; sourceTree = "<group>"; };
+		99743D8DBE7C4E2CB063744B /* STTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTitleView.h; sourceTree = "<group>"; };
 		99743DC6A76C1449BB6BFE7A /* STViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
 		99743E050A364C5AEA45489C /* STViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
 		C85C78521CDDFA1800451A23 /* 5.7 test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "5.7 test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,8 +123,8 @@
 		99743376EB56C3487543844E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				99743D8DBE7C4E2CB063744B /* STNavigationBarTitleView.h */,
-				99743760EC2999BED3916933 /* STNavigationBarTitleView.m */,
+				99743D8DBE7C4E2CB063744B /* STTitleView.h */,
+				99743760EC2999BED3916933 /* STTitleView.m */,
 				9974363587EA702B1C6F5541 /* STNavigationController.h */,
 				9974304E973DF642BD2CB2A9 /* STNavigationController.m */,
 				99743DC6A76C1449BB6BFE7A /* STViewController.h */,
@@ -344,7 +344,7 @@
 				C85C78F51CDECAC500451A23 /* MASViewConstraint.m in Sources */,
 				C85C78F11CDECAC500451A23 /* MASConstraint.m in Sources */,
 				C85C78571CDDFA1800451A23 /* main.m in Sources */,
-				99743432EB25A5CD970084D4 /* STNavigationBarTitleView.m in Sources */,
+				99743432EB25A5CD970084D4 /* STTitleView.m in Sources */,
 				9974325B77DA25CB5688C78A /* STNavigationController.m in Sources */,
 				997431BBD5A452F76BA94EB6 /* STViewController.m in Sources */,
 				9974366E2A28A62C13B46268 /* STPeopleNearby.m in Sources */,

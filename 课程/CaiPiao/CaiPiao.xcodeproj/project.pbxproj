@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C89CDEE11CF1634900A0A19F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDEE01CF1634900A0A19F /* main.m */; };
+		C89CDEE41CF1634900A0A19F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDEE31CF1634900A0A19F /* AppDelegate.m */; };
+		C89CDEEC1CF1634900A0A19F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89CDEEB1CF1634900A0A19F /* Assets.xcassets */; };
+		C89CDF161CF18C0600A0A19F /* STTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF151CF18C0600A0A19F /* STTabBarViewController.m */; };
+		C89CDF191CF18C2400A0A19F /* STNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF181CF18C2400A0A19F /* STNavigationController.m */; };
+		C89CDF1C1CF18C5500A0A19F /* STArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF1B1CF18C5500A0A19F /* STArenaViewController.m */; };
+		C89CDF1F1CF18CA200A0A19F /* STDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF1E1CF18CA200A0A19F /* STDiscoverTableViewController.m */; };
+		C89CDF221CF18CE700A0A19F /* STHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF211CF18CE700A0A19F /* STHallViewController.m */; };
+		C89CDF251CF18D0700A0A19F /* STCover.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF241CF18D0700A0A19F /* STCover.m */; };
+		C89CDF281CF18D2200A0A19F /* STPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF271CF18D2200A0A19F /* STPopMenu.m */; };
+		C89CDF2A1CF18D3500A0A19F /* STPopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89CDF291CF18D3500A0A19F /* STPopMenu.xib */; };
+		C89CDF2D1CF18D9900A0A19F /* STHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF2C1CF18D9900A0A19F /* STHistoryViewController.m */; };
+		C89CDF301CF18DC400A0A19F /* STTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF2F1CF18DC400A0A19F /* STTabBar.m */; };
+		C89CDF331CF18DDE00A0A19F /* STTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF321CF18DDE00A0A19F /* STTabBarButton.m */; };
+		C89CDF361CF18E0C00A0A19F /* STMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF351CF18E0C00A0A19F /* STMyLotteryViewController.m */; };
+		C89CDF391CF18E3000A0A19F /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF381CF18E3000A0A19F /* UIImage+image.m */; };
+		C89CDF3C1CF18E4300A0A19F /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF3B1CF18E4300A0A19F /* UIView+frame.m */; };
+		C89CDF3F1CF1955B00A0A19F /* STBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF3E1CF1955B00A0A19F /* STBaseSettingViewController.m */; };
+		C89CDF421CF1958600A0A19F /* STAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF411CF1958600A0A19F /* STAwardViewController.m */; };
+		C89CDF451CF195A100A0A19F /* STPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF441CF195A100A0A19F /* STPushViewController.m */; };
+		C89CDF481CF195AE00A0A19F /* STSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF471CF195AE00A0A19F /* STSettingViewController.m */; };
+		C89CDF4B1CF195D400A0A19F /* STSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF4A1CF195D400A0A19F /* STSettingItem.m */; };
+		C89CDF4E1CF195E300A0A19F /* STGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF4D1CF195E300A0A19F /* STGroupItem.m */; };
+		C89CDF511CF195F000A0A19F /* STArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF501CF195F000A0A19F /* STArrowItem.m */; };
+		C89CDF541CF195FD00A0A19F /* STSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF531CF195FD00A0A19F /* STSwitchItem.m */; };
+		C89CDF571CF1962700A0A19F /* STSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF561CF1962700A0A19F /* STSettingCell.m */; };
+		C89CDF611CF1975D00A0A19F /* STArenaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF601CF1975D00A0A19F /* STArenaNavigationController.m */; };
+		C89CDF641CF1977A00A0A19F /* STArenaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF631CF1977A00A0A19F /* STArenaView.m */; };
+		C89CDF671CF197AE00A0A19F /* STBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF661CF197AE00A0A19F /* STBuyViewController.m */; };
+		C89CDF6C1CF197F600A0A19F /* STTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF6B1CF197F600A0A19F /* STTitleButton.m */; };
+		C89CDF6E1CF1985000A0A19F /* STMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89CDF6D1CF1985000A0A19F /* STMyLotteryViewController.xib */; };
+		C89CDF721CF1990800A0A19F /* STScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF711CF1990800A0A19F /* STScoreViewController.m */; };
+		C89CDF7A1CF19CF200A0A19F /* STNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF791CF19CF200A0A19F /* STNewFeatureViewController.m */; };
+		C89CDF7D1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF7C1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.m */; };
+		C89CDF7F1CF28FC100A0A19F /* STDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89CDF7E1CF28FC100A0A19F /* STDiscoverTableViewController.storyboard */; };
+		C89CDF821CF2DD2400A0A19F /* STGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF811CF2DD2400A0A19F /* STGuideTool.m */; };
+		C89CDF851CF2DD3400A0A19F /* STSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CDF841CF2DD3400A0A19F /* STSaveTool.m */; };
+		C89CDF871CF2E7DC00A0A19F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89CDF861CF2E7DC00A0A19F /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C89CDEDC1CF1634900A0A19F /* CaiPiao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaiPiao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89CDEE01CF1634900A0A19F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C89CDEE21CF1634900A0A19F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C89CDEE31CF1634900A0A19F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C89CDEEB1CF1634900A0A19F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C89CDEF01CF1634900A0A19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89CDF141CF18C0600A0A19F /* STTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBarViewController.h; sourceTree = "<group>"; };
+		C89CDF151CF18C0600A0A19F /* STTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBarViewController.m; sourceTree = "<group>"; };
+		C89CDF171CF18C2400A0A19F /* STNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavigationController.h; sourceTree = "<group>"; };
+		C89CDF181CF18C2400A0A19F /* STNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavigationController.m; sourceTree = "<group>"; };
+		C89CDF1A1CF18C5500A0A19F /* STArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STArenaViewController.h; sourceTree = "<group>"; };
+		C89CDF1B1CF18C5500A0A19F /* STArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STArenaViewController.m; sourceTree = "<group>"; };
+		C89CDF1D1CF18CA200A0A19F /* STDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDiscoverTableViewController.h; sourceTree = "<group>"; };
+		C89CDF1E1CF18CA200A0A19F /* STDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDiscoverTableViewController.m; sourceTree = "<group>"; };
+		C89CDF201CF18CE700A0A19F /* STHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHallViewController.h; sourceTree = "<group>"; };
+		C89CDF211CF18CE700A0A19F /* STHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHallViewController.m; sourceTree = "<group>"; };
+		C89CDF231CF18D0700A0A19F /* STCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCover.h; sourceTree = "<group>"; };
+		C89CDF241CF18D0700A0A19F /* STCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCover.m; sourceTree = "<group>"; };
+		C89CDF261CF18D2200A0A19F /* STPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopMenu.h; sourceTree = "<group>"; };
+		C89CDF271CF18D2200A0A19F /* STPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopMenu.m; sourceTree = "<group>"; };
+		C89CDF291CF18D3500A0A19F /* STPopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STPopMenu.xib; sourceTree = "<group>"; };
+		C89CDF2B1CF18D9900A0A19F /* STHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHistoryViewController.h; sourceTree = "<group>"; };
+		C89CDF2C1CF18D9900A0A19F /* STHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHistoryViewController.m; sourceTree = "<group>"; };
+		C89CDF2E1CF18DC400A0A19F /* STTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBar.h; sourceTree = "<group>"; };
+		C89CDF2F1CF18DC400A0A19F /* STTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBar.m; sourceTree = "<group>"; };
+		C89CDF311CF18DDE00A0A19F /* STTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBarButton.h; sourceTree = "<group>"; };
+		C89CDF321CF18DDE00A0A19F /* STTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBarButton.m; sourceTree = "<group>"; };
+		C89CDF341CF18E0C00A0A19F /* STMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMyLotteryViewController.h; sourceTree = "<group>"; };
+		C89CDF351CF18E0C00A0A19F /* STMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMyLotteryViewController.m; sourceTree = "<group>"; };
+		C89CDF371CF18E3000A0A19F /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		C89CDF381CF18E3000A0A19F /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		C89CDF3A1CF18E4300A0A19F /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		C89CDF3B1CF18E4300A0A19F /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		C89CDF3D1CF1955B00A0A19F /* STBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseSettingViewController.h; sourceTree = "<group>"; };
+		C89CDF3E1CF1955B00A0A19F /* STBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseSettingViewController.m; sourceTree = "<group>"; };
+		C89CDF401CF1958600A0A19F /* STAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAwardViewController.h; sourceTree = "<group>"; };
+		C89CDF411CF1958600A0A19F /* STAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAwardViewController.m; sourceTree = "<group>"; };
+		C89CDF431CF195A100A0A19F /* STPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPushViewController.h; sourceTree = "<group>"; };
+		C89CDF441CF195A100A0A19F /* STPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPushViewController.m; sourceTree = "<group>"; };
+		C89CDF461CF195AE00A0A19F /* STSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingViewController.h; sourceTree = "<group>"; };
+		C89CDF471CF195AE00A0A19F /* STSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingViewController.m; sourceTree = "<group>"; };
+		C89CDF491CF195D400A0A19F /* STSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingItem.h; sourceTree = "<group>"; };
+		C89CDF4A1CF195D400A0A19F /* STSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingItem.m; sourceTree = "<group>"; };
+		C89CDF4C1CF195E300A0A19F /* STGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGroupItem.h; sourceTree = "<group>"; };
+		C89CDF4D1CF195E300A0A19F /* STGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGroupItem.m; sourceTree = "<group>"; };
+		C89CDF4F1CF195F000A0A19F /* STArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STArrowItem.h; sourceTree = "<group>"; };
+		C89CDF501CF195F000A0A19F /* STArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STArrowItem.m; sourceTree = "<group>"; };
+		C89CDF521CF195FD00A0A19F /* STSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSwitchItem.h; sourceTree = "<group>"; };
+		C89CDF531CF195FD00A0A19F /* STSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSwitchItem.m; sourceTree = "<group>"; };
+		C89CDF551CF1962700A0A19F /* STSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingCell.h; sourceTree = "<group>"; };
+		C89CDF561CF1962700A0A19F /* STSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingCell.m; sourceTree = "<group>"; };
+		C89CDF5F1CF1975D00A0A19F /* STArenaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STArenaNavigationController.h; sourceTree = "<group>"; };
+		C89CDF601CF1975D00A0A19F /* STArenaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STArenaNavigationController.m; sourceTree = "<group>"; };
+		C89CDF621CF1977A00A0A19F /* STArenaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STArenaView.h; sourceTree = "<group>"; };
+		C89CDF631CF1977A00A0A19F /* STArenaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STArenaView.m; sourceTree = "<group>"; };
+		C89CDF651CF197AE00A0A19F /* STBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBuyViewController.h; sourceTree = "<group>"; };
+		C89CDF661CF197AE00A0A19F /* STBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBuyViewController.m; sourceTree = "<group>"; };
+		C89CDF6A1CF197F600A0A19F /* STTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTitleButton.h; sourceTree = "<group>"; };
+		C89CDF6B1CF197F600A0A19F /* STTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTitleButton.m; sourceTree = "<group>"; };
+		C89CDF6D1CF1985000A0A19F /* STMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMyLotteryViewController.xib; sourceTree = "<group>"; };
+		C89CDF6F1CF1987B00A0A19F /* ST.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ST.pch; sourceTree = "<group>"; };
+		C89CDF701CF1990800A0A19F /* STScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScoreViewController.h; sourceTree = "<group>"; };
+		C89CDF711CF1990800A0A19F /* STScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScoreViewController.m; sourceTree = "<group>"; };
+		C89CDF781CF19CF200A0A19F /* STNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNewFeatureViewController.h; sourceTree = "<group>"; };
+		C89CDF791CF19CF200A0A19F /* STNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNewFeatureViewController.m; sourceTree = "<group>"; };
+		C89CDF7B1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNewFeatureCollectionViewCell.h; sourceTree = "<group>"; };
+		C89CDF7C1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNewFeatureCollectionViewCell.m; sourceTree = "<group>"; };
+		C89CDF7E1CF28FC100A0A19F /* STDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
+		C89CDF801CF2DD2400A0A19F /* STGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGuideTool.h; sourceTree = "<group>"; };
+		C89CDF811CF2DD2400A0A19F /* STGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGuideTool.m; sourceTree = "<group>"; };
+		C89CDF831CF2DD3400A0A19F /* STSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSaveTool.h; sourceTree = "<group>"; };
+		C89CDF841CF2DD3400A0A19F /* STSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSaveTool.m; sourceTree = "<group>"; };
+		C89CDF861CF2E7DC00A0A19F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C89CDED91CF1634900A0A19F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C89CDED31CF1634900A0A19F = {
+			isa = PBXGroup;
+			children = (
+				C89CDEDE1CF1634900A0A19F /* CaiPiao */,
+				C89CDEDD1CF1634900A0A19F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C89CDEDD1CF1634900A0A19F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDEDC1CF1634900A0A19F /* CaiPiao.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C89CDEDE1CF1634900A0A19F /* CaiPiao */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDEF61CF1637C00A0A19F /* Arena(竞技场) */,
+				C89CDEF71CF1639300A0A19F /* Discover */,
+				C89CDEF81CF163A300A0A19F /* Hall */,
+				C89CDEF91CF163B300A0A19F /* History */,
+				C89CDEFA1CF163C600A0A19F /* Main */,
+				C89CDEFB1CF1892E00A0A19F /* MyLottery */,
+				C89CDF581CF1965500A0A19F /* NewFeature */,
+				C89CDF5A1CF1967200A0A19F /* Setting */,
+				C89CDF591CF1966100A0A19F /* Tool */,
+				C89CDEFC1CF1894600A0A19F /* Other */,
+				C89CDEEB1CF1634900A0A19F /* Assets.xcassets */,
+				C89CDEDF1CF1634900A0A19F /* Supporting Files */,
+			);
+			path = CaiPiao;
+			sourceTree = "<group>";
+		};
+		C89CDEDF1CF1634900A0A19F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDEF01CF1634900A0A19F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C89CDEF61CF1637C00A0A19F /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDEFD1CF1896400A0A19F /* Controller */,
+				C89CDEFE1CF1896E00A0A19F /* Model */,
+				C89CDEFF1CF1897B00A0A19F /* View */,
+			);
+			name = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		C89CDEF71CF1639300A0A19F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF001CF189BE00A0A19F /* Controller */,
+				C89CDF011CF189C800A0A19F /* Model */,
+				C89CDF021CF189D200A0A19F /* View */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		C89CDEF81CF163A300A0A19F /* Hall */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF051CF18A2000A0A19F /* Controller */,
+				C89CDF041CF18A1B00A0A19F /* Model */,
+				C89CDF031CF189ED00A0A19F /* View */,
+			);
+			name = Hall;
+			sourceTree = "<group>";
+		};
+		C89CDEF91CF163B300A0A19F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF081CF18A2F00A0A19F /* Controller */,
+				C89CDF071CF18A2C00A0A19F /* Model */,
+				C89CDF061CF18A2900A0A19F /* View */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		C89CDEFA1CF163C600A0A19F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF0C1CF18A6200A0A19F /* Controller */,
+				C89CDF0B1CF18A5E00A0A19F /* Model */,
+				C89CDF091CF18A3700A0A19F /* View */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C89CDEFB1CF1892E00A0A19F /* MyLottery */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF0F1CF18A6F00A0A19F /* Controller */,
+				C89CDF0E1CF18A6B00A0A19F /* Model */,
+				C89CDF0D1CF18A6900A0A19F /* View */,
+			);
+			name = MyLottery;
+			sourceTree = "<group>";
+		};
+		C89CDEFC1CF1894600A0A19F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF101CF18A7300A0A19F /* Category */,
+				C89CDEE01CF1634900A0A19F /* main.m */,
+				C89CDEE21CF1634900A0A19F /* AppDelegate.h */,
+				C89CDEE31CF1634900A0A19F /* AppDelegate.m */,
+				C89CDF6F1CF1987B00A0A19F /* ST.pch */,
+				C89CDF861CF2E7DC00A0A19F /* Launch Screen.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C89CDEFD1CF1896400A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF5F1CF1975D00A0A19F /* STArenaNavigationController.h */,
+				C89CDF601CF1975D00A0A19F /* STArenaNavigationController.m */,
+				C89CDF1A1CF18C5500A0A19F /* STArenaViewController.h */,
+				C89CDF1B1CF18C5500A0A19F /* STArenaViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDEFE1CF1896E00A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDEFF1CF1897B00A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF621CF1977A00A0A19F /* STArenaView.h */,
+				C89CDF631CF1977A00A0A19F /* STArenaView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF001CF189BE00A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF651CF197AE00A0A19F /* STBuyViewController.h */,
+				C89CDF661CF197AE00A0A19F /* STBuyViewController.m */,
+				C89CDF1D1CF18CA200A0A19F /* STDiscoverTableViewController.h */,
+				C89CDF1E1CF18CA200A0A19F /* STDiscoverTableViewController.m */,
+				C89CDF7E1CF28FC100A0A19F /* STDiscoverTableViewController.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF011CF189C800A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF021CF189D200A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF6A1CF197F600A0A19F /* STTitleButton.h */,
+				C89CDF6B1CF197F600A0A19F /* STTitleButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF031CF189ED00A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF231CF18D0700A0A19F /* STCover.h */,
+				C89CDF241CF18D0700A0A19F /* STCover.m */,
+				C89CDF261CF18D2200A0A19F /* STPopMenu.h */,
+				C89CDF271CF18D2200A0A19F /* STPopMenu.m */,
+				C89CDF291CF18D3500A0A19F /* STPopMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF041CF18A1B00A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF051CF18A2000A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF201CF18CE700A0A19F /* STHallViewController.h */,
+				C89CDF211CF18CE700A0A19F /* STHallViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF061CF18A2900A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF071CF18A2C00A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF081CF18A2F00A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF2B1CF18D9900A0A19F /* STHistoryViewController.h */,
+				C89CDF2C1CF18D9900A0A19F /* STHistoryViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF091CF18A3700A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF2E1CF18DC400A0A19F /* STTabBar.h */,
+				C89CDF2F1CF18DC400A0A19F /* STTabBar.m */,
+				C89CDF311CF18DDE00A0A19F /* STTabBarButton.h */,
+				C89CDF321CF18DDE00A0A19F /* STTabBarButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF0B1CF18A5E00A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF0C1CF18A6200A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF141CF18C0600A0A19F /* STTabBarViewController.h */,
+				C89CDF151CF18C0600A0A19F /* STTabBarViewController.m */,
+				C89CDF171CF18C2400A0A19F /* STNavigationController.h */,
+				C89CDF181CF18C2400A0A19F /* STNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF0D1CF18A6900A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF0E1CF18A6B00A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF0F1CF18A6F00A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF341CF18E0C00A0A19F /* STMyLotteryViewController.h */,
+				C89CDF351CF18E0C00A0A19F /* STMyLotteryViewController.m */,
+				C89CDF6D1CF1985000A0A19F /* STMyLotteryViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF101CF18A7300A0A19F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF371CF18E3000A0A19F /* UIImage+image.h */,
+				C89CDF381CF18E3000A0A19F /* UIImage+image.m */,
+				C89CDF3A1CF18E4300A0A19F /* UIView+frame.h */,
+				C89CDF3B1CF18E4300A0A19F /* UIView+frame.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		C89CDF581CF1965500A0A19F /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF771CF1994700A0A19F /* Controller */,
+				C89CDF761CF1994400A0A19F /* Model */,
+				C89CDF751CF1994100A0A19F /* View */,
+			);
+			name = NewFeature;
+			sourceTree = "<group>";
+		};
+		C89CDF591CF1966100A0A19F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF731CF1992900A0A19F /* Guide */,
+				C89CDF741CF1992C00A0A19F /* Save */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		C89CDF5A1CF1967200A0A19F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF5B1CF196A300A0A19F /* Controller */,
+				C89CDF5C1CF196A700A0A19F /* Model */,
+				C89CDF5D1CF196AD00A0A19F /* View */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		C89CDF5B1CF196A300A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF3D1CF1955B00A0A19F /* STBaseSettingViewController.h */,
+				C89CDF3E1CF1955B00A0A19F /* STBaseSettingViewController.m */,
+				C89CDF401CF1958600A0A19F /* STAwardViewController.h */,
+				C89CDF411CF1958600A0A19F /* STAwardViewController.m */,
+				C89CDF431CF195A100A0A19F /* STPushViewController.h */,
+				C89CDF441CF195A100A0A19F /* STPushViewController.m */,
+				C89CDF461CF195AE00A0A19F /* STSettingViewController.h */,
+				C89CDF471CF195AE00A0A19F /* STSettingViewController.m */,
+				C89CDF701CF1990800A0A19F /* STScoreViewController.h */,
+				C89CDF711CF1990800A0A19F /* STScoreViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C89CDF5C1CF196A700A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF491CF195D400A0A19F /* STSettingItem.h */,
+				C89CDF4A1CF195D400A0A19F /* STSettingItem.m */,
+				C89CDF4C1CF195E300A0A19F /* STGroupItem.h */,
+				C89CDF4D1CF195E300A0A19F /* STGroupItem.m */,
+				C89CDF4F1CF195F000A0A19F /* STArrowItem.h */,
+				C89CDF501CF195F000A0A19F /* STArrowItem.m */,
+				C89CDF521CF195FD00A0A19F /* STSwitchItem.h */,
+				C89CDF531CF195FD00A0A19F /* STSwitchItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF5D1CF196AD00A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF551CF1962700A0A19F /* STSettingCell.h */,
+				C89CDF561CF1962700A0A19F /* STSettingCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF731CF1992900A0A19F /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF801CF2DD2400A0A19F /* STGuideTool.h */,
+				C89CDF811CF2DD2400A0A19F /* STGuideTool.m */,
+			);
+			name = Guide;
+			sourceTree = "<group>";
+		};
+		C89CDF741CF1992C00A0A19F /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF831CF2DD3400A0A19F /* STSaveTool.h */,
+				C89CDF841CF2DD3400A0A19F /* STSaveTool.m */,
+			);
+			name = Save;
+			sourceTree = "<group>";
+		};
+		C89CDF751CF1994100A0A19F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF7B1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.h */,
+				C89CDF7C1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C89CDF761CF1994400A0A19F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C89CDF771CF1994700A0A19F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C89CDF781CF19CF200A0A19F /* STNewFeatureViewController.h */,
+				C89CDF791CF19CF200A0A19F /* STNewFeatureViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C89CDEDB1CF1634900A0A19F /* CaiPiao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89CDEF31CF1634900A0A19F /* Build configuration list for PBXNativeTarget "CaiPiao" */;
+			buildPhases = (
+				C89CDED81CF1634900A0A19F /* Sources */,
+				C89CDED91CF1634900A0A19F /* Frameworks */,
+				C89CDEDA1CF1634900A0A19F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaiPiao;
+			productName = CaiPiao;
+			productReference = C89CDEDC1CF1634900A0A19F /* CaiPiao.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C89CDED41CF1634900A0A19F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kemchenj;
+				TargetAttributes = {
+					C89CDEDB1CF1634900A0A19F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C89CDED71CF1634900A0A19F /* Build configuration list for PBXProject "CaiPiao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C89CDED31CF1634900A0A19F;
+			productRefGroup = C89CDEDD1CF1634900A0A19F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C89CDEDB1CF1634900A0A19F /* CaiPiao */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C89CDEDA1CF1634900A0A19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89CDF7F1CF28FC100A0A19F /* STDiscoverTableViewController.storyboard in Resources */,
+				C89CDF6E1CF1985000A0A19F /* STMyLotteryViewController.xib in Resources */,
+				C89CDF2A1CF18D3500A0A19F /* STPopMenu.xib in Resources */,
+				C89CDF871CF2E7DC00A0A19F /* Launch Screen.storyboard in Resources */,
+				C89CDEEC1CF1634900A0A19F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C89CDED81CF1634900A0A19F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89CDF1C1CF18C5500A0A19F /* STArenaViewController.m in Sources */,
+				C89CDF7A1CF19CF200A0A19F /* STNewFeatureViewController.m in Sources */,
+				C89CDF481CF195AE00A0A19F /* STSettingViewController.m in Sources */,
+				C89CDF421CF1958600A0A19F /* STAwardViewController.m in Sources */,
+				C89CDF391CF18E3000A0A19F /* UIImage+image.m in Sources */,
+				C89CDEE41CF1634900A0A19F /* AppDelegate.m in Sources */,
+				C89CDF3C1CF18E4300A0A19F /* UIView+frame.m in Sources */,
+				C89CDF851CF2DD3400A0A19F /* STSaveTool.m in Sources */,
+				C89CDF251CF18D0700A0A19F /* STCover.m in Sources */,
+				C89CDF221CF18CE700A0A19F /* STHallViewController.m in Sources */,
+				C89CDF361CF18E0C00A0A19F /* STMyLotteryViewController.m in Sources */,
+				C89CDF511CF195F000A0A19F /* STArrowItem.m in Sources */,
+				C89CDF3F1CF1955B00A0A19F /* STBaseSettingViewController.m in Sources */,
+				C89CDF611CF1975D00A0A19F /* STArenaNavigationController.m in Sources */,
+				C89CDEE11CF1634900A0A19F /* main.m in Sources */,
+				C89CDF4E1CF195E300A0A19F /* STGroupItem.m in Sources */,
+				C89CDF301CF18DC400A0A19F /* STTabBar.m in Sources */,
+				C89CDF1F1CF18CA200A0A19F /* STDiscoverTableViewController.m in Sources */,
+				C89CDF191CF18C2400A0A19F /* STNavigationController.m in Sources */,
+				C89CDF641CF1977A00A0A19F /* STArenaView.m in Sources */,
+				C89CDF4B1CF195D400A0A19F /* STSettingItem.m in Sources */,
+				C89CDF6C1CF197F600A0A19F /* STTitleButton.m in Sources */,
+				C89CDF671CF197AE00A0A19F /* STBuyViewController.m in Sources */,
+				C89CDF721CF1990800A0A19F /* STScoreViewController.m in Sources */,
+				C89CDF541CF195FD00A0A19F /* STSwitchItem.m in Sources */,
+				C89CDF161CF18C0600A0A19F /* STTabBarViewController.m in Sources */,
+				C89CDF2D1CF18D9900A0A19F /* STHistoryViewController.m in Sources */,
+				C89CDF331CF18DDE00A0A19F /* STTabBarButton.m in Sources */,
+				C89CDF821CF2DD2400A0A19F /* STGuideTool.m in Sources */,
+				C89CDF7D1CF19D0C00A0A19F /* STNewFeatureCollectionViewCell.m in Sources */,
+				C89CDF281CF18D2200A0A19F /* STPopMenu.m in Sources */,
+				C89CDF451CF195A100A0A19F /* STPushViewController.m in Sources */,
+				C89CDF571CF1962700A0A19F /* STSettingCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C89CDEF11CF1634900A0A19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C89CDEF21CF1634900A0A19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C89CDEF41CF1634900A0A19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CaiPiao/ST.pch;
+				INFOPLIST_FILE = CaiPiao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.CaiPiao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C89CDEF51CF1634900A0A19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CaiPiao/ST.pch;
+				INFOPLIST_FILE = CaiPiao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.CaiPiao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C89CDED71CF1634900A0A19F /* Build configuration list for PBXProject "CaiPiao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89CDEF11CF1634900A0A19F /* Debug */,
+				C89CDEF21CF1634900A0A19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89CDEF31CF1634900A0A19F /* Build configuration list for PBXNativeTarget "CaiPiao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89CDEF41CF1634900A0A19F /* Debug */,
+				C89CDEF51CF1634900A0A19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C89CDED41CF1634900A0A19F /* Project object */;
+}

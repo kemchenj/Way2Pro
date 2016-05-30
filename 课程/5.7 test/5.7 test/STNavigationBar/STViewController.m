@@ -8,14 +8,14 @@
 
 #import "STViewController.h"
 #import "STPeopleNearby.h"
-#import "STNavigationBarTitleView.h"
+#import "STTitleView.h"
 
 
 
 @interface STViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITabBar          *tabBar;
-@property (nonatomic, strong) STNavigationBarTitleView *titleView;
+@property (nonatomic, strong) STTitleView *titleView;
 @property (nonatomic, strong) UIScrollView             *scrollView;
 
 @end
@@ -36,13 +36,17 @@
     CGSize navigationBarSize = self.navigationController.navigationBar.frame.size;
 
     // 标题
-    STNavigationBarTitleView *titleView = [[STNavigationBarTitleView alloc] initWithFrame:CGRectMake(navigationBarSize.width / 2 - 60, 0, 120, navigationBarSize.height)];
+    STTitleView *titleView = [[STTitleView alloc] initWithFrame:CGRectMake(navigationBarSize.width / 2 - 60, 0, 120, navigationBarSize.height)];
     titleView.clipsToBounds       = YES;
     self.titleView                = titleView;
     self.navigationItem.titleView = titleView;
 
     // 右边的按钮
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"附近" style:UIBarButtonItemStylePlain target:self action:@selector(PeopleNearby)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"附近"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(PeopleNearby)
+    ];
 
     // 左边的按钮
     UIButton *btn = [[UIButton alloc] init];
@@ -117,13 +121,16 @@
 - (void)scrollToRight
 {
     [self.scrollView setContentOffset:CGPointMake([UIScreen mainScreen].bounds.size.width, 0)
-                             animated:YES];
+                             animated:YES
+    ];
 }
 
 - (void)scrollToLeft
 {
     [self.scrollView setContentOffset:CGPointMake(0, 0)
-                             animated:YES];
+                             animated:YES
+    ];
+
 }
 
 - (UIScrollView *)scrollView

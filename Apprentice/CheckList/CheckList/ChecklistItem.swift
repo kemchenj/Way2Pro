@@ -14,27 +14,49 @@ class ChecklistItem: NSObject, NSCoding
 {
     var text = ""
     var checked = false
-
-    override init() {
-        super.init()
+    var dueDate = NSDate()
+    var shouldRemind = false
+    var itemID : Int
+    
+    
+    override convenience init() {
+        self.init(text: "", checked: false)
     }
-
-    // this is the method for unfreezing the objects from the file
-    required init?(coder aDecoder: NSCoder) {
-        text = aDecoder.decodeObjectForKey("Text") as! String
-        checked = aDecoder.decodeBoolForKey("Checked")
-        super.init()
+    
+    convenience init(text: String) {
+        self.init(text: text, checked: false)
     }
-
-    // NSCoindg Protocol
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(text, forKey: "Text")
-        aCoder.encodeBool(checked, forKey: "Checked")
+    
+    init(text: String, checked: Bool) {
+        self.text = text
+        self.checked = checked
+        self.itemID = DataModel.nextChecklistItemID()
+        super.init()
     }
 
     func toggleChecked() {
         checked = !checked
     }
+    
+    
+    
+    // MARK: - NSCoindg Protocol
+    
+    required init?(coder aDecoder: NSCoder) {
+        text         = aDecoder.decodeObjectForKey("Text") as! String
+        checked      = aDecoder.decodeBoolForKey("Checked")
+        dueDate      = aDecoder.decodeObjectForKey("DueDate") as! NSDate
+        shouldRemind = aDecoder.decodeBoolForKey("ShouldRemind")
+        itemID       = aDecoder.decodeIntegerForKey("ItemID")
+        
+        super.init()
+    }
 
-    // end
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(text, forKey: "Text")
+        aCoder.encodeBool(checked, forKey: "Checked")
+        aCoder.encodeObject(dueDate, forKey: "DueDate")
+        aCoder.encodeBool(shouldRemind, forKey: "ShouldRemind")
+        aCoder.encodeInteger(itemID, forKey: "ItemID")
+    }
 }

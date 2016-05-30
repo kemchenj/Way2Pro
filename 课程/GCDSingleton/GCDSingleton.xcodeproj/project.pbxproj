@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C854DEDB1CFB075700073226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854DEDA1CFB075700073226 /* AppDelegate.swift */; };
+		C854DEDD1CFB075700073226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854DEDC1CFB075700073226 /* ViewController.swift */; };
+		C854DEE01CFB075700073226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C854DEDE1CFB075700073226 /* Main.storyboard */; };
+		C854DEE21CFB075700073226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C854DEE11CFB075700073226 /* Assets.xcassets */; };
+		C854DEE51CFB075700073226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C854DEE31CFB075700073226 /* LaunchScreen.storyboard */; };
+		C854DEED1CFB077900073226 /* STTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854DEEC1CFB077900073226 /* STTool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C854DED71CFB075700073226 /* GCDSingleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDSingleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C854DEDA1CFB075700073226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C854DEDC1CFB075700073226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C854DEDF1CFB075700073226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C854DEE11CFB075700073226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C854DEE41CFB075700073226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C854DEE61CFB075700073226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C854DEEC1CFB077900073226 /* STTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C854DED41CFB075700073226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C854DECE1CFB075700073226 = {
+			isa = PBXGroup;
+			children = (
+				C854DED91CFB075700073226 /* GCDSingleton */,
+				C854DED81CFB075700073226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C854DED81CFB075700073226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C854DED71CFB075700073226 /* GCDSingleton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C854DED91CFB075700073226 /* GCDSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				C854DEDA1CFB075700073226 /* AppDelegate.swift */,
+				C854DEDC1CFB075700073226 /* ViewController.swift */,
+				C854DEEC1CFB077900073226 /* STTool.swift */,
+				C854DEDE1CFB075700073226 /* Main.storyboard */,
+				C854DEE11CFB075700073226 /* Assets.xcassets */,
+				C854DEE31CFB075700073226 /* LaunchScreen.storyboard */,
+				C854DEE61CFB075700073226 /* Info.plist */,
+			);
+			path = GCDSingleton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C854DED61CFB075700073226 /* GCDSingleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C854DEE91CFB075700073226 /* Build configuration list for PBXNativeTarget "GCDSingleton" */;
+			buildPhases = (
+				C854DED31CFB075700073226 /* Sources */,
+				C854DED41CFB075700073226 /* Frameworks */,
+				C854DED51CFB075700073226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDSingleton;
+			productName = GCDSingleton;
+			productReference = C854DED71CFB075700073226 /* GCDSingleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C854DECF1CFB075700073226 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kemchenj;
+				TargetAttributes = {
+					C854DED61CFB075700073226 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C854DED21CFB075700073226 /* Build configuration list for PBXProject "GCDSingleton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C854DECE1CFB075700073226;
+			productRefGroup = C854DED81CFB075700073226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C854DED61CFB075700073226 /* GCDSingleton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C854DED51CFB075700073226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C854DEE51CFB075700073226 /* LaunchScreen.storyboard in Resources */,
+				C854DEE21CFB075700073226 /* Assets.xcassets in Resources */,
+				C854DEE01CFB075700073226 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C854DED31CFB075700073226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C854DEDD1CFB075700073226 /* ViewController.swift in Sources */,
+				C854DEED1CFB077900073226 /* STTool.swift in Sources */,
+				C854DEDB1CFB075700073226 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C854DEDE1CFB075700073226 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C854DEDF1CFB075700073226 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C854DEE31CFB075700073226 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C854DEE41CFB075700073226 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C854DEE71CFB075700073226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C854DEE81CFB075700073226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C854DEEA1CFB075700073226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GCDSingleton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.GCDSingleton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C854DEEB1CFB075700073226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GCDSingleton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.GCDSingleton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C854DED21CFB075700073226 /* Build configuration list for PBXProject "GCDSingleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C854DEE71CFB075700073226 /* Debug */,
+				C854DEE81CFB075700073226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C854DEE91CFB075700073226 /* Build configuration list for PBXNativeTarget "GCDSingleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C854DEEA1CFB075700073226 /* Debug */,
+				C854DEEB1CFB075700073226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C854DECF1CFB075700073226 /* Project object */;
+}

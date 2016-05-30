@@ -13,18 +13,70 @@ import UIKit
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate
 {
     var checklist: Checklist!
+    
 
 
 
-    // MARK - UIView
+    // MARK: - UIView
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = checklist.name
     }
+    
+    
+    
+    // MARK: - Segue
+    
+    // 通知view某个segue将要触发了
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // 1. 因为代理可能不止一个，所以需要用identifier来判断是否是自己需要的那个代理
+        // swift的==可以用在绝大部分数据类型上，例如string等
+        if segue.identifier == "AddItem" {
+            // 2. 从storyboard可以看到ChecklistViewController并不直接连AddItemViewController，中间隔着navigationBar，所以需要先获取navigationBar
+            let navigationController = segue.destinationViewController as! UINavigationController
+            navigationController.title = "Add Item"
+            let controller = navigationController.topViewController as! ItemDetailViewController
+            // 3. 把AddItemViewController的代理设置为ChecklistViewController
+            controller.delegate = self
+        } else if segue.identifier == "EditItem" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = navigationController.topViewController as! ItemDetailViewController
+            navigationController.title = "Edit Item"
+            controller.delegate = self
+            // 函数定义的参数列表里有any Object的话，在调用的时候就需要指定该参数的类型
+            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
+                controller.itemToEdit = checklist.items[indexPath.row]
+            }
+        }
+    }
 
+    
+    
+    // MARK: - Configure Content
+    
+    func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
+        let label = cell.viewWithTag(1001) as! UILabel
 
+        if item.checked {
+            label.text = "√"
+        } else {
+            label.text = ""
+        }
+    }
 
+    func configureTextForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
+        let label = cell.viewWithTag(1000) as! UILabel
+//        label.text = item.text
+        label.text = "\(item.itemID): \(item.text)"
+        
+        label.textColor = view.tintColor
+    }
+
+    
+
+    // MARK: - ItemDetailViewController Delegate
+    
     func itemDetailViewControllerDidCancel(controller: ItemDetailViewController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -54,31 +106,10 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         }
         dismissViewControllerAnimated(true, completion: nil)
     }
-
-    // 通知view某个segue将要触发了
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // 1. 因为代理可能不止一个，所以需要用identifier来判断是否是自己需要的那个代理
-        // swift的==可以用在绝大部分数据类型上，例如string等
-        if segue.identifier == "AddItem" {
-            // 2. 从storyboard可以看到ChecklistViewController并不直接连AddItemViewController，中间隔着navigationBar，所以需要先获取navigationBar
-            let navigationController = segue.destinationViewController as! UINavigationController
-            navigationController.title = "Add Item"
-            let controller = navigationController.topViewController as! ItemDetailViewController
-            // 3. 把AddItemViewController的代理设置为ChecklistViewController
-            controller.delegate = self
-        } else if segue.identifier == "EditItem" {
-            let navigationController = segue.destinationViewController as! UINavigationController
-            let controller = navigationController.topViewController as! ItemDetailViewController
-            navigationController.title = "Edit Item"
-            controller.delegate = self
-            // 函数定义的参数列表里有any Object的话，在调用的时候就需要指定该参数的类型
-            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
-                controller.itemToEdit = checklist.items[indexPath.row]
-            }
-        }
-    }
-
-
+    
+    
+    
+    // MARK: - TableView
 
     // view ask for data
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -99,7 +130,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             let item = checklist.items[indexPath.row]
             item.toggleChecked()
-
+            
             configureCheckmarkForCell(cell, withChecklistItem: item)
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -111,22 +142,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         // 2. Delete the corresponding row from the table view
         let indexPaths = [indexPath]
         tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-
     }
 
-    func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
-        let label = cell.viewWithTag(1001) as! UILabel
-
-        if item.checked {
-            label.text = "√"
-        } else {
-            label.text = ""
-        }
-    }
-
-    func configureTextForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
-        let label = cell.viewWithTag(1000) as! UILabel
-        label.text = item.text
-    }
 }
 

@@ -2,15 +2,15 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/CheckList/ItemDetailViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckList/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/AllListTableViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CheckList/ChecklistItem.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CheckList/ListDetailViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckList/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckList/ItemDetailViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/Checklist.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/ChecklistViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CheckList/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CheckList/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckList/ChecklistItem.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckList/ListDetailViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CheckList/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DataModel.swift" isTestSource="false" />

@@ -2,37 +2,13 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint+Private.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/Masonry.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraintMaker.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/ViewController+MASAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASShorthandAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASLayoutConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraintMaker.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASCompositeConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASLayoutConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASCompositeConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewAttribute.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewConstraint.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASShorthandAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSLayoutConstraint+MASDebugAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewAttribute.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASUtilities.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSLayoutConstraint+MASDebugAdditions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/ViewController+MASAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/STHeroCell.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/heros.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/ViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/MJExtension/MJFoundation.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/MJExtension/NSObject+MJCoding.h" isTestSource="false" />
@@ -55,9 +31,34 @@
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/STHeroCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/STHero.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/STHeroCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint+Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/ViewController+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/ViewController+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraintMaker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASLayoutConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraintMaker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASCompositeConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASLayoutConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewAttribute.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/View+MASShorthandAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSLayoutConstraint+MASDebugAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASViewAttribute.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASUtilities.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/Masonry.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSLayoutConstraint+MASDebugAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/MASCompositeConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5.4 Test/Masonry/NSArray+MASShorthandAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5.4 Test/AppDelegate.m" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

@@ -13,6 +13,8 @@
 		C816EDE41CE5EBBA00D7C3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C816EDE21CE5EBBA00D7C3F5 /* Main.storyboard */; };
 		C816EDE61CE5EBBA00D7C3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C816EDE51CE5EBBA00D7C3F5 /* Assets.xcassets */; };
 		C816EDE91CE5EBBA00D7C3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C816EDE71CE5EBBA00D7C3F5 /* LaunchScreen.storyboard */; };
+		C816EDF21CE5EC0500D7C3F5 /* ShapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C816EDF11CE5EC0500D7C3F5 /* ShapView.m */; };
+		C816EDF51CE5EC0F00D7C3F5 /* LiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C816EDF41CE5EC0F00D7C3F5 /* LiveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		C816EDE51CE5EBBA00D7C3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C816EDE81CE5EBBA00D7C3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C816EDEA1CE5EBBA00D7C3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C816EDF01CE5EC0500D7C3F5 /* ShapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapView.h; sourceTree = "<group>"; };
+		C816EDF11CE5EC0500D7C3F5 /* ShapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapView.m; sourceTree = "<group>"; };
+		C816EDF31CE5EC0F00D7C3F5 /* LiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveView.h; sourceTree = "<group>"; };
+		C816EDF41CE5EC0F00D7C3F5 /* LiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				C816EDDF1CE5EBBA00D7C3F5 /* ViewController.h */,
 				C816EDE01CE5EBBA00D7C3F5 /* ViewController.m */,
 				C816EDE21CE5EBBA00D7C3F5 /* Main.storyboard */,
+				C816EDF01CE5EC0500D7C3F5 /* ShapView.h */,
+				C816EDF11CE5EC0500D7C3F5 /* ShapView.m */,
+				C816EDF31CE5EC0F00D7C3F5 /* LiveView.h */,
+				C816EDF41CE5EC0F00D7C3F5 /* LiveView.m */,
 				C816EDE51CE5EBBA00D7C3F5 /* Assets.xcassets */,
 				C816EDE71CE5EBBA00D7C3F5 /* LaunchScreen.storyboard */,
 				C816EDEA1CE5EBBA00D7C3F5 /* Info.plist */,
@@ -149,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C816EDF21CE5EC0500D7C3F5 /* ShapView.m in Sources */,
 				C816EDE11CE5EBBA00D7C3F5 /* ViewController.m in Sources */,
 				C816EDDE1CE5EBBA00D7C3F5 /* AppDelegate.m in Sources */,
+				C816EDF51CE5EC0F00D7C3F5 /* LiveView.m in Sources */,
 				C816EDDB1CE5EBBA00D7C3F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
